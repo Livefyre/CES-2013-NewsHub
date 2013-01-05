@@ -8,3 +8,13 @@
 #header-nav #main-nav>ul{margin-right:auto;margin-left:auto;}
 .brand{margin-top:0;margin-bottom:0;}
 .ces-brand{display:block;float:left;color:#FFF;width:83px;height:100px;line-height:100px;text-align:center;}
+
+#main-nav li.active a { color: black; }
+#main-nav a {
+	border-radius: 0;
+	color: white;
+}
+#main-nav a:hover {
+	color: black;
+	text-decoration: underline;
+}
