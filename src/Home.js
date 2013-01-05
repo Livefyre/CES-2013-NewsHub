@@ -4,7 +4,7 @@ function () {
 
 //Do something
 require(['jquery'], function ($) {
-	$('h1').html('Go StreamHub!')
+	//$('h1').html('Go StreamHub!')
 })
 
 console.log("Home loaded");
