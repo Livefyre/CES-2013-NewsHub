@@ -5,6 +5,7 @@
     "dependencies": {
         "jquery": "~1.8",
         "requirejs": "~2.1.2",
-        "requirejs-text": "*"
+        "requirejs-text": "*",
+        "bootstrap.css": "2.1.1"
     }
 }

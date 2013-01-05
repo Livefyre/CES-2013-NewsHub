@@ -14,4 +14,3 @@ Then, from the root of this repo:
 * Get dependencies for this app
 
     bower install
-
