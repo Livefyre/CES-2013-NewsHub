@@ -7,8 +7,8 @@
         <link href="style.css" rel="stylesheet" media="screen">
     </head>
 <body>
-    <div class="container">
-        <h1 class="brand clearfix">
+    <div id="header">
+        <h1 class="container brand clearfix">
             <span class="ces-brand blue">C</span>
             <span class="ces-brand turquoise">E</span>
             <span class="ces-brand green">S</span>
@@ -17,47 +17,56 @@
             <span class="ces-brand yellow">1</span>
             <span class="ces-brand yellow">3</span>
         </h1>
+    </div>
+
+    <div id="header-nav">
         <div class="tabbable"> <!-- Only required for left/right tabs -->
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#tab1" data-toggle="tab">Exhibitors</a></li>
-                <li><a href="#tab2" data-toggle="tab">News</a></li>
-                <li><a href="#tab3" data-toggle="tab">Media</a></li>
-                <li><a href="#tab4" data-toggle="tab">Products</a></li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane" id="tab1">
-                    <ul id="exhibitors-nav" class="nav nav-pills">
-                        <li><a href="#">Apple</a></li>
-                        <li><a href="#">Microsoft</a></li>
-                        <li><a href="#">Nvidia</a></li>
-                        <li><a href="#">Samsung</a></li>
-                        <li><a href="#">Sony</a></li>
-                    </ul>
-                </div>
-                <div class="tab-pane" id="tab2">
-                    <ul id="news-nav" class="nav nav-pills">
-                        <li><a href="#">News 1</a></li>
-                        <li><a href="#">News 2</a></li>
-                        <li><a href="#">News 3</a></li>
-                    </ul>
-                </div>
-                <div class="tab-pane" id="tab3">
-                    <ul id="media-nav" class="nav nav-pills">
-                        <li><a href="#">Media 1</a></li>
-                        <li><a href="#">Media 2</a></li>
-                        <li><a href="#">Media 3</a></li>
-                    </ul>
-                </div>
-                <div class="tab-pane" id="tab4">
-                    <ul id="products-nav" class="nav nav-pills">
-                        <li><a href="#">Product 1</a></li>
-                        <li><a href="#">Product 2</a></li>
-                        <li><a href="#">Product 3</a></li>
-                    </ul>
+            <div id="main-nav" class="blue-gradient">
+                <ul class="container nav nav-tabs">
+                    <li class="active"><a href="#tab1" data-toggle="tab">Exhibitors</a></li>
+                    <li><a href="#tab2" data-toggle="tab">News</a></li>
+                    <li><a href="#tab3" data-toggle="tab">Media</a></li>
+                    <li><a href="#tab4" data-toggle="tab">Products</a></li>
+                </ul>
+            </div>
+            <div id="main-nav-content">
+                <div class="tab-content container">
+                    <div class="tab-pane" id="tab1">
+                        <ul id="exhibitors-nav" class="nav nav-pills">
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                            <li><a href="#">Nvidia</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">Sony</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <ul id="news-nav" class="nav nav-pills">
+                            <li><a href="#">News 1</a></li>
+                            <li><a href="#">News 2</a></li>
+                            <li><a href="#">News 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <ul id="media-nav" class="nav nav-pills">
+                            <li><a href="#">Media 1</a></li>
+                            <li><a href="#">Media 2</a></li>
+                            <li><a href="#">Media 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="tab4">
+                        <ul id="products-nav" class="nav nav-pills">
+                            <li><a href="#">Product 1</a></li>
+                            <li><a href="#">Product 2</a></li>
+                            <li><a href="#">Product 3</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="container">
         <div class="hero-unit">
             <h1>Heading</h1>
             <p>Tagline</p>

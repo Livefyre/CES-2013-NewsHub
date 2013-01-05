@@ -3,12 +3,50 @@
 .green { background-color: rgba(23,186,188,1); }
 .yellow { background-color: rgba(215,222,85,1); }
 
+.blue-gradient {
+    background-color: #435b80;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(67, 91, 128)),to(rgb(46, 61, 85)));
+    background-image: -webkit-linear-gradient(top, rgb(67, 91, 128), rgb(46, 61, 85));
+    background-image: -moz-linear-gradient(top, rgb(67, 91, 128), rgb(46, 61, 85));
+    background-image: -o-linear-gradient(top, rgb(67, 91, 128), rgb(46, 61, 85));
+    background-image: -ms-linear-gradient(top, rgb(67, 91, 128), rgb(46, 61, 85));
+    background-image: linear-gradient(top, rgb(67, 91, 128), rgb(46, 61, 85));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#435b80', EndColorStr='#2e3d55');
+}
+
+@main-nav-tab-width: 83px;
+@ces-brand-height: 100px;
+
+#header {
+    background-color: rgba(21,29,41,1);
+}
+#header-nav {
+    font-size: 11px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+
+    .nav-tabs li {
+        width: @main-nav-tab-width;
+        text-align: center;
+    }
+
+    #main-nav > ul {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.brand {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .ces-brand { 
     display: block;
     float: left;
     color: #FFF;
-    width: 50px;
-    height: 80px;
-    line-height: 80px;
+    width: @main-nav-tab-width;
+    height: @ces-brand-height;
+    line-height: @ces-brand-height;
     text-align: center;
 }
