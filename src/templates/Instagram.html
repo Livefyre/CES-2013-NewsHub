@@ -1,0 +1,20 @@
+<article class="brand-instagram" data-hub-content-id="{{ id }}">
+	<div class="hub-heading">
+		{{#author.avatar}}
+		<a class="hub-avatar"><img src="{{ author.avatar }}" /></a>
+		{{/author.avatar}}
+		<p class="hub-byline"><span class="hub-author">{{ author.displayName }}</span><a class="hub-timestamp">{{formattedCreatedAt}}</a></p>
+	</div>
+	<div class="hub-body">
+		<div class="hub-body-html">
+		<!--{{{ bodyHtml }}}-->
+		</div>
+		<div class="hub-attachments">
+		{{ #attachments }}
+			<div class="hub-attachment hub-attachment-photo">
+				<img src="{{ url }}" />
+			</div>
+		{{ /attachments }}
+		</div>
+	</div>
+</article>
