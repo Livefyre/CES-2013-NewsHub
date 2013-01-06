@@ -194,6 +194,7 @@ body {
 
         #main-nav-right {
             width: 50%;
+            height: 35px;
             float: right;
             position: relative;
             right: 100px;
@@ -214,8 +215,29 @@ body {
 }
 
 .brand {
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     margin-top: 0;
     margin-bottom: 0;
+}
+.brand .heading {
+    color: white;
+    height: 26px;
+    padding: 3px 10px;
+
+    h2 {
+        font-size: 1em;
+        font-weight: normal;
+        line-height: 2em;
+        margin-top: 0;
+        margin-bottom: 0.25em;
+        text-transform: uppercase;
+    }
 }
 
 .ces-brand { 
@@ -231,7 +253,23 @@ body {
 }
 
 #main-nav-content {
+    height: 30px;
     float: left;
+    width: 100%;
+
+    a {
+        color: #FFF;
+        height: 30px;
+        line-height: 30px;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        &:hover {
+            border-radius: 0;
+            background: #888;
+        }
+    }
 
     .tab-pane {
         display: none;
@@ -296,24 +334,6 @@ body {
     min-height: 200px;
     -webkit-overflow-scrolling: touch;
 }
-
-/*
- * Exhibitors
- */
-.brand .heading {
-    color: white;
-    height: 26px;
-    padding: 3px 10px;
-
-    h2 {
-        font-size: 1em;
-        font-weight: normal;
-        line-height: 2em;
-        margin-top: 0;
-        margin-bottom: 0.25em;
-        text-transform: uppercase;
-    }
-}
 .brand-env {
 	vertical-align: top;
     border-top: 1px solid rgb(182,196,203);
@@ -358,6 +378,15 @@ body {
     .hub-avatar img {
         width: 48px;
         height: 48px;
+    }
+}
+
+/*
+ * Exhibitors
+ */
+.exhibitors {
+    #main-nav-content {
+        background: rgba(102,137,181,1);
     }
 }
 
