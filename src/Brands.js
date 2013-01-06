@@ -1,7 +1,8 @@
 // This will run on the Brands page
 require(['./config'], function () {
 
-require(['fyre', 'streamhub-backbone', 'jquery'], function (fyre, Hub, $) {
+require(['fyre', 'streamhub-backbone', 'jquery', 'mustache', 'text!../src/templates/Instagram.html'],
+function (fyre, Hub, $, Mustache, InstagramHtml) {
     var apps = [];
 	fyre.conv.load({}, [{
 		network: 'livefyre.com',
@@ -14,6 +15,11 @@ require(['fyre', 'streamhub-backbone', 'jquery'], function (fyre, Hub, $) {
             collection: {
                 siteId: "303818",
                 articleId: "51"
+            },
+            sources: {
+                rss: {
+                    template: Mustache.compile(InstagramHtml)
+                }
             },
             el: document.getElementById("brand-0-env")
 	    }));
