@@ -153,8 +153,9 @@ body {
 .deck {
   overflow-x: auto;
   overflow-y: hidden;
-  padding-left: 0.25em;
-  padding-right: 0.25em;
+  margin-left: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
   position: absolute;
   top: 144px;
   left: 0;
@@ -163,7 +164,6 @@ body {
 }
 .deck-columns {
   height: 100%;
-  padding-left: 1em;
   overflow: visible;
 }
 .deck-col {
@@ -180,11 +180,8 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   min-height: 200px;
+  -webkit-overflow-scrolling: touch;
 }
-/*
-    overflow-y: auto;
-    height: 600px;
-}*/
 /*
  * Exhibitors
  */
