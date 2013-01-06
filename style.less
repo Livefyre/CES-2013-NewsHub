@@ -67,10 +67,6 @@ body {
 
     #main-nav {
         margin-left: -100px;
-
-        .nav {
-            margin-bottom: 0;
-        }
         
         li#main-nav-home.active {
             a:hover {
@@ -160,14 +156,37 @@ body {
  */
 .deck {
     overflow-x: auto;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
 }
+.deck-col {
+    margin-left: 0.5em;
+}
+.deck-col-scroll {
+    overflow-y: auto;
+    height: 600px;
+}
+
 /*
  * Exhibitors
  */
+.brand .heading {
+    color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    h2 {
+        font-size: 1em;
+        font-weight: normal;
+        line-height: 2em;
+        margin-top: 0;
+        margin-bottom: 0.25em;
+        text-transform: uppercase;
+    }
+}
 .brand-env {
 	vertical-align: top;
+    border-top: 1px solid rgb(182,196,203);
 }
 
 .brand-env .hub-item {
@@ -179,8 +198,11 @@ body {
 	background-image: -ms-linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
 	background-image: linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr=' #f2f6fc ', EndColorStr=' #dce5ea ');
-	margin-bottom: 0.5em;
-	padding: 0.5em;
+    border-right: 1px solid rgb(182,196,203);
+    border-left: 1px solid rgb(182,196,203);
+    border-bottom: 1px solid rgb(182,196,203);
+    cursor: pointer;
+    padding: 0.5em;
     -webkit-animation: fadeIn 300ms;
     -moz-animation: fadeIn 300ms;
     animation: fadeIn 300ms;
