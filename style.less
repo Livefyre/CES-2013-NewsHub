@@ -145,6 +145,8 @@
  */
 .brand-env {
 	vertical-align: top;
+    height: 600px;
+    overflow-y: auto;
 }
 
 .brand-env .hub-item {
@@ -158,4 +160,22 @@
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr=' #f2f6fc ', EndColorStr=' #dce5ea ');
 	margin-bottom: 0.5em;
 	padding: 0.5em;
+    -webkit-animation: fadeIn 300ms;
+    -moz-animation: fadeIn 300ms;
+    animation: fadeIn 300ms;
+}
+
+@-moz-keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
 }
