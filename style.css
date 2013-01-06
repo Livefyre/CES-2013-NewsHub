@@ -7,10 +7,11 @@ body{font-family:proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sa
 #header{background-color:#151d29;}#header #livefyre-brand{background:url('media/newshub_logo.png');width:206px;height:30px;float:left;margin-top:40px;margin-left:145px;}
 #header-nav{font-size:11px;text-transform:uppercase;}#header-nav .nav-tabs li{width:83px;text-align:center;}
 #header-nav #main-nav>ul{margin-right:auto;margin-left:auto;}#header-nav #main-nav>ul li{border:none;}
-#header-nav #main-nav{margin-left:-100px;}#header-nav #main-nav .nav{margin-bottom:0;}
-#header-nav #main-nav li#main-nav-home.active a:hover{background:url('media/home_button.png') no-repeat 0px 1px;}
+#header-nav #main-nav{margin-left:-100px;}#header-nav #main-nav .nav-tabs{border:none;}
+#header-nav #main-nav .nav{margin-bottom:0;}
+#header-nav #main-nav li#main-nav-home.active a{background:url('media/home_button.png') no-repeat 0px -20px;}#header-nav #main-nav li#main-nav-home.active a:hover{background:url('media/home_button.png') no-repeat 0px -20px;}
 #header-nav #main-nav li.active a{border:none;}
-#header-nav #main-nav a{width:83px;padding-left:0;padding-right:0;border-radius:0;color:white;font-weight:bold;}#header-nav #main-nav a:hover{border:none;color:#FFF;text-decoration:none;}
+#header-nav #main-nav a{width:83px;padding-left:0;padding-right:0;border-radius:0;border:none;color:white;font-weight:bold;}#header-nav #main-nav a:hover{border:none;color:#FFF;text-decoration:none;}
 #header-nav #main-nav li#main-nav-home{width:50px;text-indent:-9999px;}#header-nav #main-nav li#main-nav-home a{border:none;background:url('media/home_button.png') no-repeat 0px 1px;margin:auto;width:22px;height:20px;display:block;padding:0;margin-top:7px;}#header-nav #main-nav li#main-nav-home a:hover{border:none;background:url('media/home_button.png') no-repeat 0px -20px;}
 #header-nav #main-nav li#main-nav-exhibitors a:hover,#header-nav #main-nav li#main-nav-exhibitors.active a{background-color:#4376a9;}
 #header-nav #main-nav li#main-nav-news a:hover,#header-nav #main-nav li#main-nav-news.active a{background-color:#00616e;}

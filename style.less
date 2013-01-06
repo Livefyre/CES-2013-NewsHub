@@ -61,13 +61,19 @@ body {
     #main-nav {
         margin-left: -100px;
 
+        .nav-tabs {
+            border: none;
+        }
+
         .nav {
             margin-bottom: 0;
         }
         
-        li#main-nav-home.active {
-            a:hover {
-                background: url('media/home_button.png') no-repeat 0px 1px;
+        li#main-nav-home.active a {
+            background: url('media/home_button.png') no-repeat 0px -20px;
+
+            &:hover {
+                background: url('media/home_button.png') no-repeat 0px -20px;
             }
         }
 
@@ -80,6 +86,7 @@ body {
             padding-left: 0;
             padding-right: 0;
             border-radius: 0;
+            border: none;
             color: white;
             font-weight: bold;
 
