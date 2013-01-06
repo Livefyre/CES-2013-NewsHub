@@ -22,6 +22,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#435b80', EndColorStr='#2e3d55');
 }
 /** Variables **/
+body {
+  font-family: proxima-nova, "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 #header {
   background-color: #151d29;
 }
