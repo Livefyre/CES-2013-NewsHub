@@ -17,12 +17,12 @@ require(['fyre', 'streamhub-backbone', 'jquery'], function (fyre, Hub, $) {
             },
             el: document.getElementById("brand-0-env")
 	    }));
-        // Apple
+        // Google
 	    var app1 = apps.push(new Hub({
             sdk: sdk,
             collection: {
 				siteId: "303818",
-                articleId: "49"
+                articleId: "60"
             },
             el: document.getElementById("brand-1-env")
 	    }));
@@ -53,12 +53,12 @@ require(['fyre', 'streamhub-backbone', 'jquery'], function (fyre, Hub, $) {
             },
             el: document.getElementById("brand-4-env")
         }));
-        // Google
+        // Apple
         var app5 = apps.push(new Hub({
             sdk: sdk,
             collection: {
                 siteId: "303818",
-                articleId: "60"
+                articleId: "49"
             },
             el: document.getElementById("brand-5-env")
         }));
