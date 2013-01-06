@@ -3,6 +3,7 @@
 .green{background-color:#17babc;}
 .yellow{background-color:#d7de55;}
 .blue-gradient{background-color:#435b80;background-image:-webkit-gradient(linear, left top, left bottom, from(#435b80), to(#2e3d55));background-image:-webkit-linear-gradient(top, #435b80, #2e3d55);background-image:-moz-linear-gradient(top, #435b80, #2e3d55);background-image:-o-linear-gradient(top, #435b80, #2e3d55);background-image:-ms-linear-gradient(top, #435b80, #2e3d55);background-image:linear-gradient(top, #435b80, #2e3d55);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#435b80', EndColorStr='#2e3d55');}
+body{font-family:proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;}
 #header{background-color:#151d29;}#header #livefyre-brand{background:url('media/newshub_logo.png');width:206px;height:30px;float:right;position:relative;top:35px;right:80px;}
 #header-nav{font-size:11px;letter-spacing:-1px;text-transform:uppercase;}#header-nav .nav-tabs li{width:83px;text-align:center;}
 #header-nav #main-nav>ul{margin-right:auto;margin-left:auto;}#header-nav #main-nav>ul li{border:none;}
