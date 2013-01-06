@@ -24,10 +24,10 @@ body{font-family:proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sa
 #header-nav #main-nav #main-nav-login a:hover{background:none;}
 .brand{margin-top:0;margin-bottom:0;}
 .ces-brand{display:block;float:left;color:#FFF;width:83px;height:100px;line-height:100px;text-align:center;font-size:88px;font-weight:700;}
-.deck{overflow-x:auto;overflow-y:hidden;padding-left:0.25em;padding-right:0.25em;position:absolute;top:144px;left:0;right:0;bottom:0;}
-.deck-columns{height:100%;padding-left:1em;overflow:visible;}
+.deck{overflow-x:auto;overflow-y:hidden;margin-left:0.5em;padding-left:1em;padding-right:1em;position:absolute;top:144px;left:0;right:0;bottom:0;-webkit-overflow-scrolling:touch;}
+.deck-columns{height:100%;overflow:visible;}
 .deck-col{height:100%;margin-left:0.5em;position:relative;}
-.deck-col-scroll{position:absolute;top:35px;left:0;bottom:0;width:100%;overflow-x:hidden;overflow-y:auto;min-height:200px;}
+.deck-col-scroll{position:absolute;top:35px;left:0;bottom:0;width:100%;overflow-x:hidden;overflow-y:auto;min-height:200px;-webkit-overflow-scrolling:touch;}
 .brand .heading{color:white;height:26px;padding:3px 10px;}.brand .heading h2{font-size:1em;font-weight:normal;line-height:2em;margin-top:0;margin-bottom:0.25em;text-transform:uppercase;}
 .brand-env{vertical-align:top;border-top:1px solid #b6c4cb;}
 .brand-env .hub-item{background-color:#f2f6fc ;background-image:-webkit-gradient(linear, left top, left bottom, from(#f2f6fc), to(#dce5ea));background-image:-webkit-linear-gradient(top, #f2f6fc, #dce5ea);background-image:-moz-linear-gradient(top, #f2f6fc, #dce5ea);background-image:-o-linear-gradient(top, #f2f6fc, #dce5ea);background-image:-ms-linear-gradient(top, #f2f6fc, #dce5ea);background-image:linear-gradient(top, #f2f6fc, #dce5ea);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr=' #f2f6fc ', EndColorStr=' #dce5ea ');border-right:1px solid #b6c4cb;border-left:1px solid #b6c4cb;border-bottom:1px solid #b6c4cb;cursor:pointer;padding:0.5em;-webkit-animation:fadeIn 300ms;-moz-animation:fadeIn 300ms;animation:fadeIn 300ms;}
