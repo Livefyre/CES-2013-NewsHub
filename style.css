@@ -13,8 +13,29 @@
 #main-nav a {
 	border-radius: 0;
 	color: white;
+	font-weight: bold;
 }
 #main-nav a:hover {
 	color: black;
 	text-decoration: underline;
+}
+
+/*
+ * Exhibitors
+ */
+.brand-env {
+	vertical-align: top;
+}
+
+.brand-env .hub-item {
+	background-color: #f2f6fc ;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(242, 246, 252)),to(rgb(220, 229, 234)));
+	background-image: -webkit-linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
+	background-image: -moz-linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
+	background-image: -o-linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
+	background-image: -ms-linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
+	background-image: linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr=' #f2f6fc ', EndColorStr=' #dce5ea ');
+	margin-bottom: 0.5em;
+	padding: 0.5em;
 }

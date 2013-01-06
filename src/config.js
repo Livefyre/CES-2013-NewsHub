@@ -5,11 +5,15 @@ require.config({
   paths: {
     "CES": "../src/ces",
     jquery: 'jquery/jquery',
-    text: 'requirejs-text/text'
+    text: 'requirejs-text/text',
+    backbone: 'backbone/backbone',
+    underscore: 'underscore/underscore',
+    mustache: 'mustache/mustache',
+    fyre: 'http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre'
   },
   packages: [{
-    name: 'CES',
-    location: 'src'
+    name: 'streamhub-backbone',
+    location: 'streamhub-backbone'
   }],
   shim: {
     'backbone': {
@@ -18,6 +22,9 @@ require.config({
     },
     'underscore': {
         exports: '_'
+    },
+    'fyre': {
+        exports: 'fyre'
     }
   }
 });
