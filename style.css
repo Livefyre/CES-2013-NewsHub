@@ -1,21 +1,174 @@
-.blue{background-color:#4376a9;}
-.turquoise{background-color:#00616e;}
-.green{background-color:#17babc;}
-.yellow{background-color:#d7de55;}
-.blue-gradient{background-color:#435b80;background-image:-webkit-gradient(linear, left top, left bottom, from(#435b80), to(#2e3d55));background-image:-webkit-linear-gradient(top, #435b80, #2e3d55);background-image:-moz-linear-gradient(top, #435b80, #2e3d55);background-image:-o-linear-gradient(top, #435b80, #2e3d55);background-image:-ms-linear-gradient(top, #435b80, #2e3d55);background-image:linear-gradient(top, #435b80, #2e3d55);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#435b80', EndColorStr='#2e3d55');}
-#header{background-color:#151d29;}#header #livefyre-brand{background:url('media/newshub_logo.png');width:206px;height:30px;float:right;position:relative;top:35px;right:80px;}
-#header-nav{font-size:11px;letter-spacing:-1px;text-transform:uppercase;}#header-nav .nav-tabs li{width:83px;text-align:center;}
-#header-nav #main-nav>ul{margin-right:auto;margin-left:auto;}#header-nav #main-nav>ul li{border:none;}
-#header-nav #main-nav{margin-left:-100px;}#header-nav #main-nav li#main-nav-home.active a:hover{background:url('media/home_button.png') no-repeat 0px 1px;}
-#header-nav #main-nav li.active a{border:none;}
-#header-nav #main-nav a{width:83px;padding-left:0;padding-right:0;border-radius:0;color:white;font-weight:bold;}#header-nav #main-nav a:hover{border:none;color:#FFF;text-decoration:none;}
-#header-nav #main-nav li#main-nav-home{width:50px;text-indent:-9999px;}#header-nav #main-nav li#main-nav-home a{border:none;background:url('media/home_button.png') no-repeat 0px 1px;margin:auto;width:22px;height:20px;display:block;padding:0;margin-top:7px;}#header-nav #main-nav li#main-nav-home a:hover{border:none;background:url('media/home_button.png') no-repeat 0px -20px;}
-#header-nav #main-nav li#main-nav-exhibitors a:hover,#header-nav #main-nav li#main-nav-exhibitors.active a{background-color:#4376a9;}
-#header-nav #main-nav li#main-nav-news a:hover,#header-nav #main-nav li#main-nav-news.active a{background-color:#00616e;}
-#header-nav #main-nav li#main-nav-media a:hover,#header-nav #main-nav li#main-nav-media.active a{background-color:#17babc;}
-#header-nav #main-nav li#main-nav-products a:hover,#header-nav #main-nav li#main-nav-products.active a{background-color:#d7de55;}
-.brand{margin-top:0;margin-bottom:0;}
-.ces-brand{display:block;float:left;color:#FFF;width:83px;height:100px;line-height:100px;text-align:center;}
-.brand-env{vertical-align:top;height:600px;overflow-y:auto;}
-.brand-env .hub-item{background-color:#f2f6fc ;background-image:-webkit-gradient(linear, left top, left bottom, from(#f2f6fc), to(#dce5ea));background-image:-webkit-linear-gradient(top, #f2f6fc, #dce5ea);background-image:-moz-linear-gradient(top, #f2f6fc, #dce5ea);background-image:-o-linear-gradient(top, #f2f6fc, #dce5ea);background-image:-ms-linear-gradient(top, #f2f6fc, #dce5ea);background-image:linear-gradient(top, #f2f6fc, #dce5ea);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr=' #f2f6fc ', EndColorStr=' #dce5ea ');margin-bottom:0.5em;padding:0.5em;-webkit-animation:fadeIn 300ms;-moz-animation:fadeIn 300ms;animation:fadeIn 300ms;}
-@-moz-keyframes fadeIn{from{opacity:0;} to{opacity:1;}}@-webkit-keyframes fadeIn{from{opacity:0;} to{opacity:1;}}@keyframes fadeIn{from{opacity:0;} to{opacity:1;}}
+/** Colors **/
+.blue {
+  background-color: #4376a9;
+}
+.turquoise {
+  background-color: #00616e;
+}
+.green {
+  background-color: #17babc;
+}
+.yellow {
+  background-color: #d7de55;
+}
+.blue-gradient {
+  background-color: #435b80;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#435b80), to(#2e3d55));
+  background-image: -webkit-linear-gradient(top, #435b80, #2e3d55);
+  background-image: -moz-linear-gradient(top, #435b80, #2e3d55);
+  background-image: -o-linear-gradient(top, #435b80, #2e3d55);
+  background-image: -ms-linear-gradient(top, #435b80, #2e3d55);
+  background-image: linear-gradient(top, #435b80, #2e3d55);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#435b80', EndColorStr='#2e3d55');
+}
+/** Variables **/
+#header {
+  background-color: #151d29;
+}
+#header #livefyre-brand {
+  background: url('media/newshub_logo.png');
+  width: 206px;
+  height: 30px;
+  float: right;
+  position: relative;
+  top: 35px;
+  right: 80px;
+}
+#header-nav {
+  font-size: 11px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+#header-nav .nav-tabs li {
+  width: 83px;
+  text-align: center;
+}
+#header-nav .nav-tabs li:hover {
+  cursor: pointer;
+}
+#header-nav .nav-tabs li:hover a {
+  cursor: pointer;
+}
+#header-nav #main-nav > ul {
+  margin-right: auto;
+  margin-left: auto;
+}
+#header-nav #main-nav > ul li {
+  border: none;
+}
+#header-nav #main-nav {
+  margin-left: -100px;
+}
+#header-nav #main-nav li#main-nav-home.active a:hover {
+  background: url('media/home_button.png') no-repeat 0px 1px;
+}
+#header-nav #main-nav li.active a {
+  border: none;
+}
+#header-nav #main-nav a {
+  width: 83px;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  color: white;
+  font-weight: bold;
+}
+#header-nav #main-nav a:hover {
+  border: none;
+  color: #FFF;
+  text-decoration: none;
+}
+#header-nav #main-nav li#main-nav-home {
+  width: 50px;
+  text-indent: -9999px;
+}
+#header-nav #main-nav li#main-nav-home a {
+  border: none;
+  background: url('media/home_button.png') no-repeat 0px 1px;
+  margin: auto;
+  width: 22px;
+  height: 20px;
+  display: block;
+  padding: 0;
+  margin-top: 7px;
+}
+#header-nav #main-nav li#main-nav-home a:hover {
+  border: none;
+  background: url('media/home_button.png') no-repeat 0px -20px;
+}
+#header-nav #main-nav li#main-nav-exhibitors a:hover,
+#header-nav #main-nav li#main-nav-exhibitors.active a {
+  background-color: #4376a9;
+}
+#header-nav #main-nav li#main-nav-news a:hover,
+#header-nav #main-nav li#main-nav-news.active a {
+  background-color: #00616e;
+}
+#header-nav #main-nav li#main-nav-media a:hover,
+#header-nav #main-nav li#main-nav-media.active a {
+  background-color: #17babc;
+}
+#header-nav #main-nav li#main-nav-products a:hover,
+#header-nav #main-nav li#main-nav-products.active a {
+  background-color: #d7de55;
+}
+.brand {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ces-brand {
+  display: block;
+  float: left;
+  color: #FFF;
+  width: 83px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+/*
+ * Exhibitors
+ */
+.brand-env {
+  vertical-align: top;
+  height: 600px;
+  overflow-y: auto;
+}
+.brand-env .hub-item {
+  background-color: #f2f6fc ;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f6fc), to(#dce5ea));
+  background-image: -webkit-linear-gradient(top, #f2f6fc, #dce5ea);
+  background-image: -moz-linear-gradient(top, #f2f6fc, #dce5ea);
+  background-image: -o-linear-gradient(top, #f2f6fc, #dce5ea);
+  background-image: -ms-linear-gradient(top, #f2f6fc, #dce5ea);
+  background-image: linear-gradient(top, #f2f6fc, #dce5ea);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr=' #f2f6fc ', EndColorStr=' #dce5ea ');
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  -webkit-animation: fadeIn 300ms;
+  -moz-animation: fadeIn 300ms;
+  animation: fadeIn 300ms;
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
