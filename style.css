@@ -22,13 +22,14 @@ body{min-width:960px;font-family:proxima-nova,"Proxima Nova","Helvetica Neue",He
 #header-nav #main-nav #main-nav-buttons li#main-nav-news a:hover,#header-nav #main-nav #main-nav-buttons li#main-nav-news.active a{background-color:#00616e;}
 #header-nav #main-nav #main-nav-buttons li#main-nav-media a:hover,#header-nav #main-nav #main-nav-buttons li#main-nav-media.active a{background-color:#17babc;}
 #header-nav #main-nav #main-nav-buttons li#main-nav-products a:hover,#header-nav #main-nav #main-nav-buttons li#main-nav-products.active a{background-color:#d7de55;}
-#header-nav #main-nav #main-nav-right{width:50%;float:right;position:relative;right:100px;}#header-nav #main-nav #main-nav-right #main-nav-social{float:right;margin-right:-10px;}
+#header-nav #main-nav #main-nav-right{width:50%;height:35px;float:right;position:relative;right:100px;}#header-nav #main-nav #main-nav-right #main-nav-social{float:right;margin-right:-10px;}
 #header-nav #main-nav #main-nav-right a:hover{background:none;}
 #header-nav #main-nav #main-nav-right .social-button{text-align:right;padding-top:7px;margin-left:15px;}
 .brand{cursor:default;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin-top:0;margin-bottom:0;}
 .brand .heading{color:white;height:26px;padding:3px 10px;}.brand .heading h2{font-size:1em;font-weight:normal;line-height:2em;margin-top:0;margin-bottom:0.25em;text-transform:uppercase;}
 .ces-brand{display:block;float:left;color:#FFF;width:83px;height:100px;line-height:100px;text-align:center;font-size:88px;font-weight:700;}
-#main-nav-content{float:left;}#main-nav-content .tab-pane{display:none;}
+#main-nav-content{height:30px;float:left;width:100%;}#main-nav-content a{color:#FFF;height:30px;line-height:30px;margin:0;padding-top:0;padding-bottom:0;}#main-nav-content a:hover{border-radius:0;background:#888;}
+#main-nav-content .tab-pane{display:none;}
 #main-nav-content .active{display:block;}
 #day-nav{display:none;letter-spacing:1px;text-transform:uppercase;}#day-nav li{margin:0 10px;}
 .day-num{font-size:22px;font-weight:550;vertical-align:sub;}
@@ -40,5 +41,6 @@ body{min-width:960px;font-family:proxima-nova,"Proxima Nova","Helvetica Neue",He
 .brand-env .hub-item{background-color:#f2f6fc ;background-image:-webkit-gradient(linear, left top, left bottom, from(#f2f6fc), to(#dce5ea));background-image:-webkit-linear-gradient(top, #f2f6fc, #dce5ea);background-image:-moz-linear-gradient(top, #f2f6fc, #dce5ea);background-image:-o-linear-gradient(top, #f2f6fc, #dce5ea);background-image:-ms-linear-gradient(top, #f2f6fc, #dce5ea);background-image:linear-gradient(top, #f2f6fc, #dce5ea);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr=' #f2f6fc ', EndColorStr=' #dce5ea ');border-right:1px solid #b6c4cb;border-left:1px solid #b6c4cb;border-bottom:1px solid #b6c4cb;cursor:pointer;-webkit-animation:fadeIn 300ms;-moz-animation:fadeIn 300ms;animation:fadeIn 300ms;}.brand-env .hub-item>article{padding:0.5em;}
 .brand-env .hub-item>article.brand-instagram{padding:0;position:relative;}.brand-env .hub-item>article.brand-instagram .hub-heading{position:absolute;bottom:0;left:0;right:0;background:rgba(0, 0, 0, 0.6);padding:5px;height:30px;color:white;}
 .brand-env .hub-item .hub-avatar img{width:48px;height:48px;}
+.exhibitors #main-nav-content{background:#6689b5;}
 body.media{background:#222;}
 @-moz-keyframes fadeIn{from{opacity:0;} to{opacity:1;}}@-webkit-keyframes fadeIn{from{opacity:0;} to{opacity:1;}}@keyframes fadeIn{from{opacity:0;} to{opacity:1;}}
