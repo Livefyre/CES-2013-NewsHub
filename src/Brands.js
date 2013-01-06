@@ -11,7 +11,7 @@ require(['fyre', 'streamhub-backbone'], function (fyre, Hub) {
             sdk: sdk,
             collection: {
                 siteId: "303818",
-                articleId: "11"
+                articleId: "51"
             },
             el: document.getElementById("brand-0-env")
 	    });
