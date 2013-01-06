@@ -53,6 +53,7 @@ body {
   border: none;
 }
 #header-nav #main-nav {
+  height: 35px;
   margin-left: -100px;
 }
 #header-nav #main-nav .nav-tabs {
@@ -81,11 +82,17 @@ body {
   color: #FFF;
   text-decoration: none;
 }
-#header-nav #main-nav li#main-nav-home {
+#header-nav #main-nav #main-nav-buttons li#main-nav-home.active a {
+  background: url('media/home_button.png') no-repeat 0px -20px;
+}
+#header-nav #main-nav #main-nav-buttons li#main-nav-home.active a:hover {
+  background: url('media/home_button.png') no-repeat 0px -20px;
+}
+#header-nav #main-nav #main-nav-buttons li#main-nav-home {
   width: 50px;
   text-indent: -9999px;
 }
-#header-nav #main-nav li#main-nav-home a {
+#header-nav #main-nav #main-nav-buttons li#main-nav-home a {
   border: none;
   background: url('media/home_button.png') no-repeat 0px 1px;
   margin: auto;
@@ -95,25 +102,35 @@ body {
   padding: 0;
   margin-top: 7px;
 }
-#header-nav #main-nav li#main-nav-home a:hover {
+#header-nav #main-nav #main-nav-buttons li#main-nav-home a:hover {
   border: none;
   background: url('media/home_button.png') no-repeat 0px -20px;
 }
-#header-nav #main-nav li#main-nav-exhibitors a:hover,
-#header-nav #main-nav li#main-nav-exhibitors.active a {
+#header-nav #main-nav #main-nav-buttons li#main-nav-exhibitors a:hover,
+#header-nav #main-nav #main-nav-buttons li#main-nav-exhibitors.active a {
   background-color: #4376a9;
 }
-#header-nav #main-nav li#main-nav-news a:hover,
-#header-nav #main-nav li#main-nav-news.active a {
+#header-nav #main-nav #main-nav-buttons li#main-nav-news a:hover,
+#header-nav #main-nav #main-nav-buttons li#main-nav-news.active a {
   background-color: #00616e;
 }
-#header-nav #main-nav li#main-nav-media a:hover,
-#header-nav #main-nav li#main-nav-media.active a {
+#header-nav #main-nav #main-nav-buttons li#main-nav-media a:hover,
+#header-nav #main-nav #main-nav-buttons li#main-nav-media.active a {
   background-color: #17babc;
 }
-#header-nav #main-nav li#main-nav-products a:hover,
-#header-nav #main-nav li#main-nav-products.active a {
+#header-nav #main-nav #main-nav-buttons li#main-nav-products a:hover,
+#header-nav #main-nav #main-nav-buttons li#main-nav-products.active a {
   background-color: #d7de55;
+}
+#header-nav #main-nav #main-nav-login {
+  position: relative;
+  right: -70px;
+}
+#header-nav #main-nav #main-nav-login li {
+  float: right;
+}
+#header-nav #main-nav #main-nav-login a:hover {
+  background: none;
 }
 .brand {
   margin-top: 0;
