@@ -63,6 +63,10 @@
     #main-nav {
         margin-left: -100px;
 
+        .nav {
+            margin-bottom: 0;
+        }
+        
         li#main-nav-home.active {
             a:hover {
                 background: url('media/home_button.png') no-repeat 0px 1px;
@@ -147,12 +151,18 @@
 }
 
 /*
+ * Deck Layout
+ */
+.deck {
+    overflow-x: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+/*
  * Exhibitors
  */
 .brand-env {
 	vertical-align: top;
-    height: 600px;
-    overflow-y: auto;
 }
 
 .brand-env .hub-item {

@@ -59,6 +59,9 @@
 #header-nav #main-nav {
   margin-left: -100px;
 }
+#header-nav #main-nav .nav {
+  margin-bottom: 0;
+}
 #header-nav #main-nav li#main-nav-home.active a:hover {
   background: url('media/home_button.png') no-repeat 0px 1px;
 }
@@ -126,12 +129,18 @@
   text-align: center;
 }
 /*
+ * Deck Layout
+ */
+.deck {
+  overflow-x: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/*
  * Exhibitors
  */
 .brand-env {
   vertical-align: top;
-  height: 600px;
-  overflow-y: auto;
 }
 .brand-env .hub-item {
   background-color: #f2f6fc ;
