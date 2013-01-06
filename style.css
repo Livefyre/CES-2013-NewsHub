@@ -283,6 +283,10 @@ body {
   height: 30px;
   color: white;
 }
+.brand-env .hub-item .hub-avatar img {
+  width: 48px;
+  height: 48px;
+}
 @-moz-keyframes fadeIn {
   from {
     opacity: 0;
