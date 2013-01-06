@@ -158,16 +158,38 @@ body {
  */
 .deck {
     overflow-x: auto;
+    overflow-y: hidden;
     padding-left: 0.25em;
     padding-right: 0.25em;
+    position: absolute;
+    top: 144px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.deck-columns {
+    height: 100%;
+    overflow: visible;
 }
 .deck-col {
+    height: 100%;
     margin-left: 0.5em;
+    position: relative;
 }
 .deck-col-scroll {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 200px;
+}
+/*
     overflow-y: auto;
     height: 600px;
-}
+}*/
 
 /*
  * Exhibitors
