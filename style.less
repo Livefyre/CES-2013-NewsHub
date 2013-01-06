@@ -208,9 +208,11 @@ body {
  * Deck Layout
  */
 .deck {
+    display: block;
     overflow-x: auto;
     overflow-y: hidden;
     margin-left: 0.5em;
+    margin-right: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
     position: absolute;
@@ -221,13 +223,20 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 .deck-columns {
+    display: block;
     height: 100%;
     overflow: visible;
+    white-space: nowrap;
 }
 .deck-col {
+    display: inline-block;
     height: 100%;
     margin-left: 0.5em;
+    overflow: hidden;
     position: relative;
+    white-space: normal;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 .deck-col-scroll {
     position: absolute;
@@ -277,22 +286,65 @@ body {
     border-bottom: 1px solid rgb(182,196,203);
     cursor: pointer;
     padding: 0.5em;
-    -webkit-animation: fadeIn 300ms;
-    -moz-animation: fadeIn 300ms;
-    animation: fadeIn 300ms;
+    -webkit-animation: slideDown 500ms;
+    -moz-animation: slideDown 500ms;
+    -o-animation: slideDown 500ms;
+    animation: slideDown 500ms;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 0s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px),
+    only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5),
+    only screen and (min-width: 560px) and (max-device-width: 1136px) {
+        animation: none;
+    }
 }
 
-@-moz-keyframes fadeIn {
-    from {opacity:0;}
-    to {opacity:1;}
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+    }
 }
 
-@-webkit-keyframes fadeIn {
-    from {opacity:0;}
-    to {opacity:1;}
+@-moz-keyframes slideDown {
+    0% {
+        -moz-transform: translateY(-20px);
+    }
+
+    100% {
+        -moz-transform: translateY(0);
+    }
 }
 
-@keyframes fadeIn {
-    from {opacity:0;}
-    to {opacity:1;}
+@-o-keyframes slideDown {
+    0% {
+        -o-transform: translateY(-20px);
+    }
+
+    100% {
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slideDown {
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+    animation-name: fadeInDown;
 }
