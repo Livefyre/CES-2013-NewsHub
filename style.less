@@ -1,8 +1,8 @@
+/** Colors **/
 .blue { background-color: rgba(67,118,169,1); }
 .turquoise { background-color: rgba(0,97,110,1); }
 .green { background-color: rgba(23,186,188,1); }
 .yellow { background-color: rgba(215,222,85,1); }
-
 .blue-gradient {
     background-color: #435b80;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(67, 91, 128)),to(rgb(46, 61, 85)));
@@ -14,11 +14,22 @@
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#435b80', EndColorStr='#2e3d55');
 }
 
+/** Variables **/
 @main-nav-tab-width: 83px;
 @ces-brand-height: 100px;
 
 #header {
     background-color: rgba(21,29,41,1);
+
+    #livefyre-brand {
+        background: url('media/newshub_logo.png');
+        width: 206px;
+        height: 30px;
+        float: right;
+        position: relative;
+        top: 35px;
+        right: 80px;
+    }
 }
 #header-nav {
     font-size: 11px;
@@ -33,6 +44,51 @@
     #main-nav > ul {
         margin-right: auto;
         margin-left: auto;
+    }
+
+    #main-nav {
+        margin-left: -100px;
+
+        li#main-nav-home.active {
+            a:hover {
+                border: none;
+                background: url('media/home_button.png') no-repeat 0px 1px;
+            }
+        }
+
+        li#main-nav-home {
+            width: 50px;
+            text-indent: -9999px;
+
+            a {
+                border: none;
+                background: url('media/home_button.png') no-repeat 0px 1px;
+                margin: auto;
+                width: 22px;
+                height: 20px;
+                display: block;
+                padding: 0;
+                margin-top: 7px;
+
+                &:hover {
+                    border: none;
+                    background: url('media/home_button.png') no-repeat 0px -20px;
+                }
+            }
+        }
+
+        li.active a { color: black; }
+
+        a {
+            border-radius: 0;
+            color: white;
+            font-weight: bold;
+
+            &:hover {
+                color: black;
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -49,4 +105,44 @@
     height: @ces-brand-height;
     line-height: @ces-brand-height;
     text-align: center;
+}
+
+/*
+ * Exhibitors
+ */
+.brand-env {
+	vertical-align: top;
+    height: 600px;
+    overflow-y: auto;
+}
+
+.brand-env .hub-item {
+	background-color: #f2f6fc ;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(242, 246, 252)),to(rgb(220, 229, 234)));
+	background-image: -webkit-linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
+	background-image: -moz-linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
+	background-image: -o-linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
+	background-image: -ms-linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
+	background-image: linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr=' #f2f6fc ', EndColorStr=' #dce5ea ');
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+    -webkit-animation: fadeIn 300ms;
+    -moz-animation: fadeIn 300ms;
+    animation: fadeIn 300ms;
+}
+
+@-moz-keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
 }
