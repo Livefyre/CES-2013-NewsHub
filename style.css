@@ -1,3 +1,4 @@
+/** Variables **/
 /** Colors **/
 .blue {
   background-color: #4376a9;
@@ -21,7 +22,36 @@
   background-image: linear-gradient(top, #435b80, #2e3d55);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#435b80', EndColorStr='#2e3d55');
 }
-/** Variables **/
+.turquoise-gradient {
+  background-color: #387582;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#387582), to(#27535d));
+  background-image: -webkit-linear-gradient(top, #387582, #27535d);
+  background-image: -moz-linear-gradient(top, #387582, #27535d);
+  background-image: -o-linear-gradient(top, #387582, #27535d);
+  background-image: -ms-linear-gradient(top, #387582, #27535d);
+  background-image: linear-gradient(top, #387582, #27535d);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#387582', EndColorStr='#27535d');
+}
+.green-gradient {
+  background-color: #7dc4c8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7dc4c8), to(#5a8f92));
+  background-image: -webkit-linear-gradient(top, #7dc4c8, #5a8f92);
+  background-image: -moz-linear-gradient(top, #7dc4c8, #5a8f92);
+  background-image: -o-linear-gradient(top, #7dc4c8, #5a8f92);
+  background-image: -ms-linear-gradient(top, #7dc4c8, #5a8f92);
+  background-image: linear-gradient(top, #7dc4c8, #5a8f92);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#7dc4c8', EndColorStr='#5a8f92');
+}
+.yellow-gradient {
+  background-color: #d1ce67;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d1ce67), to(#979449));
+  background-image: -webkit-linear-gradient(top, #d1ce67, #979449);
+  background-image: -moz-linear-gradient(top, #d1ce67, #979449);
+  background-image: -o-linear-gradient(top, #d1ce67, #979449);
+  background-image: -ms-linear-gradient(top, #d1ce67, #979449);
+  background-image: linear-gradient(top, #d1ce67, #979449);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr=' #d1ce67 ', EndColorStr='#979449');
+}
 body {
   font-family: proxima-nova, "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400px;
@@ -183,7 +213,7 @@ body {
 }
 .deck-col-scroll {
   position: absolute;
-  top: 30px;
+  top: 35px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -197,8 +227,8 @@ body {
  */
 .brand .heading {
   color: white;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  height: 26px;
+  padding: 3px 10px;
 }
 .brand .heading h2 {
   font-size: 1em;

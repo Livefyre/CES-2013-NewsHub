@@ -1,3 +1,12 @@
+/** Variables **/
+@blue: rgba(67,118,169,1);
+@turquoise: rgba(0,97,110,1);
+@green: rgba(23,186,188,1);
+@yellow: rgba(215,222,85,1);
+@main-nav-tab-width: 83px;
+@ces-brand-height: 100px;
+@proxima-nova-font-family: proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+
 /** Colors **/
 .blue { background-color: @blue; }
 .turquoise { background-color: @turquoise; }
@@ -13,15 +22,36 @@
     background-image: linear-gradient(top, rgb(67, 91, 128), rgb(46, 61, 85));
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#435b80', EndColorStr='#2e3d55');
 }
-
-/** Variables **/
-@blue: rgba(67,118,169,1);
-@turquoise: rgba(0,97,110,1);
-@green: rgba(23,186,188,1);
-@yellow: rgba(215,222,85,1);
-@main-nav-tab-width: 83px;
-@ces-brand-height: 100px;
-@proxima-nova-font-family: proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+.turquoise-gradient {
+    background-color: #387582;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(56, 117, 130)),to(rgb(39, 83, 93)));
+    background-image: -webkit-linear-gradient(top, rgb(56, 117, 130), rgb(39, 83, 93));
+    background-image: -moz-linear-gradient(top, rgb(56, 117, 130), rgb(39, 83, 93));
+    background-image: -o-linear-gradient(top, rgb(56, 117, 130), rgb(39, 83, 93));
+    background-image: -ms-linear-gradient(top, rgb(56, 117, 130), rgb(39, 83, 93));
+    background-image: linear-gradient(top, rgb(56, 117, 130), rgb(39, 83, 93));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#387582', EndColorStr='#27535d');
+}
+.green-gradient {
+    background-color: #7dc4c8;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(125, 196, 200)),to(rgb(90, 143, 146)));
+    background-image: -webkit-linear-gradient(top, rgb(125, 196, 200), rgb(90, 143, 146));
+    background-image: -moz-linear-gradient(top, rgb(125, 196, 200), rgb(90, 143, 146));
+    background-image: -o-linear-gradient(top, rgb(125, 196, 200), rgb(90, 143, 146));
+    background-image: -ms-linear-gradient(top, rgb(125, 196, 200), rgb(90, 143, 146));
+    background-image: linear-gradient(top, rgb(125, 196, 200), rgb(90, 143, 146));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#7dc4c8', EndColorStr='#5a8f92');
+}
+.yellow-gradient{
+    background-color: #d1ce67;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(209, 206, 103)),to(rgb(151, 148, 73)));
+    background-image: -webkit-linear-gradient(top, rgb(209, 206, 103), rgb(151, 148, 73));
+    background-image: -moz-linear-gradient(top, rgb(209, 206, 103), rgb(151, 148, 73));
+    background-image: -o-linear-gradient(top, rgb(209, 206, 103), rgb(151, 148, 73));
+    background-image: -ms-linear-gradient(top, rgb(209, 206, 103), rgb(151, 148, 73));
+    background-image: linear-gradient(top, rgb(209, 206, 103), rgb(151, 148, 73));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr=' #d1ce67 ', EndColorStr='#979449');
+}
 
 body {
     font-family: @proxima-nova-font-family;
@@ -210,7 +240,7 @@ body {
 }
 .deck-col-scroll {
     position: absolute;
-    top: 30px;
+    top: 35px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -225,8 +255,8 @@ body {
  */
 .brand .heading {
     color: white;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    height: 26px;
+    padding: 3px 10px;
 
     h2 {
         font-size: 1em;
