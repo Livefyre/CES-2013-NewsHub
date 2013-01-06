@@ -25,6 +25,7 @@
 
 body {
     font-family: @proxima-nova-font-family;
+    font-weight: 400px;
 }
 
 #header {
@@ -34,26 +35,18 @@ body {
         background: url('media/newshub_logo.png');
         width: 206px;
         height: 30px;
-        float: right;
-        position: relative;
-        top: 35px;
-        right: 80px;
+        float: left;
+        margin-top: 40px;
+        margin-left: 145px;
     }
 }
 #header-nav {
     font-size: 11px;
-    letter-spacing: -1px;
     text-transform: uppercase;
 
     .nav-tabs li {
         width: @main-nav-tab-width;
         text-align: center;
-        &:hover {
-            cursor: pointer;
-            a {
-                cursor: pointer;
-            }
-        }
     }
 
     #main-nav > ul {
@@ -153,6 +146,8 @@ body {
     height: @ces-brand-height;
     line-height: @ces-brand-height;
     text-align: center;
+    font-size: 88px;
+    font-weight: 700;
 }
 
 /*
