@@ -9,7 +9,8 @@ require.config({
     backbone: 'backbone/backbone',
     underscore: 'underscore/underscore',
     mustache: 'mustache/mustache',
-    fyre: 'http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre'
+    fyre: 'streamhub-backbone/test/fixtures/fyre.conv.sdk'
+    //fyre: 'http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre'
   },
   packages: [{
     name: 'streamhub-backbone',
