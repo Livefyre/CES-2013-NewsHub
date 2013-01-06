@@ -3,6 +3,7 @@
 @turquoise: rgba(0,97,110,1);
 @green: rgba(23,186,188,1);
 @yellow: rgba(215,222,85,1);
+@livefyre-dark: rgba(21,29,41,1);
 @main-nav-tab-width: 83px;
 @ces-brand-height: 100px;
 @proxima-nova-font-family: proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -54,12 +55,13 @@
 }
 
 body {
+    min-width: 960px;
     font-family: @proxima-nova-font-family;
     font-weight: 400px;
 }
 
 #header {
-    background-color: rgba(21,29,41,1);
+    background-color: @livefyre-dark;
 
     #brand-spacer {
         margin-left: 50px;
@@ -77,6 +79,7 @@ body {
     }
 }
 #header-nav {
+    margin-bottom: 20px;
     font-size: 11px;
     text-transform: uppercase;
 
@@ -99,17 +102,19 @@ body {
     }
 
     #main-nav {
+        width: 100%;
         height: 35px;
+        float: left;
 
         .nav-tabs {
             border: none;
         }
 
         li#main-nav-home.active a {
-            background: url('media/home_button.png') no-repeat 0px -20px;
+            background: url('media/home_button.png') no-repeat 0px -13px;
 
             &:hover {
-                background: url('media/home_button.png') no-repeat 0px -20px;
+                background: url('media/home_button.png') no-repeat 0px -13px;
             }
         }
 
@@ -138,10 +143,10 @@ body {
             float: left;
 
             li#main-nav-home.active a {
-                background: url('media/home_button.png') no-repeat 0px -20px;
+                background: url('media/home_button.png') no-repeat 0px -13px;
 
                 &:hover {
-                    background: url('media/home_button.png') no-repeat 0px -20px;
+                    background: url('media/home_button.png') no-repeat 0px -13px;
                 }
             }
 
@@ -151,17 +156,17 @@ body {
 
                 a {
                     border: none;
-                    background: url('media/home_button.png') no-repeat 0px 1px;
+                    background: url('media/home_button.png') no-repeat 0px 0px;
                     margin: auto;
-                    width: 22px;
-                    height: 20px;
+                    width: 14px;
+                    height: 12px;
                     display: block;
                     padding: 0;
-                    margin-top: 7px;
+                    margin-top: 11px;
 
                     &:hover {
                         border: none;
-                        background: url('media/home_button.png') no-repeat 0px -20px;
+                        background: url('media/home_button.png') no-repeat 0px -13px;
                     }
                 }
             }
@@ -187,19 +192,22 @@ body {
             }
         }
 
-        #main-nav-login {
+        #main-nav-right {
             width: 50%;
             float: right;
             position: relative;
             right: 100px;
 
-            li {
+            #main-nav-social {
                 float: right;
+                margin-right: -10px;
             }
             a:hover { background: none; }
 
-            .plusone {
-                padding-top: 5px;
+            .social-button {
+                text-align: right;
+                padding-top: 7px;
+                margin-left: 15px;
             }
         }
     }
@@ -222,6 +230,36 @@ body {
     font-weight: 700;
 }
 
+#main-nav-content {
+    float: left;
+
+    .tab-pane {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+}
+
+/*
+ * Home page
+ */
+#day-nav {
+    display: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    li {
+        margin: 0 10px;
+    }
+}
+.day-num {
+    font-size: 22px;
+    font-weight: 550;
+    vertical-align: sub;
+}
+
 /*
  * Deck Layout
  */
@@ -232,7 +270,7 @@ body {
     padding-left: 1em;
     padding-right: 1em;
     position: absolute;
-    top: 155px;
+    top: 185px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -244,7 +282,7 @@ body {
 }
 .deck-col {
     height: 100%;
-    margin-left: 0.5em;
+    margin: 0 0.25em;
     position: relative;
 }
 .deck-col-scroll {
@@ -323,6 +361,17 @@ body {
     }
 }
 
+/*
+ * Media Wall
+ */
+body.media {
+    background: #222;
+}
+
+
+/*
+ * Animations
+ */
 @-moz-keyframes fadeIn {
     from {opacity:0;}
     to {opacity:1;}
