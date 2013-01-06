@@ -9,6 +9,13 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
 		app: 'sdk'
 	}], loadApp);
 	function loadApp (sdk) {
+        var sources = {
+            rss: {
+                template: function (d) {
+                    return Mustache.compile(InstagramHtml)(d);
+                }
+            }
+        }
         // Samsung
 		var app0 = apps.push(new Hub({
             sdk: sdk,
@@ -16,11 +23,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
                 siteId: "303818",
                 articleId: "51"
             },
-            sources: {
-                rss: {
-                    template: Mustache.compile(InstagramHtml)
-                }
-            },
+            sources: sources,
             el: document.getElementById("brand-0-env")
 	    }));
         // Google
@@ -30,6 +33,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
 				siteId: "303818",
                 articleId: "60"
             },
+            sources: sources,
             el: document.getElementById("brand-1-env")
 	    }));
         // Microsoft
@@ -39,6 +43,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
                 siteId: "303818",
                 articleId: "56"
             },
+            sources: sources,
             el: document.getElementById("brand-2-env")
         }));
         // Canonical
@@ -48,6 +53,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
                 siteId: "303818",
                 articleId: "29"
             },
+            sources: sources,
             el: document.getElementById("brand-3-env")
         }));
         // Sony
@@ -57,6 +63,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
                 siteId: "303818",
                 articleId: "8"
             },
+            sources: sources,
             el: document.getElementById("brand-4-env")
         }));
         // Apple
@@ -66,6 +73,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
                 siteId: "303818",
                 articleId: "49"
             },
+            sources: sources,
             el: document.getElementById("brand-5-env")
         }));
         // LG
@@ -75,6 +83,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
                 siteId: "303818",
                 articleId: "58"
             },
+            sources: sources,
             el: document.getElementById("brand-6-env")
         }));
         $('.deck-columns').css('width', apps.length*307);
