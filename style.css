@@ -24,7 +24,7 @@ body{font-family:proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sa
 #header-nav #main-nav #main-nav-login a:hover{background:none;}
 .brand{margin-top:0;margin-bottom:0;}
 .ces-brand{display:block;float:left;color:#FFF;width:83px;height:100px;line-height:100px;text-align:center;font-size:88px;font-weight:700;}
-.deck{overflow-x:auto;overflow-y:hidden;margin-left:0.5em;padding-left:1em;padding-right:1em;position:absolute;top:144px;left:0;right:0;bottom:0;-webkit-overflow-scrolling:touch;}
+.deck{overflow-x:auto;overflow-y:hidden;margin-left:0.5em;padding-left:1em;padding-right:1em;position:absolute;top:155px;left:0;right:0;bottom:0;-webkit-overflow-scrolling:touch;}
 .deck-columns{height:100%;overflow:visible;}
 .deck-col{height:100%;margin-left:0.5em;position:relative;}
 .deck-col-scroll{position:absolute;top:35px;left:0;bottom:0;width:100%;overflow-x:hidden;overflow-y:auto;min-height:200px;-webkit-overflow-scrolling:touch;}
