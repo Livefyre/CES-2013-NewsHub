@@ -86,7 +86,9 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
             sources: sources,
             el: document.getElementById("brand-6-env")
         }));
-        //$('.deck-columns').css('width', apps.length*307);
+        var col_width = 307;
+        var viewport_width = $(window).width();
+        $('.deck-columns').css('width', ((apps.length-1) * col_width) + viewport_width-150);
 	}
 });
 
