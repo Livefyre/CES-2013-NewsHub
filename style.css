@@ -13,10 +13,10 @@ body{min-width:960px;font-family:proxima-nova,"Proxima Nova","Helvetica Neue",He
 #header-nav #main-nav-wrapper{margin-left:0px;}
 #header-nav #main-nav>ul{margin-right:auto;margin-left:auto;}#header-nav #main-nav>ul li{border:none;}
 #header-nav #main-nav{width:100%;height:35px;float:left;}#header-nav #main-nav .nav-tabs{border:none;}
-#header-nav #main-nav li#main-nav-home.active a{background:url('media/home_button.png') no-repeat 0px -13px;}#header-nav #main-nav li#main-nav-home.active a:hover{background:url('media/home_button.png') no-repeat 0px -13px;}
+#header-nav #main-nav li#main-nav-home.active a{background:url('media/home_button.png') no-repeat 0px -13px;opacity:1;}#header-nav #main-nav li#main-nav-home.active a:hover{background:url('media/home_button.png') no-repeat 0px -13px;}
 #header-nav #main-nav li.active a{border:none;}
 #header-nav #main-nav a{width:83px;padding-left:0;padding-right:0;border-radius:0;border:none;color:white;font-weight:bold;}#header-nav #main-nav a:hover{border:none;color:#FFF;text-decoration:none;}
-#header-nav #main-nav #main-nav-buttons{width:50%;float:left;}#header-nav #main-nav #main-nav-buttons li#main-nav-home.active a{background:url('media/home_button.png') no-repeat 0px -13px;}#header-nav #main-nav #main-nav-buttons li#main-nav-home.active a:hover{background:url('media/home_button.png') no-repeat 0px -13px;}
+#header-nav #main-nav #main-nav-buttons{width:50%;float:left;}#header-nav #main-nav #main-nav-buttons li#main-nav-home.active a{background:url('media/home_button.png') no-repeat 0px -13px;opacity:1;}#header-nav #main-nav #main-nav-buttons li#main-nav-home.active a:hover{background:url('media/home_button.png') no-repeat 0px -13px;}
 #header-nav #main-nav #main-nav-buttons li#main-nav-home{width:50px;text-indent:-9999px;}#header-nav #main-nav #main-nav-buttons li#main-nav-home a{border:none;background:url('media/home_button.png') no-repeat 0px -13px;opacity:0.5;margin:auto;width:14px;height:12px;display:block;padding:0;margin-top:11px;}#header-nav #main-nav #main-nav-buttons li#main-nav-home a:hover{border:none;opacity:1;background:url('media/home_button.png') no-repeat 0px -13px;}
 #header-nav #main-nav #main-nav-buttons li#main-nav-exhibitors a:hover,#header-nav #main-nav #main-nav-buttons li#main-nav-exhibitors.active a{background-color:#6689b5;}
 #header-nav #main-nav #main-nav-buttons li#main-nav-news a:hover,#header-nav #main-nav #main-nav-buttons li#main-nav-news.active a{background-color:#34727f;}
