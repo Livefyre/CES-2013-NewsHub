@@ -385,9 +385,33 @@ body {
             display: none;
         }
     }
-
     & > article.brand-instagram:hover .hub-body-html {
         display: block;
+    }
+
+    & > article.brand-rss {
+        background: @blue;
+        color: white;
+        min-height: 150px;
+        max-height: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .hub-author {
+            float: left;
+            text-transform: uppercase;
+            font-weight: 200;
+            font-size: 11px;
+        }
+        .hub-timestamp {
+            float: right;
+        }
+        .hub-body-html {
+            padding-bottom: 10px;
+            font-size: 20px;
+            line-height: 22px;
+            clear: both;
+        }
     }
 
     .hub-avatar img {
@@ -402,6 +426,49 @@ body {
             .hub-heading {
                 background: @blue90;
             }
+        }
+
+        & > article.brand-rss {
+            background: @blue;
+        }
+    }
+}
+.news {
+    .brand-env .hub-item {
+        & > article.brand-instagram {
+            .hub-heading {
+                background: @turquoise90;
+            }
+        }
+
+        & > article.brand-rss {
+            background: @turquoise;
+        }
+    }
+}
+.media {
+    .brand-env .hub-item {
+        & > article.brand-instagram {
+            .hub-heading {
+                background: @green90;
+            }
+        }
+
+        & > article.brand-rss {
+            background: @green;
+        }
+    }
+}
+.products {
+    .brand-env .hub-item {
+        & > article.brand-instagram {
+            .hub-heading {
+                background: @yellow90;
+            }
+        }
+
+        & > article.brand-rss {
+            background: @yellow;
         }
     }
 }
