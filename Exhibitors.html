@@ -79,16 +79,16 @@
             <div id="main-nav-content">
                     <div class="tab-pane active" id="tab1">
                         <ul id="exhibitors-nav" class="nav nav-pills">
-                            <li><a href="#">Samsung</a></li>
-                            <li><a href="#">Google</a></li>
-                            <li><a href="#">Microsoft</a></li>
-                            <li><a href="#">Canonical</a></li>
-                            <li><a href="#">Apple</a></li>
-                            <li><a href="#">Lenovo</a></li>
-                            <li><a href="#">Sharp</a></li>
-                            <li><a href="#">Panasonic</a></li>
-                            <li><a href="#">LG</a></li>
-                            <li><a href="#">Vizio</a></li>
+                            <li><a href="#brand-0">Samsung</a></li>
+                            <li><a href="#brand-1">Google</a></li>
+                            <li><a href="#brand-2">Microsoft</a></li>
+                            <li><a href="#brand-3">Canonical</a></li>
+                            <li><a href="#brand-4">Apple</a></li>
+                            <li><a href="#brand-5">Lenovo</a></li>
+                            <li><a href="#brand-6">Sharp</a></li>
+                            <li><a href="#brand-7">Panasonic</a></li>
+                            <li><a href="#brand-8">LG</a></li>
+                            <li><a href="#brand-9">Vizio</a></li>
                         </ul>
                     </div>
                     <div class="tab-pane" id="tab2">
@@ -115,7 +115,7 @@
             </div>
     </div>
 
-    <div class="deck">
+    <div class="deck" data-spy="scroll" data-target="#exhibitors-nav">
         <div class="brand-envs deck-columns row" style="width: 10000px">
             <section class="span4 brand deck-col" id="brand-0">
                 <div class="heading blue-gradient">
@@ -230,6 +230,7 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script src="lib/jquery/jquery.js"></script>
     <script src="lib/bootstrap.css/js/bootstrap.min.js"></script>
+    <!--<script src="lib/bootstrap.css/js/bootstrap-scrollspy-horizontal.js"></script>-->
     <script data-main="src/Brands" src="lib/requirejs/require.js"></script>
     <!-- Google Analytics -->
     <script type="text/javascript">

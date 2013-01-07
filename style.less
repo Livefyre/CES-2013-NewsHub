@@ -266,11 +266,12 @@ body {
         margin: 0;
         padding-top: 0;
         padding-bottom: 0;
+    }
 
-        &:hover {
-            border-radius: 0;
-            background: #888;
-        }
+    .nav .active a,
+    a:hover {
+        border-radius: 0;
+        background: #888;
     }
 
     .tab-pane {
@@ -326,11 +327,12 @@ body {
     position: relative;
 }
 .deck-col-scroll {
+    float: left;
     position: absolute;
     top: 35px;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 299px;
     overflow-x: hidden;
     overflow-y: auto;
     min-height: 200px;
