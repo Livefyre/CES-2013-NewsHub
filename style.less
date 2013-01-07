@@ -276,11 +276,12 @@ body {
         margin: 0;
         padding-top: 0;
         padding-bottom: 0;
+    }
 
-        &:hover {
-            border-radius: 0;
-            background: #888;
-        }
+    .nav .active a,
+    a:hover {
+        border-radius: 0;
+        background: #888;
     }
 
     .tab-pane {
@@ -336,11 +337,12 @@ body {
     position: relative;
 }
 .deck-col-scroll {
+    float: left;
     position: absolute;
     top: 35px;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 299px;
     overflow-x: hidden;
     overflow-y: auto;
     min-height: 200px;
@@ -490,6 +492,7 @@ body {
 .exhibitors #main-nav-content {
     background: @blue;
 
+    .nav .active a,
     a:hover {
         background: rgba(93,122,162,1);
     }
@@ -501,6 +504,7 @@ body {
 .news #main-nav-content {
     background: @turquoise;
 
+    .nav .active a,
     a:hover {
         background: rgba(63,131,142,1);
     }
@@ -516,6 +520,7 @@ body.media {
 .media #main-nav-content {
     background: @green;
     
+    .nav .active a,
     a:hover {
         background: rgba(104,175,187,1);
     }  
@@ -527,6 +532,7 @@ body.media {
 .products #main-nav-content {
     background: @yellow;
     
+    .nav .active a,
     a:hover {
         background: rgba(197,202,113,1);
     }  
