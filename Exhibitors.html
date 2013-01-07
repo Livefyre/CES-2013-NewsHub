@@ -239,24 +239,26 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script src="lib/jquery/jquery.js"></script>
     <script type="text/javascript">
-        $('#livefyre-brand').click(function(e) {
-            e.preventDefault();
-            $('#streamhub').slideToggle();
-        });
-        $('#close').click(function(e) {
-            e.preventDefault();
-            $('#streamhub').slideUp();
-        });
+        $(function($) {
+            $('#livefyre-brand').click(function(e) {
+                e.preventDefault();
+                $('#streamhub').slideToggle();
+            });
+            $('#close').click(function(e) {
+                e.preventDefault();
+                $('#streamhub').slideUp();
+            });
 
-        <!-- Nav scroll -->
-        var $deck = $('.deck');
-        $('li', '#exhibitors-nav').click(function(e) {
-            var $deck_col = $($('a', this).attr('href'));
-            if (!$deck_col) {
-                return;
-            }
-            var relative_offset = $deck_col.offset().left;
-            $('.deck').animate({'scrollLeft': $deck.scrollLeft() + relative_offset - 50});
+            <!-- Nav scroll -->
+            var $deck = $('.deck');
+            $('li', '#exhibitors-nav').click(function(e) {
+                var $deck_col = $($('a', this).attr('href'));
+                if (!$deck_col) {
+                    return;
+                }
+                var relative_offset = $deck_col.offset().left;
+                $('.deck').animate({'scrollLeft': $deck.scrollLeft() + relative_offset - 50});
+            });
         });
     </script>
     <script src="lib/bootstrap.css/js/bootstrap.min.js"></script>
