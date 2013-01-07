@@ -1,8 +1,12 @@
 /** Variables **/
 @blue: rgba(102,137,181,1);
+@blue90: rgba(102,137,181,.9);
 @turquoise: rgba(52,114,127,1);
+@turquoise90: rgba(52,114,127,.9);
 @green: rgba(122,195,199,1);
+@green90: rgba(122,195,199,.9);
 @yellow: rgba(224,224,110,1);
+@yellow90: rgba(224,224,110,.9);
 @livefyre-dark: rgba(21,29,41,1);
 @main-nav-tab-width: 83px;
 @ces-brand-height: 100px;
@@ -392,12 +396,22 @@ body {
     }
 }
 
+.exhibitors {
+    .brand-env .hub-item {
+        & > article.brand-instagram {
+            .hub-heading {
+                background: @blue90;
+            }
+        }
+    }
+}
+
 /*
  * Exhibitors
  */
 .exhibitors {
     #main-nav-content {
-        background: rgba(102,137,181,1);
+        background: @blue;
     }
 }
 
