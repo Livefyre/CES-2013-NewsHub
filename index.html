@@ -6,8 +6,18 @@
         <link href="lib/bootstrap.css/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="style.css" rel="stylesheet" media="screen">
 </head>
-<body>
-    <div id="header">
+<body class="home">
+    <div id="streamhub" class="clearfix">
+        <div id="streamhub-wrapper" class="container">
+            <a id="logo" href="http://livefyre.com/streamhub" target="_blank"></a>
+            <div id="copy">
+                <div id="powered-by"><em>Powered by</em> Livefyre StreamHub</div>
+                <div id="description">Your real-time source for the hottest CES news from Vegas</div>
+                <div id="close">Close <span>X</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="header" class="clearfix">
         <h1 class="brand clearfix">
             <div id="brand-spacer"> 
                 <span class="ces-brand blue">C</span>
@@ -18,7 +28,7 @@
                 <span class="ces-brand yellow">1</span>
                 <span class="ces-brand yellow">3</span>
             </div>
-            <a id="livefyre-brand" target="_blank" href="http://livefyre.com/streamhub"></a>
+            <a id="livefyre-brand" href="#"></a>
         </h1>
     </div>
 
@@ -133,6 +143,16 @@
     <script type="text/javascript" src="//use.typekit.net/gvq8fcu.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script src="lib/jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $('#livefyre-brand').click(function(e) {
+            e.preventDefault();
+            $('#streamhub').slideToggle();
+        });
+        $('#close').click(function(e) {
+            e.preventDefault();
+            $('#streamhub').slideUp();
+        });
+    </script>
     <script src="lib/bootstrap.css/js/bootstrap.min.js"></script>
     <script data-main="src/Home" src="lib/requirejs/require.js"></script>
     <!-- Google Analytics -->

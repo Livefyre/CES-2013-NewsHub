@@ -1,8 +1,12 @@
 /** Variables **/
 @blue: rgba(102,137,181,1);
+@blue90: rgba(102,137,181,.9);
 @turquoise: rgba(52,114,127,1);
+@turquoise90: rgba(52,114,127,.9);
 @green: rgba(122,195,199,1);
+@green90: rgba(122,195,199,.9);
 @yellow: rgba(224,224,110,1);
+@yellow90: rgba(224,224,110,.9);
 @livefyre-dark: rgba(21,29,41,1);
 @main-nav-tab-width: 83px;
 @ces-brand-height: 100px;
@@ -61,6 +65,8 @@ body {
 }
 
 #header {
+    position: relative;
+    z-index: 10;
     background-color: @livefyre-dark;
 
     #brand-spacer {
@@ -73,7 +79,6 @@ body {
         height: 22px;
         float: right;
         margin-top: 40px;
-        margin-left: 145px;
         position: relative;
         right: 50px;
     }
@@ -82,6 +87,8 @@ body {
     margin-bottom: 20px;
     font-size: 11px;
     text-transform: uppercase;
+    position: relative;
+    z-index: 10;
 
     .nav-tabs li {
         width: @main-nav-tab-width;
@@ -111,10 +118,11 @@ body {
         }
 
         li#main-nav-home.active a {
-            background: url('media/home_button.png') no-repeat 0px -13px;
+            background: url('media/home_button.png') no-repeat 0px -17px;
+            opacity: 1;
 
             &:hover {
-                background: url('media/home_button.png') no-repeat 0px -13px;
+                background: url('media/home_button.png') no-repeat 0px -17px;
             }
         }
 
@@ -143,10 +151,11 @@ body {
             float: left;
 
             li#main-nav-home.active a {
-                background: url('media/home_button.png') no-repeat 0px -13px;
+                background: url('media/home_button.png') no-repeat 0px -17px;
+                opacity: 1;
 
                 &:hover {
-                    background: url('media/home_button.png') no-repeat 0px -13px;
+                    background: url('media/home_button.png') no-repeat 0px -17px;
                 }
             }
 
@@ -156,19 +165,19 @@ body {
 
                 a {
                     border: none;
-                    background: url('media/home_button.png') no-repeat 0px -13px;
+                    background: url('media/home_button.png') no-repeat 0px -17px;
                     opacity: 0.5;
                     margin: auto;
-                    width: 14px;
-                    height: 12px;
+                    width: 18px;
+                    height: 17px;
                     display: block;
                     padding: 0;
-                    margin-top: 11px;
+                    margin-top: 9px;
 
                     &:hover {
                         border: none;
                         opacity: 1;
-                        background: url('media/home_button.png') no-repeat 0px -13px;
+                        background: url('media/home_button.png') no-repeat 0px -17px;
                     }
                 }
             }
@@ -255,9 +264,10 @@ body {
 }
 
 #main-nav-content {
+    background: #666;
     height: 30px;
-    float: left;
     width: 100%;
+    float: left;
 
     a {
         color: #FFF;
@@ -374,8 +384,39 @@ body {
             right: 0;
             background: rgba(0,0,0,0.6);
             padding: 5px;
-            height: 30px;
+            height: auto;
             color: white;
+        }
+        .hub-body-html {
+            display: none;
+        }
+    }
+    & > article.brand-instagram:hover .hub-body-html {
+        display: block;
+    }
+
+    & > article.brand-rss {
+        background: @blue;
+        color: white;
+        min-height: 150px;
+        max-height: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .hub-author {
+            float: left;
+            text-transform: uppercase;
+            font-weight: 200;
+            font-size: 11px;
+        }
+        .hub-timestamp {
+            float: right;
+        }
+        .hub-body-html {
+            padding-bottom: 10px;
+            font-size: 20px;
+            line-height: 22px;
+            clear: both;
         }
     }
 
@@ -385,20 +426,112 @@ body {
     }
 }
 
+.exhibitors {
+    .brand-env .hub-item {
+        & > article.brand-instagram {
+            .hub-heading {
+                background: @blue90;
+            }
+        }
+
+        & > article.brand-rss {
+            background: @blue;
+        }
+    }
+}
+.news {
+    .brand-env .hub-item {
+        & > article.brand-instagram {
+            .hub-heading {
+                background: @turquoise90;
+            }
+        }
+
+        & > article.brand-rss {
+            background: @turquoise;
+        }
+    }
+}
+.media {
+    .brand-env .hub-item {
+        & > article.brand-instagram {
+            .hub-heading {
+                background: @green90;
+            }
+        }
+
+        & > article.brand-rss {
+            background: @green;
+        }
+    }
+}
+.products {
+    .brand-env .hub-item {
+        & > article.brand-instagram {
+            .hub-heading {
+                background: @yellow90;
+            }
+        }
+
+        & > article.brand-rss {
+            background: @yellow;
+        }
+    }
+}
+
+/*
+ * Home
+ */
+.home #main-nav-content {
+    display: none;
+}
+
 /*
  * Exhibitors
  */
-.exhibitors {
-    #main-nav-content {
-        background: rgba(102,137,181,1);
+.exhibitors #main-nav-content {
+    background: @blue;
+
+    a:hover {
+        background: rgba(93,122,162,1);
     }
 }
+
+/*
+ * News
+ */
+.news #main-nav-content {
+    background: @turquoise;
+
+    a:hover {
+        background: rgba(63,131,142,1);
+    }
+}
+
 
 /*
  * Media Wall
  */
 body.media {
     background: #222;
+}
+.media #main-nav-content {
+    background: @green;
+    
+    a:hover {
+        background: rgba(104,175,187,1);
+    }  
+}
+
+/*
+ * Products
+ */
+.products #main-nav-content {
+    background: @yellow;
+    
+    a:hover {
+        background: rgba(197,202,113,1);
+    }  
 }
 
 
@@ -419,3 +552,89 @@ body.media {
     from {opacity:0;}
     to {opacity:1;}
 }
+
+/*
+ * Streamhub header
+ */
+#streamhub {
+    display: none;
+    background: #0C0A18 url('media/streamhub-background.jpg') no-repeat center -170px;
+    width: 100%;
+    height: 135px;
+    margin: 0 auto;
+
+    #logo {
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        background: url('media/streamhub-logo.png') no-repeat;
+        position: relative;
+        top: 20px;
+    };
+
+    #copy {
+        display: inline-block;
+        position: relative;
+        top: -40px;
+        margin-left: 40px;
+    }
+
+    #powered-by {
+       color: #99C;
+       text-transform: uppercase;
+       font-weight: 700;
+       font-size: 18px;
+       border-bottom: 1px solid white;
+       padding-bottom: 10px;
+       width: 680px;
+
+        em {
+            font-weight: 300;
+        }
+    }
+
+    #description {
+        color: #FFF;
+        margin-top: 10px;
+    }
+
+    #close {
+        float: right;
+        position: relative;
+        top: -40px;
+        margin-right: -70px;
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: 12px;
+
+        span {
+            font-size: 14px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+/*
+ * Media queries
+ */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    .ces-brand {
+        height: 75px;
+        line-height: 75px;
+    }
+    #header #livefyre-brand {
+        margin-top: 30px;
+    }
+    .deck {
+        top: 160px;
+    }
+}
+
