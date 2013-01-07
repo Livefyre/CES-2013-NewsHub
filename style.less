@@ -65,6 +65,8 @@ body {
 }
 
 #header {
+    position: relative;
+    z-index: 10;
     background-color: @livefyre-dark;
 
     #brand-spacer {
@@ -77,7 +79,6 @@ body {
         height: 22px;
         float: right;
         margin-top: 40px;
-        margin-left: 145px;
         position: relative;
         right: 50px;
     }
@@ -533,9 +534,74 @@ body.media {
 }
 
 /*
+ * Streamhub header
+ */
+#streamhub {
+    display: none;
+    background: #0C0A18 url('media/streamhub-background.jpg') no-repeat center -170px;
+    width: 100%;
+    height: 135px;
+    margin: 0 auto;
+
+    #logo {
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        background: url('media/streamhub-logo.png') no-repeat;
+        position: relative;
+        top: 20px;
+    };
+
+    #copy {
+        display: inline-block;
+        position: relative;
+        top: -40px;
+        margin-left: 40px;
+    }
+
+    #powered-by {
+       color: #99C;
+       text-transform: uppercase;
+       font-weight: 700;
+       font-size: 18px;
+       border-bottom: 1px solid white;
+       padding-bottom: 10px;
+       width: 680px;
+
+        em {
+            font-weight: 300;
+        }
+    }
+
+    #description {
+        color: #FFF;
+        margin-top: 10px;
+    }
+
+    #close {
+        float: right;
+        position: relative;
+        top: -40px;
+        margin-right: -70px;
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: 12px;
+
+        span {
+            font-size: 14px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+/*
  * Media queries
  */
-
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
