@@ -1,8 +1,9 @@
 // This will run on the Media page
 require(['./config'], function () {
 
-require(['fyre', 'streamhub-backbone', 'jquery', 'mustache', 'text!../src/templates/Instagram.html'],
-function (fyre, Hub, $, Mustache, InstagramHtml) {
+require(['fyre', 'streamhub-backbone', 'streamhub-isotope',
+	     'jquery', 'mustache', 'text!../src/templates/Instagram.html'],
+function (fyre, Hub, IsotopeView, $, Mustache, InstagramHtml) {
 	fyre.conv.load({}, [{
 		network: 'livefyre.com',
 		app: 'sdk'
@@ -15,6 +16,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
 	            articleId: "51"
 	        },
 	        el: document.getElementById("media-wall-0"),
+	        view: IsotopeView,
 			sources: {
 	            rss: {
 	                template: function (d) {

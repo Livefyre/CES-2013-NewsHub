@@ -9,22 +9,29 @@ require.config({
     backbone: 'backbone/backbone',
     underscore: 'underscore/underscore',
     mustache: 'mustache/mustache',
+    isotope: 'isotope/jquery.isotope',
     fyre: 'streamhub-backbone/test/fixtures/fyre.conv.sdk'
     //fyre: 'http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre'
   },
   packages: [{
     name: 'streamhub-backbone',
     location: 'streamhub-backbone'
+  },{
+    name: 'streamhub-isotope',
+    location: 'streamhub-isotope'
   }],
   shim: {
-    'backbone': {
+    backbone: {
         deps: ['underscore', 'jquery'],
         exports: 'Backbone'
     },
-    'underscore': {
+    underscore: {
         exports: '_'
     },
-    'fyre': {
+    isotope: {
+            deps: ['jquery']
+    },
+    fyre: {
         exports: 'fyre'
     }
   }
