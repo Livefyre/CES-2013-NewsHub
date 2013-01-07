@@ -87,36 +87,36 @@
                 </div>
             </div>
             <div id="main-nav-content">
-                    <div class="tab-pane active" id="tab1">
-                        <ul id="exhibitors-nav" class="nav nav-pills">
-                            <li><a href="#">Samsung</a></li>
-                            <li><a href="#">Google</a></li>
-                            <li><a href="#">Microsoft</a></li>
-                            <li><a href="#">Canonical</a></li>
-                            <li><a href="#">Apple</a></li>
-                            <li><a href="#">Lenovo</a></li>
-                            <li><a href="#">Sharp</a></li>
-                            <li><a href="#">Panasonic</a></li>
-                            <li><a href="#">LG</a></li>
-                            <li><a href="#">Vizio</a></li>
+                    <div class="tab-pane active" id="exhibitors-nav" >
+                        <ul class="nav nav-pills">
+                            <li><a href="#brand-0">Samsung</a></li>
+                            <li><a href="#brand-1">Google</a></li>
+                            <li><a href="#brand-2">Microsoft</a></li>
+                            <li><a href="#brand-3">Canonical</a></li>
+                            <li><a href="#brand-4">Apple</a></li>
+                            <li><a href="#brand-5">Lenovo</a></li>
+                            <li><a href="#brand-6">Sharp</a></li>
+                            <li><a href="#brand-7">Panasonic</a></li>
+                            <li><a href="#brand-8">LG</a></li>
+                            <li><a href="#brand-9">Vizio</a></li>
                         </ul>
                     </div>
-                    <div class="tab-pane" id="tab2">
-                        <ul id="news-nav" class="nav nav-pills">
+                    <div class="tab-pane" id="news-nav">
+                        <ul class="nav nav-pills">
                             <li><a href="#">News 1</a></li>
                             <li><a href="#">News 2</a></li>
                             <li><a href="#">News 3</a></li>
                         </ul>
                     </div>
-                    <div class="tab-pane" id="tab3">
-                        <ul id="media-nav" class="nav nav-pills">
+                    <div class="tab-pane" id="media-nav">
+                        <ul class="nav nav-pills">
                             <li><a href="#">Media 1</a></li>
                             <li><a href="#">Media 2</a></li>
                             <li><a href="#">Media 3</a></li>
                         </ul>
                     </div>
-                    <div class="tab-pane" id="tab4">
-                        <ul id="products-nav" class="nav nav-pills">
+                    <div class="tab-pane" id="products-nav">
+                        <ul class="nav nav-pills">
                             <li><a href="#">Product 1</a></li>
                             <li><a href="#">Product 2</a></li>
                             <li><a href="#">Product 3</a></li>
@@ -125,7 +125,7 @@
             </div>
     </div>
 
-    <div class="deck">
+    <div class="deck" data-spy="scroll" data-target="#exhibitors-nav">
         <div class="brand-envs deck-columns row" style="width: 10000px">
             <section class="span4 brand deck-col" id="brand-0">
                 <div class="heading blue-gradient">
@@ -250,6 +250,7 @@
         });
     </script>
     <script src="lib/bootstrap.css/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrap.css/js/bootstrap-scrollspy-horizontal.js"></script>
     <script data-main="src/Brands" src="lib/requirejs/require.js"></script>
     <!-- Google Analytics -->
     <script type="text/javascript">
