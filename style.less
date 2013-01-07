@@ -374,9 +374,16 @@ body {
             right: 0;
             background: rgba(0,0,0,0.6);
             padding: 5px;
-            height: 30px;
+            height: auto;
             color: white;
         }
+        .hub-body-html {
+            display: none;
+        }
+    }
+
+    & > article.brand-instagram:hover .hub-body-html {
+        display: block;
     }
 
     .hub-avatar img {
