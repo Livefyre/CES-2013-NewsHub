@@ -261,9 +261,10 @@ body {
 }
 
 #main-nav-content {
+    background: #666;
     height: 30px;
-    float: left;
     width: 100%;
+    float: left;
 
     a {
         color: #FFF;
@@ -474,19 +475,42 @@ body {
 }
 
 /*
+ * Home
+ */
+.home #main-nav-content {
+    display: none;
+}
+
+/*
  * Exhibitors
  */
-.exhibitors {
-    #main-nav-content {
-        background: @blue;
-    }
+.exhibitors #main-nav-content {
+    background: @blue;
 }
+
+/*
+ * News
+ */
+.news #main-nav-content {
+    background: @turquoise;
+}
+
 
 /*
  * Media Wall
  */
+.media #main-nav-content {
+    background: @green;
+}
 body.media {
     background: #222;
+}
+
+/*
+ * Products
+ */
+.products #main-nav-content {
+    background: @yellow;
 }
 
 
