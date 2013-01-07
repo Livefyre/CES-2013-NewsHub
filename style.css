@@ -43,6 +43,7 @@ body{min-width:960px;font-family:proxima-nova,"Proxima Nova","Helvetica Neue",He
 .brand-env .hub-item>article.brand-instagram .hub-body-html{display:none;}
 .brand-env .hub-item>article.brand-instagram:hover .hub-body-html{display:block;}
 .brand-env .hub-item .hub-avatar img{width:48px;height:48px;}
+.exhibitors .brand-env .hub-item>article.brand-instagram .hub-heading{background:rgba(102, 137, 181, 0.9);}
 .exhibitors #main-nav-content{background:#6689b5;}
 body.media{background:#222;}
 @-moz-keyframes fadeIn{from{opacity:0;} to{opacity:1;}}@-webkit-keyframes fadeIn{from{opacity:0;} to{opacity:1;}}@keyframes fadeIn{from{opacity:0;} to{opacity:1;}}
