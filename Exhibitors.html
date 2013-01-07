@@ -247,6 +247,17 @@
             e.preventDefault();
             $('#streamhub').slideUp();
         });
+
+        <!-- Nav scroll -->
+        var $deck = $('.deck');
+        $('li', '#exhibitors-nav').click(function(e) {
+            var $deck_col = $($('a', this).attr('href'));
+            if (!$deck_col) {
+                return;
+            }
+            var relative_offset = $deck_col.offset().left;
+            $('.deck').animate({'scrollLeft': $deck.scrollLeft() + relative_offset - 50});
+        });
     </script>
     <script src="lib/bootstrap.css/js/bootstrap.min.js"></script>
     <script src="lib/bootstrap.css/js/bootstrap-scrollspy-horizontal.js"></script>
