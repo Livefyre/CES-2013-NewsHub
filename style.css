@@ -39,7 +39,9 @@ body{min-width:960px;font-family:proxima-nova,"Proxima Nova","Helvetica Neue",He
 .deck-col-scroll{position:absolute;top:35px;left:0;bottom:0;width:100%;overflow-x:hidden;overflow-y:auto;min-height:200px;-webkit-overflow-scrolling:touch;}
 .brand-env{vertical-align:top;border-top:1px solid #b6c4cb;}
 .brand-env .hub-item{background-color:#f2f6fc ;background-image:-webkit-gradient(linear, left top, left bottom, from(#f2f6fc), to(#dce5ea));background-image:-webkit-linear-gradient(top, #f2f6fc, #dce5ea);background-image:-moz-linear-gradient(top, #f2f6fc, #dce5ea);background-image:-o-linear-gradient(top, #f2f6fc, #dce5ea);background-image:-ms-linear-gradient(top, #f2f6fc, #dce5ea);background-image:linear-gradient(top, #f2f6fc, #dce5ea);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr=' #f2f6fc ', EndColorStr=' #dce5ea ');border-right:1px solid #b6c4cb;border-left:1px solid #b6c4cb;border-bottom:1px solid #b6c4cb;cursor:pointer;-webkit-animation:fadeIn 300ms;-moz-animation:fadeIn 300ms;animation:fadeIn 300ms;}.brand-env .hub-item>article{padding:0.5em;}
-.brand-env .hub-item>article.brand-instagram{padding:0;position:relative;}.brand-env .hub-item>article.brand-instagram .hub-heading{position:absolute;bottom:0;left:0;right:0;background:rgba(0, 0, 0, 0.6);padding:5px;height:30px;color:white;}
+.brand-env .hub-item>article.brand-instagram{padding:0;position:relative;}.brand-env .hub-item>article.brand-instagram .hub-heading{position:absolute;bottom:0;left:0;right:0;background:rgba(0, 0, 0, 0.6);padding:5px;height:auto;color:white;}
+.brand-env .hub-item>article.brand-instagram .hub-body-html{display:none;}
+.brand-env .hub-item>article.brand-instagram:hover .hub-body-html{display:block;}
 .brand-env .hub-item .hub-avatar img{width:48px;height:48px;}
 .exhibitors #main-nav-content{background:#6689b5;}
 body.media{background:#222;}
