@@ -55,11 +55,11 @@ body{min-width:960px;font-family:proxima-nova,"Proxima Nova","Helvetica Neue",He
 .products .brand-env .hub-item>article.brand-instagram .hub-heading{background:rgba(224, 224, 110, 0.9);}
 .products .brand-env .hub-item>article.brand-rss{background:#e0e06e;}
 .home #main-nav-content{display:none;}
-.exhibitors #main-nav-content{background:#6689b5;}
-.news #main-nav-content{background:#34727f;}
-.media #main-nav-content{background:#7ac3c7;}
+.exhibitors #main-nav-content{background:#6689b5;}.exhibitors #main-nav-content a:hover{background:#5d7aa2;}
+.news #main-nav-content{background:#34727f;}.news #main-nav-content a:hover{background:#3f838e;}
 body.media{background:#222;}
-.products #main-nav-content{background:#e0e06e;}
+.media #main-nav-content{background:#7ac3c7;}.media #main-nav-content a:hover{background:#68afbb;}
+.products #main-nav-content{background:#e0e06e;}.products #main-nav-content a:hover{background:#c5ca71;}
 @-moz-keyframes fadeIn{from{opacity:0;} to{opacity:1;}}@-webkit-keyframes fadeIn{from{opacity:0;} to{opacity:1;}}@keyframes fadeIn{from{opacity:0;} to{opacity:1;}}#streamhub{display:none;background:#0c0a18 url('media/streamhub-background.jpg') no-repeat center -170px;width:100%;height:135px;margin:0 auto;}#streamhub #logo{display:inline-block;width:140px;height:140px;background:url('media/streamhub-logo.png') no-repeat;position:relative;top:20px;}
 #streamhub #copy{display:inline-block;position:relative;top:-40px;margin-left:40px;}
 #streamhub #powered-by{color:#99C;text-transform:uppercase;font-weight:700;font-size:18px;border-bottom:1px solid white;padding-bottom:10px;width:680px;}#streamhub #powered-by em{font-weight:300;}
