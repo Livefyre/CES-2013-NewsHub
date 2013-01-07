@@ -386,13 +386,18 @@ body {
             padding: 5px;
             height: auto;
             color: white;
+            overflow: hidden;
+            line-height: 22px;
+            max-height: 20px;
+            transition:all 1.5s;
+            -moz-transition:all 1.5s; /* Firefox 4 */
+            -webkit-transition:all 1.5s; /* Safari and Chrome */
+            -o-transition:all 1.5s; /* Opera */
         }
-        .hub-body-html {
-            display: none;
+
+        &:hover .hub-heading {
+            max-height: 300px;
         }
-    }
-    & > article.brand-instagram:hover .hub-body-html {
-        display: block;
     }
 
     & > article.brand-rss {
