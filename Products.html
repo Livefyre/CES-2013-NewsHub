@@ -5,6 +5,8 @@
         <!-- Bootstrap -->
         <link href="lib/bootstrap.css/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="style.css" rel="stylesheet" media="screen">
+        <!-- StreamHub-Backbone -->
+        <link href="lib/streamhub-backbone/main.css" rel="stylesheet" media="screen">
     </head>
 <body class="products">
     <div id="streamhub" class="clearfix">
@@ -127,8 +129,144 @@
     </div>
 
     <div class="container">
-        <div class="hero-unit">
-            <h1>Products</h1>
+        <div class="deck" data-spy="scroll" data-target="#exhibitors-nav" data-offset="175">
+            <div class="brand-envs deck-columns row" style="width: 10000px">
+                <section class="span4 brand deck-col" id="product-0">
+                    <div class="heading blue-gradient">
+                        <h2>Televisions</h2>
+                    </div>
+                    <div class="deck-col-scroll">
+                        <div class="brand-env" id="product-0-env">
+                            <div class="loading-placeholder" style="height: 300px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 300px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="span4 brand deck-col" id="brand-1">
+                    <div class="heading blue-gradient">
+                        <h2>Smartphones</h2>
+                    </div>
+                    <div class="deck-col-scroll">
+                        <div class="brand-env" id="product-1-env">
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 300px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 300px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="span4 brand deck-col" id="product-2">
+                    <div class="heading blue-gradient">
+                        <h2>Tablets</h2>
+                    </div>
+                    <div class="deck-col-scroll">
+                        <div class="brand-env" id="product-2-env">
+                            <div class="loading-placeholder" style="height: 100px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 400px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 100px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 400px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="span4 brand deck-col" id="product-3">
+                    <div class="heading blue-gradient">
+                        <h2>Computers</h2>
+                    </div>
+                    <div class="deck-col-scroll">
+                        <div class="brand-env" id="product-3-env">
+                            <div class="loading-placeholder" style="height: 300px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 250px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 100px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 100px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="span4 brand deck-col" id="product-4">
+                    <div class="heading blue-gradient">
+                        <h2>Audio</h2>
+                    </div>
+                    <div class="deck-col-scroll">
+                        <div class="brand-env" id="product-4-env">
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 300px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 350px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 100px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 400px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="span4 brand deck-col" id="product-5">
+                    <div class="heading blue-gradient">
+                        <h2>Gaming</h2>
+                    </div>
+                    <div class="deck-col-scroll">
+                        <div class="brand-env" id="product-5-env">
+                            <div class="loading-placeholder" style="height: 100px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 250px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 400px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 150px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 250px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 400px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="span4 brand deck-col" id="product-6">
+                    <div class="heading blue-gradient">
+                        <h2>Gadgets</h2>
+                    </div>
+                    <div class="deck-col-scroll">
+                        <div class="brand-env" id="product-6-env">
+                            <div class="loading-placeholder" style="height: 150px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 150px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 300px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                            <div class="loading-placeholder" style="height: 400px; margin-bottom: 10px; background-color: #5475a6;"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="span4 brand deck-col" id="product-7">
+                    <div class="heading blue-gradient">
+                        <h2>Digital Health</h2>
+                    </div>
+                    <div class="deck-col-scroll">
+                        <div class="brand-env" id="product-7-env">
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 300px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 300px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #6ab7bb;"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="span4 brand deck-col" id="product-8">
+                    <div class="heading blue-gradient">
+                        <h2>Home Electronics</h2>
+                    </div>
+                    <div class="deck-col-scroll">
+                        <div class="brand-env" id="product-8-env">
+                            <div class="loading-placeholder" style="height: 100px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 400px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 100px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                            <div class="loading-placeholder" style="height: 400px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
    
