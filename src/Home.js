@@ -33,6 +33,13 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate, SlideshowView, Hero
 	        	template: CardTemplate
 	        },
 	        view: IsotopeView,
+	        viewOptions: {
+	        	isotope: {
+	        		masonry: {
+	        			columnWidth: 200
+	        		}
+	        	}
+	        },
 	        el: document.getElementById("home-main-app")
 		})
 		var tweets = new Hub({
