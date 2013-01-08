@@ -10,7 +10,8 @@
 @livefyre-dark: rgba(21,29,41,1);
 @main-nav-tab-width: 83px;
 @ces-brand-height: 100px;
-@proxima-nova-font-family: proxima-nova-condensed,"Proxima Nova Condensed",proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+@proxima-nova-condensed: proxima-nova-condensed,"Proxima Nova Condensed",proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+@proxima-nova: proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 
 /** Colors **/
 .blue { background-color: @blue; }
@@ -60,7 +61,7 @@
 
 body {
     min-width: 960px;
-    font-family: @proxima-nova-font-family;
+    font-family: @proxima-nova-condensed;
     font-weight: 400px;
 }
 
@@ -752,6 +753,7 @@ body.media {
     width: 100%;
     height: 135px;
     margin: 0 auto;
+    font-family: @proxima-nova;
 
     #logo {
         display: inline-block;
