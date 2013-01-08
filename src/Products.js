@@ -1,11 +1,12 @@
 // This will run on the Products page
 require(['./config'], function () {
 
-require(['fyret402', 'streamhub-backbone', 'jquery', 'mustache', 'text!../src/templates/Instagram.html'],
+require(['fyre', 'streamhub-backbone', 'jquery', 'mustache', 'text!../src/templates/Instagram.html'],
 function (fyre, Hub, $, Mustache, InstagramHtml) {
     var apps = [];
-	fyre.conv.load({}, [{
-		network: 'livefyre.com',
+	fyre.conv.load({
+        network: 'labs.fyre.co'
+    }, [{
 		app: 'sdk'
 	}], loadApp);
 	function loadApp (sdk) {
@@ -20,8 +21,8 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
 		var app0 = apps.push(new Hub({
             sdk: sdk,
             collection: {
-                siteId: "303818",
-                articleId: "51"
+                siteId: "320568",
+                articleId: "products_televisions"
             },
             sources: sources,
             el: document.getElementById("product-0-env")
@@ -30,8 +31,8 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
 	    var app1 = apps.push(new Hub({
             sdk: sdk,
             collection: {
-				siteId: "303818",
-                articleId: "60"
+				siteId: "320568",
+                articleId: "products_smartphones"
             },
             sources: sources,
             el: document.getElementById("product-1-env")
@@ -40,8 +41,8 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
 	    var app2 = apps.push(new Hub({
             sdk: sdk,
             collection: {
-                siteId: "303818",
-                articleId: "56"
+                siteId: "320568",
+                articleId: "products_tablets"
             },
             sources: sources,
             el: document.getElementById("product-2-env")
@@ -50,8 +51,8 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
         var app3 = apps.push(new Hub({
             sdk: sdk,
             collection: {
-                siteId: "303818",
-                articleId: "29"
+                siteId: "320568",
+                articleId: "products_computers"
             },
             sources: sources,
             el: document.getElementById("product-3-env")
@@ -60,8 +61,8 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
         var app4 = apps.push(new Hub({
             sdk: sdk,
             collection: {
-                siteId: "303818",
-                articleId: "8"
+                siteId: "320568",
+                articleId: "products_audio"
             },
             sources: sources,
             el: document.getElementById("product-4-env")
@@ -70,8 +71,8 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
         var app5 = apps.push(new Hub({
             sdk: sdk,
             collection: {
-                siteId: "303818",
-                articleId: "49"
+                siteId: "320568",
+                articleId: "products_gaming"
             },
             sources: sources,
             el: document.getElementById("product-5-env")
@@ -80,8 +81,8 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
         var app6 = apps.push(new Hub({
             sdk: sdk,
             collection: {
-                siteId: "303818",
-                articleId: "58"
+                siteId: "320568",
+                articleId: "products_gadgets"
             },
             sources: sources,
             el: document.getElementById("product-6-env")
@@ -90,8 +91,8 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
         var app7 = apps.push(new Hub({
             sdk: sdk,
             collection: {
-                siteId: "303818",
-                articleId: "69"
+                siteId: "320568",
+                articleId: "products_digital_health"
             },
             sources: sources,
             el: document.getElementById("product-7-env")
@@ -100,13 +101,13 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
         var app8 = apps.push(new Hub({
             sdk: sdk,
             collection: {
-                siteId: "303818",
-                articleId: "73"
+                siteId: "320568",
+                articleId: "products_home_electronics"
             },
             sources: sources,
             el: document.getElementById("product-8-env")
         }));
-        var col_width = 307;
+        var col_width = 230;
         var viewport_width = $(window).width();
         $('.deck-columns').css('width', ((apps.length-1) * col_width) + viewport_width - 75);
 	}

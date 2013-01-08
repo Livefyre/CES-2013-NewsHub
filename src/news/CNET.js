@@ -2,19 +2,20 @@
 require(['../config'],
 function () {
 
-require(['fyret402', 'streamhub-backbone', 'streamhub-isotope',
-	     'jquery', 'mustache', '../src/templates/Card'],
+require(['fyre', 'streamhub-backbone', 'streamhub-isotope',
+	     'jquery', 'mustache', '../src/templates/Card', '../src/news/newsCommon'],
 function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate) {
-	fyre.conv.load({}, [{
-		network: 'livefyre.com',
+	fyre.conv.load({
+		network: 'labs.fyre.co'
+	}, [{
 		app: 'sdk'
 	}], loadHomeApps);
 	function loadHomeApps (sdk) {
 		var main = new Hub({
 			sdk: sdk,
 	        collection: {
-	            siteId: "303818",
-	            articleId: "51"
+	            siteId: "320568",
+	            articleId: "news_cnet_chatter"
 	        },
 	        contentViewOptions: {
 	        	template: CardTemplate
@@ -25,8 +26,8 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate) {
 		var tweets = new Hub({
 			sdk: sdk,
 	        collection: {
-	            siteId: "303818",
-	            articleId: "42"
+	            siteId: "320568",
+	            articleId: "news_cnet"
 	        },
 	        el: document.getElementById("cnet-tweets")
 		})
