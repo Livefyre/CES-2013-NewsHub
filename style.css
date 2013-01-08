@@ -74,8 +74,8 @@ body{min-width:960px;font-family:proxima-nova-condensed,"Proxima Nova Condensed"
 .products .feed .hub-item>article.brand-instagram .hub-heading{background:rgba(224, 224, 110, 0.9);}
 .products .feed .hub-item>article.brand-rss{background:#e0e06e;}
 .exhibitors #main-nav-content{background:#34727f;}.exhibitors #main-nav-content .nav .active a,.exhibitors #main-nav-content a:hover{background:#3f838e;}
-.news .streamhub-banner-bar{display:none;}
-.news #streamhub{display:block;}
+.home .streamhub-banner-bar{display:none;}
+.home #streamhub{display:block;}
 .news #main-nav-content{background:#6689b5;}.news #main-nav-content .nav .active a,.news #main-nav-content a:hover{background:#5d7aa2;}
 .news-app{}
 #hero{font-family:proxima-nova-condensed,"Proxima Nova Condensed",proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300px;margin:0 auto;margin-bottom:15px;width:960px;cursor:pointer;}#hero .hero-content{color:white;min-height:25px;max-height:300px;width:960px;overflow:hidden;position:relative;}#hero .hero-content a.hero-content-link{width:960px;color:#FFF;}

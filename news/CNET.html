@@ -164,26 +164,13 @@
     <script src="/lib/jquery/jquery.js"></script>
     <script type="text/javascript">
         $(function($) {
-            var streamhub_showing = true;
-            var banner_showing = false;
-            var showBanner = function() {
-                if (!banner_showing) {
-                    $('.streamhub-banner-bar').slideDown();
-                    banner_showing = true;
-                }
-            }
             $('#livefyre-brand').click(function(e) {
                 e.preventDefault();
                 $('#streamhub').slideToggle();
-                showBanner();
-                streamhub_showing = !streamhub_showing;
-                
             });
             $('#close').click(function(e) {
                 e.preventDefault();
                 $('#streamhub').slideUp();
-                showBanner();
-                streamhub_showing = false;
             });
         });
     </script>
