@@ -11,7 +11,7 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate, SlideshowView, Hero
 		app: 'sdk'
 	}], loadHomeApps);
 	function loadHomeApps (sdk) {
-		var hero = new Hub({
+		/*var hero = new Hub({
 			sdk: sdk,
 			collection: {
 				siteId: "320568",
@@ -22,7 +22,7 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate, SlideshowView, Hero
 			contentViewOptions: {
 				template: HeroTemplate
 			}
-		});
+		});*/
 		var main = new Hub({
 			sdk: sdk,
 	        collection: {

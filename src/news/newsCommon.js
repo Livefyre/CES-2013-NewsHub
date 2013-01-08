@@ -13,7 +13,6 @@ require(['jquery', 'underscore'], function ($, _) {
 				return true;
 			}
 		})
-		console.log("BINDING THIS FUCKING CLICK HANDLER");
 		$('#hero').on('click', '.hub-item', function (e) {
 			var url = $(this).find('.hero-content').attr('data-url');
 			window.open(url, '_blank');
