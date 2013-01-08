@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CES StreamHub - Home</title>
+        <title>CES StreamHub - Mashable News</title>
         <!-- Bootstrap -->
-        <link href="lib/bootstrap.css/css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="style.css" rel="stylesheet" media="screen">
-         <!-- StreamHub-Backbone -->
-        <link href="lib/streamhub-backbone/main.css" rel="stylesheet" media="screen">
-</head>
-<body class="home">
+        <link href="/lib/bootstrap.css/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="/style.css" rel="stylesheet" media="screen">
+        <!-- StreamHub-Backbone -->
+        <link href="/lib/streamhub-backbone/main.css" rel="stylesheet" media="screen">
+    </head>
+<body class="news">
     <div id="streamhub" class="clearfix">
         <div id="streamhub-wrapper" class="container">
             <a id="logo" href="http://livefyre.com/streamhub" target="_blank"></a>
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div id="header" class="clearfix">
+    <div id="header">
         <h1 class="brand clearfix">
             <div id="brand-spacer"> 
                 <span class="ces-brand blue">C</span>
@@ -30,18 +30,18 @@
                 <span class="ces-brand yellow">1</span>
                 <span class="ces-brand yellow">3</span>
             </div>
-            <a id="livefyre-brand" href="#"></a>
+            <a id="livefyre-brand" target="_blank" href="http://livefyre.com/streamhub"></a>
         </h1>
     </div>
 
     <div id="header-nav">
         <div class="tabbable"> <!-- Only required for left/right tabs -->
-            <div id="main-nav" class="blue-gradient">
+            <div id="main-nav" class="turquoise-gradient">
                 <div id="main-nav-wrapper">
                     <ul id="main-nav-buttons" class="nav nav-tabs">
-                        <li id="main-nav-home" class="active"><a href="/">Home</a></li>
+                        <li id="main-nav-home"><a href="/">Home</a></li>
                         <li id="main-nav-exhibitors"><a href="/Exhibitors.html">Exhibitors</a></li>
-                        <li id="main-nav-news"><a href="/">News</a></li>
+                        <li id="main-nav-news" class="active"><a href="/">News</a></li>
                         <li id="main-nav-media"><a href="/Media.html">Media</a></li>
                         <li id="main-nav-products"><a href="/Products.html">Products</a></li>
                     </ul>
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div id="main-nav-content">
-                <div class="tab-content container">
+                <div class="tab-content">
                     <div class="tab-pane" id="tab1">
                         <ul id="exhibitors-nav" class="nav nav-pills">
                             <li><a href="#">Samsung</a></li>
@@ -102,13 +102,13 @@
                             <li><a href="#">Vizio</a></li>
                         </ul>
                     </div>
-                    <div class="tab-pane" id="tab2">
+                    <div class="tab-pane active" id="tab2">
                         <ul id="news-nav" class="nav nav-pills">
-                            <li><a href="#">Mashable</a></li>
-                            <li><a href="#">Engadget</a></li>
-                            <li><a href="#">CNET</a></li>
-                            <li><a href="#">Fox</a></li>
-                            <li><a href="#">Techland</a></li>
+                            <li class="active"><a href="Mashable.html">Mashable</a></li>
+                            <li><a href="Engadget.html">Engadget</a></li>
+                            <li><a href="CNET.html">CNET</a></li>
+                            <li><a href="Fox.html">Fox</a></li>
+                            <li><a href="Techland.html">Techland</a></li>
                         </ul>
                     </div>
                     <div class="tab-pane" id="tab3">
@@ -131,19 +131,13 @@
     </div>
 
     <div class="container">
-        <ul id="day-nav" class="nav nav-pills">
-            <li class="active"><a href="#">Day <span class="day-num">1</span></a></li>
-            <li class="disabled"><a href="#">Day <span class="day-num">2</span></a></li>
-            <li class="disabled"><a href="#">Day <span class="day-num">3</span></a></li>
-            <li class="disabled"><a href="#">Day <span class="day-num">4</span></a></li>
-        </ul>
         <div class="row">
             <div id="section2" class="span8">
                 <div id="main-section" class="row">
                     <div class="feed-heading blue-gradient">
-                        <h2>All news</h2>
+                        <h2>Mashable news</h2>
                     </div>
-                    <div id="home-main-app" class="news-app"></div>
+                    <div id="mashable-main-app" class="news-app"></div>
                 </div>
             </div>
             <div id="section3" class="span4">
@@ -151,24 +145,18 @@
                     <div class="feed-heading blue-gradient">
                         <h2>From the Floor</h2>
                     </div>
-                    <div id="home-tweets" class="feed">
+                    <div id="mashable-tweets" class="feed">
                         <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
                     </div>
                 </div>
-                <div id="pics-section" style="background: #EEE; height: 200px">
-                    <h2>Pics</h2>
-                </div>
             </div>
         </div>
-    </div>
-
-    <div id="footer">
     </div>
    
     <!-- JS Resources --> 
     <script type="text/javascript" src="//use.typekit.net/gvq8fcu.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script src="lib/jquery/jquery.js"></script>
+    <script src="/lib/jquery/jquery.js"></script>
     <script type="text/javascript">
         $(function($) {
             $('#livefyre-brand').click(function(e) {
@@ -181,8 +169,8 @@
             });
         });
     </script>
-    <script src="lib/bootstrap.css/js/bootstrap.min.js"></script>
-    <script data-main="src/Home" src="lib/requirejs/require.js"></script>
+    <script src="/lib/bootstrap.css/js/bootstrap.min.js"></script>
+    <script data-main="/src/news/Mashable" src="/lib/requirejs/require.js"></script>
     <!-- Google Analytics -->
     <script type="text/javascript">
       var _gaq = _gaq || [];
