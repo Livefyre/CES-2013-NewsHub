@@ -36,7 +36,7 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate, SlideshowView, Hero
 	        viewOptions: {
 	        	isotope: {
 	        		masonry: {
-	        			columnWidth: 200
+	        			columnWidth: 213
 	        		}
 	        	}
 	        },
