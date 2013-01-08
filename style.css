@@ -1,3 +1,5 @@
+/** Variables **/
+/** Colors **/
 .blue {
   background-color: #6689b5;
 }
@@ -255,6 +257,9 @@ body {
 #main-nav-content .active {
   display: block;
 }
+/*
+ * Home page
+ */
 #day-nav {
   display: none;
   letter-spacing: 1px;
@@ -268,6 +273,9 @@ body {
   font-weight: 550;
   vertical-align: sub;
 }
+/*
+ * Deck Layout
+ */
 .deck {
   overflow-x: auto;
   overflow-y: hidden;
@@ -344,8 +352,17 @@ body {
   max-height: 20px;
   transition: all 1.5s;
   -moz-transition: all 1.5s;
+  /* Firefox 4 */
+
   -webkit-transition: all 1.5s;
+  /* Safari and Chrome */
+
   -o-transition: all 1.5s;
+  /* Opera */
+
+}
+.brand-env .hub-item > article.brand-instagram .hub-heading .hub-timestamp {
+  color: white;
 }
 .brand-env .hub-item > article.brand-instagram:hover .hub-heading {
   max-height: 300px;
@@ -389,10 +406,50 @@ body {
 .news .brand-env .hub-item > article.brand-rss {
   background: #34727f;
 }
-.media .brand-env .hub-item > article.brand-instagram .hub-heading {
+.media .hub-item:nth-child(4n) {
+  width: 400px;
+}
+.media .hub-item {
+  margin: 2px;
+}
+.media .hub-item .hub-heading {
   background: rgba(122, 195, 199, 0.9);
 }
-.media .brand-env .hub-item > article.brand-rss {
+.media .hub-item .hub-heading .hub-timestamp {
+  color: white;
+}
+.media .hub-item > article.brand-instagram {
+  padding: 0;
+  position: relative;
+}
+.media .hub-item > article.brand-instagram .hub-heading {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  height: auto;
+  color: white;
+  opacity: 0;
+  overflow: hidden;
+  line-height: 22px;
+  max-height: 20px;
+  transition: all .5s;
+  -moz-transition: all .5s;
+  /* Firefox 4 */
+
+  -webkit-transition: all .5s;
+  /* Safari and Chrome */
+
+  -o-transition: all .5s;
+  /* Opera */
+
+}
+.media .hub-item > article.brand-instagram:hover .hub-heading {
+  max-height: 300px;
+  opacity: 1;
+}
+.media .hub-item > article.brand-rss {
   background: #7ac3c7;
 }
 .products .brand-env .hub-item > article.brand-instagram .hub-heading {
@@ -401,9 +458,15 @@ body {
 .products .brand-env .hub-item > article.brand-rss {
   background: #e0e06e;
 }
+/*
+ * Home
+ */
 .home #main-nav-content {
   display: none;
 }
+/*
+ * Exhibitors
+ */
 .exhibitors #main-nav-content {
   background: #6689b5;
 }
@@ -411,6 +474,9 @@ body {
 .exhibitors #main-nav-content a:hover {
   background: #5d7aa2;
 }
+/*
+ * News
+ */
 .news #main-nav-content {
   background: #34727f;
 }
@@ -418,44 +484,38 @@ body {
 .news #main-nav-content a:hover {
   background: #3f838e;
 }
-article.brand-instagram {
-  padding: 0;
-  position: relative;
-}
-article.brand-instagram .hub-heading {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 5px;
-  height: 30px;
-  color: white;
-}
+/*
+ * Media Wall
+ */
 body.media {
   background: #222;
 }
 .media #main-nav-content {
   background: #7ac3c7;
+  display: none;
 }
 .media #main-nav-content .nav .active a,
 .media #main-nav-content a:hover {
   background: #68afbb;
 }
-.products #main-nav-content {
-  background: #e0e06e;
+body.media {
+  background: #222;
 }
-.products #main-nav-content .nav .active a,
-.products #main-nav-content a:hover {
-  background: #c5ca71;
-}
-.wall article.brand-instagram .hub-heading {
-  display: none;
+.wall {
+  width: 90%;
+  margin: 0 auto;
+  /**** Isotope CSS3 transitions ****/
+
+  /**** disabling Isotope CSS3 transitions ****/
+
+  /* End: Recommended Isotope styles */
+
 }
 .wall .hub-item {
   background-color: white;
   border-bottom: 0;
   clear: both;
+  margin: 2px;
   width: 200px;
 }
 .wall .isotope-item {
@@ -496,6 +556,19 @@ body.media {
   -o-transition-duration: 0s;
   transition-duration: 0s;
 }
+/*
+ * Products
+ */
+.products #main-nav-content {
+  background: #e0e06e;
+}
+.products #main-nav-content .nav .active a,
+.products #main-nav-content a:hover {
+  background: #c5ca71;
+}
+/*
+ * Animations
+ */
 @-moz-keyframes fadeIn {
   from {
     opacity: 0;
@@ -520,6 +593,9 @@ body.media {
     opacity: 1;
   }
 }
+/*
+ * Streamhub header
+ */
 #streamhub {
   display: none;
   background: #0c0a18 url('media/streamhub-background.jpg') no-repeat center -170px;
@@ -578,6 +654,9 @@ body.media {
 #streamhub #close:hover {
   cursor: pointer;
 }
+/*
+ * Media queries
+ */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .ces-brand {
     height: 75px;
