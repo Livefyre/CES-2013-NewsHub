@@ -10,7 +10,16 @@ function (fyre, Hub, IsotopeView, $, Mustache, InstagramHtml) {
 		app: 'sdk'
 	}], loadHomeApps);
 	function loadHomeApps (sdk) {
-		var wall = new Hub({
+		var main = new Hub({
+			sdk: sdk,
+	        collection: {
+	            siteId: "303818",
+	            articleId: "77"
+	        },
+	        view: IsotopeView,
+	        el: document.getElementById("home-main-app")
+		})
+		var tweets = new Hub({
 			sdk: sdk,
 	        collection: {
 	            siteId: "303818",
