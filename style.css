@@ -83,9 +83,9 @@ body{min-width:960px;font-family:proxima-nova-condensed,"Proxima Nova Condensed"
 #hero .hero-content .data{position:absolute;bottom:0;left:0;background-color:rgba(102, 137, 181, 0.92);padding:15px;width:960px;}#hero .hero-content .data .source{font-size:1.5em;}
 #hero .hero-content .data .headline{font-size:2em;font-weight:300;line-height:28px;}
 .hub-SlideshowView .pagination{display:none;}
-#main-section .feed-heading{width:590px;}
-#main-section .hub-item{border-bottom:none;margin-bottom:10px;margin-left:5px;margin-right:5px;}#main-section .hub-item .card{height:180px;width:180px;}
-#main-section .hub-item .card-image{height:410px;width:410px;}
+#main-section .feed-heading{width:615px;}
+#main-section .hub-item{border-bottom:none;margin-bottom:10px;margin-left:5px;margin-right:5px;}#main-section .hub-item .card{height:188px;width:188px;}
+#main-section .hub-item .card-image{display:none;}
 .news #main-section .hub-item{margin-left:0;}
 #day-nav{display:none;letter-spacing:1px;text-transform:uppercase;}#day-nav li{margin:0 10px;}
 .day-num{font-size:22px;font-weight:550;vertical-align:sub;}
