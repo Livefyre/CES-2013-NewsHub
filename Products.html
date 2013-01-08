@@ -254,13 +254,28 @@
     <script src="lib/jquery/jquery.js"></script>
     <script type="text/javascript">
         $(function($) {
+            var $streamhub_header = $('#streamhub');
+            var streamhub_header_height = 135;
+            var $deck = $('.deck');
+            var streamhub_showing = false;
             $('#livefyre-brand').click(function(e) {
                 e.preventDefault();
-                $('#streamhub').slideToggle();
+                $streamhub_header.slideToggle();
+                if (!streamhub_showing) {
+                    $deck.animate({top: parseInt($deck.css('top')) +
+                        streamhub_header_height});
+                } else {
+                    $deck.animate({top: parseInt($deck.css('top')) -
+                        streamhub_header_height});
+                }
+                streamhub_showing = !streamhub_showing;
             });
             $('#close').click(function(e) {
                 e.preventDefault();
                 $('#streamhub').slideUp();
+                $deck.animate({top: parseInt($deck.css('top')) -
+                    $streamhub_header.height()});
+                streamhub_showing = false;
             });
 
             <!-- Nav scroll -->
