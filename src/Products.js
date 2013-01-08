@@ -109,7 +109,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml) {
         }));
         var col_width = 307;
         var viewport_width = $(window).width();
-        $('.deck-columns').css('width', ((apps.length-1) * col_width) + viewport_width - 75);
+        $('.deck-columns').css('width', ((apps.length) * col_width) + viewport_width - 75);
 	}
 });
 
