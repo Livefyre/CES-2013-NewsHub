@@ -58,7 +58,8 @@ body {
   font-weight: 400px;
 }
 #footer {
-  height: 200px;
+  background-color: #151D29;
+  height: 50px;
   margin-top: 20px;
 }
 #header {
@@ -211,6 +212,7 @@ body {
 .feed-heading {
   color: white;
   height: 26px;
+  margin-bottom: 5px;
   padding: 3px 10px;
 }
 .feed-heading h2 {
@@ -272,9 +274,6 @@ body {
   font-size: 22px;
   font-weight: 550;
   vertical-align: sub;
-}
-#tweets-section .feed-heading {
-  margin-bottom: 5px;
 }
 /*
  * Deck Layout
@@ -486,6 +485,9 @@ body {
 .news #main-nav-content .nav .active a,
 .news #main-nav-content a:hover {
   background: #3f838e;
+}
+.news-app .hub-item:first-child {
+  width: 620px;
 }
 /*
  * Media Wall
