@@ -10,6 +10,7 @@ Mustache, $, ContentHtml, ImageHtml) {
 	var Card = function (data) {
 		if (data.attachments && data.attachments.length>0) {
 			// Use Image template
+			console.log("There are attachments in this card. You better see an image");
 			return ImageTemplate(data);
 		} else {
 			// Use colorful card

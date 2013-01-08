@@ -409,6 +409,9 @@ body {
   -moz-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
 }
+.feed .hub-item .hub-timestamp {
+  color: #222222;
+}
 .feed .hub-item > article {
   padding: 0.5em;
 }
