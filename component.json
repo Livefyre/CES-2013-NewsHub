@@ -11,6 +11,7 @@
     "requirejs-text": "*",
     "bootstrap.css": "2.1.1",
     "streamhub-backbone": "latest",
+    "streamhub-isotope": "latest",
     "backbone": "~0.9.9",
     "underscore": "~1.4.3",
     "mustache": "~0.7.2"
