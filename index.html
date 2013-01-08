@@ -9,12 +9,17 @@
         <link href="lib/streamhub-backbone/main.css" rel="stylesheet" media="screen">
 </head>
 <body class="news">
+    <div class="streamhub-banner-bar">
+        <a href="http://livefyre.com/streamhub" target="_blank">
+        Real-time news and social curation, get your own NewsHub at Livefyre.com
+        </a>
+    </div>
     <div id="streamhub" class="clearfix">
         <div id="streamhub-wrapper" class="container">
             <a id="logo" href="http://livefyre.com/streamhub" target="_blank"></a>
             <div id="copy">
                 <div id="powered-by"><em>Powered by</em> <a href="http://livefyre.com/streamhub" target="_blank">Livefyre StreamHub</a></div>
-                <div id="description">Real-time news and social curation, get your own NewsHub @ Livefyre.com</div>
+                <div id="description">Your real-time source for the hottest CES news from Vegas</div>
                 <div id="close">Close <span>X</span></div>
             </div>
         </div>
@@ -169,13 +174,26 @@
     <script src="lib/jquery/jquery.js"></script>
     <script type="text/javascript">
         $(function($) {
+            var streamhub_showing = true;
+            var banner_showing = false;
+            var showBanner = function() {
+                if (!banner_showing) {
+                    $('.streamhub-banner-bar').slideDown();
+                    banner_showing = true;
+                }
+            }
             $('#livefyre-brand').click(function(e) {
                 e.preventDefault();
                 $('#streamhub').slideToggle();
+                showBanner();
+                streamhub_showing = !streamhub_showing;
+                
             });
             $('#close').click(function(e) {
                 e.preventDefault();
                 $('#streamhub').slideUp();
+                showBanner();
+                streamhub_showing = false;
             });
         });
     </script>
