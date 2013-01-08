@@ -361,6 +361,9 @@ body {
   /* Opera */
 
 }
+.brand-env .hub-item > article.brand-instagram .hub-heading .hub-timestamp {
+  color: white;
+}
 .brand-env .hub-item > article.brand-instagram:hover .hub-heading {
   max-height: 300px;
 }
