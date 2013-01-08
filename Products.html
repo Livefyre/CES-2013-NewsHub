@@ -6,7 +6,17 @@
         <link href="lib/bootstrap.css/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="style.css" rel="stylesheet" media="screen">
     </head>
-<body>
+<body class="products">
+    <div id="streamhub" class="clearfix">
+        <div id="streamhub-wrapper" class="container">
+            <a id="logo" href="http://livefyre.com/streamhub" target="_blank"></a>
+            <div id="copy">
+                <div id="powered-by"><em>Powered by</em> <a href="http://livefyre.com/streamhub" target="_blank">Livefyre StreamHub</a></div>
+                <div id="description">Your real-time source for the hottest CES news from Vegas</div>
+                <div id="close">Close <span>X</span></div>
+            </div>
+        </div>
+    </div>
     <div id="header">
         <h1 class="brand clearfix">
             <div id="brand-spacer"> 
@@ -52,10 +62,9 @@
                             </li>
                             <li class="social-button">
                                 <a href="https://twitter.com/share"
-                                class="twitter-share-button"
-                                data-url="http://ces.livefyre.com"
-                                data-via="livefyre"
-                                data-hashtags="ces2013"></a>
+                                class="twitter-share-button" data-text="Follow the hot products and trends at CES with #Newshub"
+                                data-via="Livefyre"
+                                data-hashtags="2013CES"></a>
                                 <script>!function(d,s,id){var
                                     js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                             </li>
@@ -76,14 +85,19 @@
                 </div>
             </div>
             <div id="main-nav-content">
-                <div class="tab-content container">
+                <div class="tab-content">
                     <div class="tab-pane" id="tab1">
                         <ul id="exhibitors-nav" class="nav nav-pills">
-                            <li><a href="#">Apple</a></li>
-                            <li><a href="#">Microsoft</a></li>
-                            <li><a href="#">Nvidia</a></li>
                             <li><a href="#">Samsung</a></li>
-                            <li><a href="#">Sony</a></li>
+                            <li><a href="#">Google</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                            <li><a href="#">Canonical</a></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Sharp</a></li>
+                            <li><a href="#">Panasonic</a></li>
+                            <li><a href="#">LG</a></li>
+                            <li><a href="#">Vizio</a></li>
                         </ul>
                     </div>
                     <div class="tab-pane" id="tab2">
@@ -100,7 +114,7 @@
                             <li><a href="#">Media 3</a></li>
                         </ul>
                     </div>
-                    <div class="tab-pane" id="tab4">
+                    <div class="tab-pane active" id="tab4">
                         <ul id="products-nav" class="nav nav-pills">
                             <li><a href="#">Product 1</a></li>
                             <li><a href="#">Product 2</a></li>
@@ -122,6 +136,18 @@
     <script type="text/javascript" src="//use.typekit.net/gvq8fcu.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script src="lib/jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $(function($) {
+            $('#livefyre-brand').click(function(e) {
+                e.preventDefault();
+                $('#streamhub').slideToggle();
+            });
+            $('#close').click(function(e) {
+                e.preventDefault();
+                $('#streamhub').slideUp();
+            });
+        });
+    </script>
     <script src="lib/bootstrap.css/js/bootstrap.min.js"></script>
     <script data-main="src/Products" src="lib/requirejs/require.js"></script>
     <!-- Google Analytics -->
