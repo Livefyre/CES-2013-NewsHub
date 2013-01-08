@@ -403,6 +403,9 @@ body {
 .news .brand-env .hub-item > article.brand-rss {
   background: #34727f;
 }
+.media .hub-item:nth-child(4n) {
+  width: 400px;
+}
 .media .hub-item {
   margin: 2px;
 }
