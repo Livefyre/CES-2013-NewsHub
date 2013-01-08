@@ -39,6 +39,15 @@ body{min-width:960px;font-family:proxima-nova-condensed,"Proxima Nova Condensed"
 .card-content .hub-byline .hub-author{text-transform:uppercase;}
 .card-content .hub-byline .hub-timestamp{color:white;}
 .card-image{padding:0;position:relative;box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);}.card-image .hub-heading{position:absolute;bottom:0;left:0;right:0;background:rgba(0, 0, 0, 0.6);padding:5px;height:auto;color:white;overflow:hidden;line-height:22px;max-height:100%;transition:all 1.5s;-moz-transition:all 1.5s;-webkit-transition:all 1.5s;-o-transition:all 1.5s;}.card-image .hub-heading .hub-timestamp{color:white;}
+.hub-actions{overflow:hidden;margin-top:10px;}
+.twt-actions{display:block;float:right;list-style:none;margin-bottom:0;font-weight:200;}.twt-actions li{float:left;}.twt-actions li a{text-decoration:none;float:left;}.twt-actions li a:hover{text-decoration:underline;}
+.twt-actions li a i{display:block;background:transparent url('media/sprite.png') repeat-x 0 0;margin:1px 5px 0 5px;float:left;}
+.twt-actions .reply-action{width:65px;}.twt-actions .reply-action i{width:18px;height:13px;background-position:0 -30px;margin-top:3px;}
+.twt-actions .reply-action:hover i{background-position:-23px -30px;}
+.twt-actions .retweet-action{width:80px;}.twt-actions .retweet-action i{width:22px;height:12px;background-position:0 -48px;margin-top:3px;}
+.twt-actions .retweet-action:hover i{background-position:-27px -48px;}
+.twt-actions .favorite-action{width:75px;}.twt-actions .favorite-action i{width:16px;height:15px;background-position:0 -66px;}
+.twt-actions .favorite-action:hover i{background-position:-21px -66px;}
 #main-section .hub-item{border-bottom:none;margin-bottom:10px;margin-left:5px;margin-right:5px;}#main-section .hub-item .card{height:180px;width:180px;}
 #main-section .hub-item .card-image{height:410px;width:410px;}
 #day-nav{display:none;letter-spacing:1px;text-transform:uppercase;}#day-nav li{margin:0 10px;}

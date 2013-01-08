@@ -360,6 +360,72 @@ body {
         .hub-timestamp { color: white; }
     }
 }
+.hub-actions {
+    overflow: hidden;
+    margin-top: 10px;
+}
+.twt-actions {
+    display: block;
+    float: right;
+    list-style: none;
+    margin-bottom: 0;
+    font-weight: 200;
+
+    li {
+        float: left;
+
+        a {
+            text-decoration: none;
+            float: left;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            i {
+                display: block;
+                background: transparent url('media/sprite.png') repeat-x 0 0;
+                margin: 1px 5px 0 5px;
+                float: left;
+            }
+        }
+    }
+    .reply-action {
+        width: 65px;
+        i {
+            width: 18px;
+            height: 13px;
+            background-position: 0 -30px;
+            margin-top: 3px;
+        }
+        &:hover i {
+            background-position: -23px -30px;
+        }
+    }
+    .retweet-action {
+        width: 80px;
+        i {
+            width: 22px;
+            height: 12px;
+            background-position: 0 -48px;
+            margin-top: 3px;
+        }
+        &:hover i {
+            background-position: -27px -48px;
+        }
+    }
+    .favorite-action {
+        width: 75px;
+        i {
+            width: 16px;
+            height: 15px;
+            background-position: 0 -66px;
+        }
+        &:hover i {
+            background-position: -21px -66px
+        }
+    }
+}
 
 /*
  * News pages
