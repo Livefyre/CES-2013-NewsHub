@@ -324,6 +324,9 @@ body {
 /*
  * News pages
  */
+.hub-SlideshowView .pagination {
+  display: none;
+}
 #main-section .hub-item {
   border-bottom: none;
   margin-bottom: 10px;

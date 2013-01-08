@@ -3,13 +3,22 @@ require(['../config'],
 function () {
 
 require(['fyret402', 'streamhub-backbone', 'streamhub-isotope',
-	     'jquery', 'mustache', '../src/templates/Card'],
-function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate) {
+	     'jquery', 'mustache', '../src/templates/Card', 'CES/views/SlideshowView'],
+function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate, SlideshowView) {
 	fyre.conv.load({}, [{
 		network: 'livefyre.com',
 		app: 'sdk'
 	}], loadHomeApps);
 	function loadHomeApps (sdk) {
+		var hero = new Hub({
+			sdk: sdk,
+			collection: {
+				siteId: "303818",
+				articleId: "29"
+			},
+			el: document.getElementById('hero'),
+			view: SlideshowView
+		});
 		var main = new Hub({
 			sdk: sdk,
 	        collection: {
