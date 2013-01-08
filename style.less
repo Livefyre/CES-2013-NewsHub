@@ -459,87 +459,6 @@ body {
     }
 }
 
-/*
- * News pages
- */
- #hero {
-    font-family: @proxima-nova-condensed;
-    font-weight: 300px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    width: 960px;
-    cursor: pointer;
-
-    .hero-content {
-        color: white;
-        min-height: 25px;
-        max-height: 300px;
-        width: 960px;
-        overflow: hidden;
-        position: relative;
-
-        a.hero-content-link {
-            width: 960px; 
-            color: #FFF;
-        }
-        a.hero-content-link:hover .headline { text-decoration: underline; }
-        .data {
-            .source { font-size: 1.5em;}
-            .headline { font-size: 2em; font-weight: 300; line-height: 28px; }
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background-color: rgba(102,137,181,0.92);
-            padding: 15px;
-            width: 960px;
-        }
-    }
-}
-.hub-SlideshowView {
-    .pagination { display: none; }
-}
-#main-section .hub-item {
-    border-bottom: none;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    .card {
-        height: 180px;
-        width: 180px;
-    }
-    .card-image {
-        height: 410px;
-        width: 410px;
-    }
-}
-
-#home-main-app {
-    .hub-item {
-        margin-left: 0;
-    }
-}
-
-#tweets-section {
-    .feed-heading {
-    }
-    .feed {
-    }
-}
-
-#day-nav {
-    display: none;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-
-    li {
-        margin: 0 10px;
-    }
-}
-.day-num {
-    font-size: 22px;
-    font-weight: 550;
-    vertical-align: sub;
-}
 
 /*
  * Deck Layout
@@ -763,12 +682,21 @@ body {
 /*
  * News
  */
-.news #main-nav-content {
-    background: @blue;
+.news {
+    .streamhub-banner-bar {
+        display: none;
+    }
+    #streamhub {
+        display: block;
+    }
 
-    .nav .active a,
-    a:hover {
-        background: rgba(93,122,162,1);
+    #main-nav-content {
+        background: @blue;
+
+        .nav .active a,
+        a:hover {
+            background: rgba(93,122,162,1);
+        }
     }
 }
 .news-app {
@@ -776,6 +704,84 @@ body {
         width: 620px !important;
         height: 200px !important;
     }*/
+}
+#hero {
+    font-family: @proxima-nova-condensed;
+    font-weight: 300px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 960px;
+    cursor: pointer;
+
+    .hero-content {
+        color: white;
+        min-height: 25px;
+        max-height: 300px;
+        width: 960px;
+        overflow: hidden;
+        position: relative;
+
+        a.hero-content-link {
+            width: 960px; 
+            color: #FFF;
+        }
+        a.hero-content-link:hover .headline { text-decoration: underline; }
+        .data {
+            .source { font-size: 1.5em;}
+            .headline { font-size: 2em; font-weight: 300; line-height: 28px; }
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(102,137,181,0.92);
+            padding: 15px;
+            width: 960px;
+        }
+    }
+}
+.hub-SlideshowView {
+    .pagination { display: none; }
+}
+#main-section .hub-item {
+    border-bottom: none;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    .card {
+        height: 180px;
+        width: 180px;
+    }
+    .card-image {
+        height: 410px;
+        width: 410px;
+    }
+}
+
+#home-main-app {
+    .hub-item {
+        margin-left: 0;
+    }
+}
+
+#tweets-section {
+    .feed-heading {
+    }
+    .feed {
+    }
+}
+
+#day-nav {
+    display: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    li {
+        margin: 0 10px;
+    }
+}
+.day-num {
+    font-size: 22px;
+    font-weight: 550;
+    vertical-align: sub;
 }
 
 /*
@@ -898,7 +904,7 @@ body.media {
         display: inline-block;
         width: 292px;
         height: 292px;
-        background: url('media/streamhub-logo.png') no-repeat;
+        background: url('media/streamhub-logo.png') no-repeat -10px center;
         position: relative;
         top: 20px;
     }
@@ -906,8 +912,9 @@ body.media {
     #copy {
         display: inline-block;
         position: relative;
-        top: -40px;
-        margin-left: 40px;
+        top: -160px;
+        margin-left: 10px;
+        width: 470px;
     }
 
     #powered-by {
@@ -917,7 +924,6 @@ body.media {
        font-size: 18px;
        border-bottom: 1px solid white;
        padding-bottom: 10px;
-       width: 680px;
 
         em {
             font-weight: 300;
