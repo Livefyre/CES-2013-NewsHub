@@ -433,25 +433,26 @@ body {
  #hero {
     font-family: @proxima-nova-condensed;
     font-weight: 300px;
+    margin: 0 auto;
     margin-bottom: 10px;
-    margin-left: 10px;
+    width: 960px;
     cursor: pointer;
+
     .hero-content {
         color: white;
         min-height: 25px;
         max-height: 300px;
-        width: 100%;
+        width: 960px;
         overflow: hidden;
         position: relative;
         .data {
             .source { font-size: 1.5em;}
-            .headline { font-size: 2em; font-weight: 600; }
+            .headline { font-size: 2em; font-weight: 300; line-height: 28px; }
             position: absolute;
             bottom: 0;
             left: 0;
             background-color: rgba(102,137,181,0.8);
             padding: 15px;
-            width: 100%;
         }
     }
 }
@@ -470,6 +471,12 @@ body {
     .card-image {
         height: 410px;
         width: 410px;
+    }
+}
+
+#home-main-app {
+    .hub-item {
+        margin-left: 0;
     }
 }
 
@@ -701,10 +708,6 @@ body {
         }
     }
 }
-
-/*
- * Home Page
- */
 
 /*
  * Exhibitors
