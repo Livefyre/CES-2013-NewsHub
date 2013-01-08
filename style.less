@@ -463,10 +463,38 @@ body {
     }
 }
 .media {
-    .brand-env .hub-item {
+    .hub-item {
+        margin: 2px;
+
+        .hub-heading {
+            background: @green90;
+        }
+
         & > article.brand-instagram {
+            padding: 0;
+            position: relative;
+
             .hub-heading {
-                background: @green90;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 5px;
+                height: auto;
+                color: white;
+                opacity: 0;
+                overflow: hidden;
+                line-height: 22px;
+                max-height: 20px;
+                transition:all .5s;
+                -moz-transition:all .5s; /* Firefox 4 */
+                -webkit-transition:all .5s; /* Safari and Chrome */
+                -o-transition:all .5s; /* Opera */
+            }
+
+            &:hover .hub-heading {
+                max-height: 300px;
+                opacity: 1;
             }
         }
 
@@ -544,15 +572,11 @@ body.media {
     width: 90%;
     margin: 0 auto;
 
-    article.brand-instagram {
-        .hub-heading {
-            display: none;
-        }
-    }
     .hub-item {
         background-color: white;
         border-bottom: 0;
         clear: both;
+        margin: 2px;
         width: 200px;
     }
     .isotope-item {
