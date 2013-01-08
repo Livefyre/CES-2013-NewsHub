@@ -59,7 +59,7 @@ body{min-width:960px;font-family:proxima-nova,"Proxima Nova","Helvetica Neue",He
 .exhibitors #main-nav-content{background:#6689b5;}.exhibitors #main-nav-content .nav .active a,.exhibitors #main-nav-content a:hover{background:#5d7aa2;}
 .news #main-nav-content{background:#34727f;}.news #main-nav-content .nav .active a,.news #main-nav-content a:hover{background:#3f838e;}
 body.media{background:#222;}
-.media #main-nav-content{background:#7ac3c7;}.media #main-nav-content .nav .active a,.media #main-nav-content a:hover{background:#68afbb;}
+.media #main-nav-content{background:#7ac3c7;display:none;}.media #main-nav-content .nav .active a,.media #main-nav-content a:hover{background:#68afbb;}
 body.media{background:#222;}
 .wall{width:90%;margin:0 auto;}.wall article.brand-instagram .hub-heading{display:none;}
 .wall .hub-item{background-color:white;border-bottom:0;clear:both;width:200px;}
