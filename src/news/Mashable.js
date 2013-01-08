@@ -2,28 +2,32 @@
 require(['../config'],
 function () {
 
-require(['fyret402', 'streamhub-backbone', 'streamhub-isotope',
-	     'jquery', 'mustache', '../src/templates/Card', 'CES/views/SlideshowView'],
-function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate, SlideshowView) {
-	fyre.conv.load({}, [{
-		network: 'livefyre.com',
+require(['fyre', 'streamhub-backbone', 'streamhub-isotope',
+	     'jquery', 'mustache', '../src/templates/Card', 'CES/views/SlideshowView', 'CES/templates/Hero'],
+function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate, SlideshowView, HeroTemplate) {
+	fyre.conv.load({
+		network: 'labs.fyre.co'
+	}, [{
 		app: 'sdk'
 	}], loadHomeApps);
 	function loadHomeApps (sdk) {
 		var hero = new Hub({
 			sdk: sdk,
 			collection: {
-				siteId: "303818",
-				articleId: "29"
+				siteId: "320568",
+				articleId: "home_editorial"
 			},
 			el: document.getElementById('hero'),
-			view: SlideshowView
+			view: SlideshowView,
+			contentViewOptions: {
+				template: HeroTemplate
+			}
 		});
 		var main = new Hub({
 			sdk: sdk,
 	        collection: {
-	            siteId: "303818",
-	            articleId: "51"
+	            siteId: "320568",
+	            articleId: "news_mashable"
 	        },
 	        contentViewOptions: {
 	        	template: CardTemplate
@@ -34,8 +38,8 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate, SlideshowView) {
 		var tweets = new Hub({
 			sdk: sdk,
 	        collection: {
-	            siteId: "303818",
-	            articleId: "42"
+	            siteId: "320568",
+	            articleId: "news_mashable_chatter"
 	        },
 	        el: document.getElementById("mashable-tweets")
 		})

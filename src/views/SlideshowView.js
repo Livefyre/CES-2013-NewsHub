@@ -20,7 +20,7 @@ slides) {
 		initialize: function (opts) {
 			var that = this;
 			this._sourceOpts = opts.sources || {};
-			this._contentViewOpts = opts._contentViewOptions || {};
+			this._contentViewOpts = opts.contentViewOptions || {};
 			if (this.collection) {
 				this.collection.on('add', this._addItem, this);
 			}
@@ -30,7 +30,7 @@ slides) {
 					container: 'slides_container'
 				});
 				// No streaming
-				this.collection.off('add', that._addItem, that);
+				that.collection.off('add', that._addItem, that);
 			}, 2000)
 		},
 		render: function () {
@@ -69,6 +69,7 @@ slides) {
 			}
 			return configuredOpts;
 		}
+
 		var cv = new ContentView(_.extend({
 			model: item,
 			el: newItem

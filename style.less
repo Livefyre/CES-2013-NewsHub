@@ -356,6 +356,24 @@ body {
 /*
  * News pages
  */
+ #hero {
+    margin-left: 0;
+    .hero-content {
+        color: white;
+        max-height: 300px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        .data {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(102,137,181,0.8);
+            padding: 15px;
+            width: 100%;
+        }
+    }
+}
 .hub-SlideshowView {
     .pagination { display: none; }
 }
