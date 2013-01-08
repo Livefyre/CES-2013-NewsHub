@@ -619,15 +619,15 @@ body {
 .exhibitors #main-nav-content a:hover {
   background: #3f838e;
 }
+.home .streamhub-banner-bar {
+  display: none;
+}
+.home #streamhub {
+  display: block;
+}
 /*
  * News
  */
-.news .streamhub-banner-bar {
-  display: none;
-}
-.news #streamhub {
-  display: block;
-}
 .news #main-nav-content {
   background: #6689b5;
 }
@@ -684,6 +684,9 @@ body {
 .hub-SlideshowView .pagination {
   display: none;
 }
+#main-section .feed-heading {
+  width: 590px;
+}
 #main-section .hub-item {
   border-bottom: none;
   margin-bottom: 10px;
@@ -691,7 +694,6 @@ body {
   margin-right: 5px;
 }
 #main-section .hub-item .card {
-  float: left;
   height: 188px;
   width: 188px;
 }
