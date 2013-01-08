@@ -9,12 +9,12 @@ Mustache, $, HeroHtml) {
 	
 	var Hero = function (data) {
 		var bodyHtml = data.bodyHtml,
-			$bodyHtml = $('<div>'+bodyHtml+'</div>')
-		var url = $bodyHtml.find('p:first-child').text(),
-			image = $bodyHtml.find('p:nth-child(2) a').attr('href'),
-			source = $bodyHtml.find('p:nth-child(3)').text()
-			headline = $bodyHtml.find('p:nth-child(4)').text(),
-			snippet = $bodyHtml.find('p:nth-child(5)').text()
+			$bodyHtml = $('<div>'+bodyHtml+'</div>');
+		var url = $bodyHtml.find('p:first-child').text().trim(),
+			image = $bodyHtml.find('p:nth-child(2) a').attr('href').trim(),
+			source = $bodyHtml.find('p:nth-child(3)').text().trim(),
+			headline = $bodyHtml.find('p:nth-child(4)').text().trim(),
+			snippet = $bodyHtml.find('p:nth-child(5)').text().trim();
 			hc = {
 				url: url,
 				image: image,

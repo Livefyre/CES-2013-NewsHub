@@ -12,9 +12,5 @@ require(['jquery', 'underscore'], function ($, _) {
 			if (link.text.substring(0,1)=='#') return false
 			return true;
 		}
-	})
-	$('#hero').on('click', '.hub-item', function (e) {
-		var url = $(this).find('.hero-content').attr('data-url');
-		window.open(url, '_blank');
 	});
 })
