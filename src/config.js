@@ -1,7 +1,7 @@
 // This will run on every page
 console.log("Configuring requireJS");
 require.config({
-  baseUrl: "lib",
+  baseUrl: "/lib",
   paths: {
     "CES": "../src",
     jquery: 'jquery/jquery',

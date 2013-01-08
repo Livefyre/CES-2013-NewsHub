@@ -1,17 +1,23 @@
 define([
-'mustache', 'jquery', 'text!CES/templates/Home/Content.html', 'text!CES/templates/Home/Instagram.html'], function (
-Mustache, $, ContentHtml, InstagramHtml) {
+'mustache', 'jquery', 'text!CES/templates/Home/Content.html', 'text!CES/templates/Home/Image.html'], function (
+Mustache, $, ContentHtml, ImageHtml) {
 	var	ContentTemplate = Mustache.compile(ContentHtml),
-		InstagramTemplate = Mustache.compile(InstagramHtml);
+		ImageTemplate = Mustache.compile(ImageHtml);
 
 	var classNames = ['blue', 'turquoise', 'green', 'yellow'],
 		colorIndex = 0;
 	
 	var Card = function (data) {
-		var $el = $(ContentTemplate(data));
-		// Rainbow colors
-		$el.addClass(classNames[colorIndex++%classNames.length]);
-		return outerHtml($el);
+		if (data.attachments && data.attachments.length>0) {
+			// Use Image template
+			return ImageTemplate(data);
+		} else {
+			// Use colorful card
+			var $el = $(ContentTemplate(data));
+			// Rainbow colors
+			$el.addClass(classNames[colorIndex++%classNames.length]);
+			return outerHtml($el);
+		}
 	}
 
 	function outerHtml ($el) {
