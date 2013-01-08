@@ -698,8 +698,9 @@ body {
   width: 188px;
 }
 #main-section .hub-item .card-image {
-  height: 410px;
-  width: 410px;
+  /* TODO: Don't hide these */
+
+  display: none;
 }
 .news #main-section .hub-item {
   margin-left: 0;
