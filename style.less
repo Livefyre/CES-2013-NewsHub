@@ -12,6 +12,8 @@
 @ces-brand-height: 100px;
 @proxima-nova-condensed: proxima-nova-condensed,"Proxima Nova Condensed",proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 @proxima-nova: proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+@myriad-pro-bold: myriad-pro, "Myriad Pro", Myriad, proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+
 
 /** Colors **/
 .blue { background-color: @blue; }
@@ -271,6 +273,7 @@ body {
     text-align: center;
     font-size: 88px;
     font-weight: 700;
+    font-family: @myriad-pro-bold;
 }
 
 #main-nav-content {
@@ -322,6 +325,8 @@ body {
     font-weight: bold;
     overflow: auto;
     padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+
     .hub-byline {
         .hub-avatar { float: none; }
         .hub-avatar img { height: 1em; }
@@ -333,6 +338,7 @@ body {
 .card-image{
     padding: 0;
     position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 
     .hub-heading {
         position: absolute;
