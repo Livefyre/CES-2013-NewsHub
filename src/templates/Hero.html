@@ -1,10 +1,12 @@
 <article class="hero-content" data-hub-content-id="{{ id }}" data-url="{{ heroContext.url }}">
-	<div class="image">
-		<img src="{{ heroContext.image }}" />
-	</div>
-	<div class="data blue">
-		<p class="source">{{ heroContext.source }}</p>
-		<p class="headline">{{ heroContext.headline }}</p>
-		<p class="snippet">{{ heroContext.snippet }}</p>
-	</div>
+    <a class="hero-content-link" href="{{ heroContext.url }}" target="_blank">
+        <div class="image">
+            <img src="{{ heroContext.image }}" />
+        </div>
+        <div class="data blue">
+            <p class="source">{{ heroContext.source }}</p>
+            <p class="headline">{{ heroContext.headline }}</p>
+            <p class="snippet">{{ heroContext.snippet }}</p>
+        </div>
+    </a>
 </article>
