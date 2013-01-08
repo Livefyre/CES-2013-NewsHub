@@ -10,7 +10,8 @@ require.config({
     underscore: 'underscore/underscore',
     mustache: 'mustache/mustache',
     isotope: 'isotope/jquery.isotope',
-    fyre: 'http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre'
+    fyre: 'http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre',
+    fyret402: 'http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre'
   },
   packages: [{
     name: 'streamhub-backbone',
@@ -31,6 +32,9 @@ require.config({
             deps: ['jquery']
     },
     fyre: {
+        exports: 'fyre'
+    },
+    fyret402: {
         exports: 'fyre'
     }
   }

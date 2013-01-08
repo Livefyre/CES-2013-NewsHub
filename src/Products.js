@@ -1,7 +1,7 @@
 // This will run on the Products page
 require(['./config'], function () {
 
-require(['fyre', 'streamhub-backbone', 'jquery', 'mustache', 'text!../src/templates/Instagram.html'],
+require(['fyret402', 'streamhub-backbone', 'jquery', 'mustache', 'text!../src/templates/Instagram.html'],
 function (fyre, Hub, $, Mustache, InstagramHtml) {
     var apps = [];
 	fyre.conv.load({}, [{

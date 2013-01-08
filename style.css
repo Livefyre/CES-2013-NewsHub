@@ -208,12 +208,12 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-.brand .heading {
+.feed-heading {
   color: white;
   height: 26px;
   padding: 3px 10px;
 }
-.brand .heading h2 {
+.feed-heading h2 {
   font-size: 1em;
   font-weight: normal;
   line-height: 2em;
@@ -273,6 +273,9 @@ body {
   font-weight: 550;
   vertical-align: sub;
 }
+#tweets-section .feed-heading {
+  margin-bottom: 5px;
+}
 /*
  * Deck Layout
  */
@@ -310,11 +313,11 @@ body {
   min-height: 200px;
   -webkit-overflow-scrolling: touch;
 }
-.brand-env {
+.feed {
   vertical-align: top;
   border-top: 1px solid #b6c4cb;
 }
-.brand-env .hub-item {
+.feed .hub-item {
   background-color: #f2f6fc ;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f6fc), to(#dce5ea));
   background-image: -webkit-linear-gradient(top, #f2f6fc, #dce5ea);
@@ -331,14 +334,14 @@ body {
   -moz-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
 }
-.brand-env .hub-item > article {
+.feed .hub-item > article {
   padding: 0.5em;
 }
-.brand-env .hub-item > article.brand-instagram {
+.feed .hub-item > article.brand-instagram {
   padding: 0;
   position: relative;
 }
-.brand-env .hub-item > article.brand-instagram .hub-heading {
+.feed .hub-item > article.brand-instagram .hub-heading {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -361,13 +364,13 @@ body {
   /* Opera */
 
 }
-.brand-env .hub-item > article.brand-instagram .hub-heading .hub-timestamp {
+.feed .hub-item > article.brand-instagram .hub-heading .hub-timestamp {
   color: white;
 }
-.brand-env .hub-item > article.brand-instagram:hover .hub-heading {
+.feed .hub-item > article.brand-instagram:hover .hub-heading {
   max-height: 300px;
 }
-.brand-env .hub-item > article.brand-rss {
+.feed .hub-item > article.brand-rss {
   background: #6689b5;
   color: white;
   min-height: 150px;
@@ -375,35 +378,35 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.brand-env .hub-item > article.brand-rss .hub-author {
+.feed .hub-item > article.brand-rss .hub-author {
   float: left;
   text-transform: uppercase;
   font-weight: 200;
   font-size: 11px;
 }
-.brand-env .hub-item > article.brand-rss .hub-timestamp {
+.feed .hub-item > article.brand-rss .hub-timestamp {
   float: right;
 }
-.brand-env .hub-item > article.brand-rss .hub-body-html {
+.feed .hub-item > article.brand-rss .hub-body-html {
   padding-bottom: 10px;
   font-size: 20px;
   line-height: 22px;
   clear: both;
 }
-.brand-env .hub-item .hub-avatar img {
+.feed .hub-item .hub-avatar img {
   width: 48px;
   height: 48px;
 }
-.exhibitors .brand-env .hub-item > article.brand-instagram .hub-heading {
+.exhibitors .feed .hub-item > article.brand-instagram .hub-heading {
   background: rgba(102, 137, 181, 0.9);
 }
-.exhibitors .brand-env .hub-item > article.brand-rss {
+.exhibitors .feed .hub-item > article.brand-rss {
   background: #6689b5;
 }
-.news .brand-env .hub-item > article.brand-instagram .hub-heading {
+.news .feed .hub-item > article.brand-instagram .hub-heading {
   background: rgba(52, 114, 127, 0.9);
 }
-.news .brand-env .hub-item > article.brand-rss {
+.news .feed .hub-item > article.brand-rss {
   background: #34727f;
 }
 .media .hub-item:nth-child(4n) {
@@ -452,10 +455,10 @@ body {
 .media .hub-item > article.brand-rss {
   background: #7ac3c7;
 }
-.products .brand-env .hub-item > article.brand-instagram .hub-heading {
+.products .feed .hub-item > article.brand-instagram .hub-heading {
   background: rgba(224, 224, 110, 0.9);
 }
-.products .brand-env .hub-item > article.brand-rss {
+.products .feed .hub-item > article.brand-rss {
   background: #e0e06e;
 }
 /*

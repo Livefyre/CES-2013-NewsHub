@@ -1,7 +1,7 @@
 // This will run on the Media page
 require(['./config'], function () {
 
-require(['fyre', 'streamhub-backbone', 'streamhub-isotope',
+require(['fyret402', 'streamhub-backbone', 'streamhub-isotope',
 	     'jquery', 'mustache', 'text!../src/templates/Instagram.html'],
 function (fyre, Hub, IsotopeView, $, Mustache, InstagramHtml) {
 	fyre.conv.load({}, [{

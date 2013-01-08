@@ -241,7 +241,8 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
-.brand .heading {
+
+.feed-heading {
     color: white;
     height: 26px;
     padding: 3px 10px;
@@ -315,6 +316,13 @@ body {
     font-weight: 550;
     vertical-align: sub;
 }
+#tweets-section {
+    .feed-heading {
+        margin-bottom: 5px;
+    }
+    .feed {
+    }
+}
 
 /*
  * Deck Layout
@@ -353,12 +361,12 @@ body {
     min-height: 200px;
     -webkit-overflow-scrolling: touch;
 }
-.brand-env {
+.feed {
 	vertical-align: top;
     border-top: 1px solid rgb(182,196,203);
 }
 
-.brand-env .hub-item {
+.feed .hub-item {
 	background-color: #f2f6fc ;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(242, 246, 252)),to(rgb(220, 229, 234)));
 	background-image: -webkit-linear-gradient(top, rgb(242, 246, 252), rgb(220, 229, 234));
@@ -439,7 +447,7 @@ body {
 }
 
 .exhibitors {
-    .brand-env .hub-item {
+    .feed .hub-item {
         & > article.brand-instagram {
             .hub-heading {
                 background: @blue90;
@@ -452,7 +460,7 @@ body {
     }
 }
 .news {
-    .brand-env .hub-item {
+    .feed .hub-item {
         & > article.brand-instagram {
             .hub-heading {
                 background: @turquoise90;
@@ -510,7 +518,7 @@ body {
     }
 }
 .products {
-    .brand-env .hub-item {
+    .feed .hub-item {
         & > article.brand-instagram {
             .hub-heading {
                 background: @yellow90;
