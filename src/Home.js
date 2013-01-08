@@ -2,11 +2,12 @@
 require(['./config'],
 function () {
 
-require(['fyret402', 'streamhub-backbone', 'streamhub-isotope',
+require(['fyre', 'streamhub-backbone', 'streamhub-isotope',
 	     'jquery', 'mustache', '../src/templates/Card', 'CES/views/SlideshowView', 'CES/templates/Hero', '../src/news/newsCommon'],
 function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate, SlideshowView, HeroTemplate, newsCommon) {
-	fyre.conv.load({}, [{
-		network: 'livefyre.com',
+	fyre.conv.load({
+		network: 'labs.fyre.co'
+	}, [{
 		app: 'sdk'
 	}], loadHomeApps);
 	function loadHomeApps (sdk) {
@@ -25,8 +26,8 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate, SlideshowView, Hero
 		var main = new Hub({
 			sdk: sdk,
 	        collection: {
-	            siteId: "303818",
-	            articleId: "51"
+	            siteId: "320568",
+	            articleId: "home_news"
 	        },
 	        contentViewOptions: {
 	        	template: CardTemplate
@@ -37,8 +38,8 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate, SlideshowView, Hero
 		var tweets = new Hub({
 			sdk: sdk,
 	        collection: {
-	            siteId: "303818",
-	            articleId: "42"
+	            siteId: "320568",
+	            articleId: "journalists"
 	        },
 	        el: document.getElementById("home-tweets")
 		})
