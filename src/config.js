@@ -3,7 +3,7 @@ console.log("Configuring requireJS");
 require.config({
   baseUrl: "lib",
   paths: {
-    "CES": "../src/ces",
+    "CES": "../src",
     jquery: 'jquery/jquery',
     text: 'requirejs-text/text',
     backbone: 'backbone/backbone',
@@ -14,6 +14,9 @@ require.config({
     fyret402: 'http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre'
   },
   packages: [{
+    name: 'CES',
+    location: "../src/"
+  },{
     name: 'streamhub-backbone',
     location: 'streamhub-backbone'
   },{

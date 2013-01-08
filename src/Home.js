@@ -3,9 +3,8 @@ require(['./config'],
 function () {
 
 require(['fyret402', 'streamhub-backbone', 'streamhub-isotope',
-	     'jquery', 'mustache', 'text!../src/templates/Home/Instagram.html',
-	     'text!../src/templates/Home/Content.html'],
-function (fyre, Hub, IsotopeView, $, Mustache, InstagramHtml, HomeContentHtml) {
+	     'jquery', 'mustache', '../src/templates/Card'],
+function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate) {
 	fyre.conv.load({}, [{
 		network: 'livefyre.com',
 		app: 'sdk'
@@ -18,14 +17,7 @@ function (fyre, Hub, IsotopeView, $, Mustache, InstagramHtml, HomeContentHtml) {
 	            articleId: "51"
 	        },
 	        contentViewOptions: {
-	        	template: Mustache.compile(HomeContentHtml)
-	        },
-	        sources: {
-	            rss: {
-	                template: function (d) {
-	                    return Mustache.compile(InstagramHtml)(d);
-	                }
-	            }
+	        	template: CardTemplate
 	        },
 	        view: IsotopeView,
 	        el: document.getElementById("home-main-app")

@@ -302,8 +302,43 @@ body {
 }
 
 /*
+ * Card View (metro style)
+ */
+.card-content {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    overflow: auto;
+    padding: 10px;
+    .hub-byline {
+        .hub-avatar { float: none; }
+        .hub-avatar img { height: 1em; }
+        .hub-author { text-transform: uppercase; }
+        .hub-timestamp { color: white; }
+    }
+    .hub-body {
+        font-size: 1.5em;
+        line-height: 1.3em;
+        a { color: white; }
+    }
+}
+
+/*
  * Home page
  */
+.home #main-nav-content {
+    display: none;
+}
+#main-section .hub-item {
+    border-bottom: none;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    .card-content {
+        height: 180px;
+        width: 180px;
+    } 
+}
 #day-nav {
     display: none;
     letter-spacing: 1px;
@@ -533,13 +568,6 @@ body {
 }
 
 /*
- * Home
- */
-.home #main-nav-content {
-    display: none;
-}
-
-/*
  * Exhibitors
  */
 .exhibitors #main-nav-content {
@@ -563,9 +591,10 @@ body {
     }
 }
 .news-app {
-    .hub-item:first-child {
-        width: 620px;
-    }
+    /*.hub-item:first-child article {
+        width: 620px !important;
+        height: 200px !important;
+    }*/
 }
 
 /*
