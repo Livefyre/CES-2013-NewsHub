@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CES StreamHub - News</title>
+        <!-- Bootstrap -->
+        <link href="lib/bootstrap.css/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="style.css" rel="stylesheet" media="screen">
+    </head>
+<body class="news">
+    <div id="streamhub" class="clearfix">
+        <div id="streamhub-wrapper" class="container">
+            <a id="logo" href="http://livefyre.com/streamhub" target="_blank"></a>
+            <div id="copy">
+                <div id="powered-by"><em>Powered by</em> <a href="http://livefyre.com/streamhub" target="_blank">Livefyre StreamHub</a></div>
+                <div id="description">Your real-time source for the hottest CES news from Vegas</div>
+                <div id="close">Close <span>X</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <h1 class="brand clearfix">
+            <div id="brand-spacer"> 
+                <span class="ces-brand blue">C</span>
+                <span class="ces-brand turquoise">E</span>
+                <span class="ces-brand green">S</span>
+                <span class="ces-brand yellow">2</span>
+                <span class="ces-brand yellow">0</span>
+                <span class="ces-brand yellow">1</span>
+                <span class="ces-brand yellow">3</span>
+            </div>
+            <a id="livefyre-brand" target="_blank" href="http://livefyre.com/streamhub"></a>
+        </h1>
+    </div>
+
+    <div id="header-nav">
+        <div class="tabbable"> <!-- Only required for left/right tabs -->
+            <div id="main-nav" class="turquoise-gradient">
+                <div id="main-nav-wrapper">
+                    <ul id="main-nav-buttons" class="nav nav-tabs">
+                        <li id="main-nav-home"><a href="/">Home</a></li>
+                        <li id="main-nav-exhibitors"><a href="/Exhibitors.html">Exhibitors</a></li>
+                        <li id="main-nav-news" class="active"><a href="/">News</a></li>
+                        <li id="main-nav-media"><a href="/Media.html">Media</a></li>
+                        <li id="main-nav-products"><a href="/Products.html">Products</a></li>
+                    </ul>
+                    <div id="main-nav-right">
+                        <ul id="main-nav-social" class="nav nav-tabs">
+                            <li class="social-button">
+                                <div class="fb-like" data-href="http://ces.livefyre.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+                                <!-- FB -->
+                                <div id="fb-root"></div>
+                                <script>
+                                    (function(d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                            js = d.createElement(s); js.id = id;
+                                            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=280339985355171";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }
+                                        (document, 'script', 'facebook-jssdk'));
+                                </script>
+                            </li>
+                            <li class="social-button">
+                                <a href="https://twitter.com/share"
+                                class="twitter-share-button" data-text="Follow the hot products and trends at CES with #Newshub"
+                                data-via="Livefyre"
+                                data-hashtags="2013CES"></a>
+                                <script>!function(d,s,id){var
+                                    js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                            </li>
+                            <li class="social-button">
+                                <!-- Place this tag where you want the +1 button to render. -->
+                                <div class="g-plusone" data-callback="onPlusOne" align="right" data-size="medium"></div>
+                                <!-- Place this tag after the last +1 button tag. -->
+                                <script type="text/javascript">
+                                  (function() {
+                                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                    po.src = 'https://apis.google.com/js/plusone.js';
+                                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                  })();
+                                </script>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="main-nav-content">
+                <div class="tab-content">
+                    <div class="tab-pane" id="tab1">
+                        <ul id="exhibitors-nav" class="nav nav-pills">
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">Google</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                            <li><a href="#">Canonical</a></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Sharp</a></li>
+                            <li><a href="#">Panasonic</a></li>
+                            <li><a href="#">LG</a></li>
+                            <li><a href="#">Vizio</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane active" id="tab2">
+                        <ul id="news-nav" class="nav nav-pills">
+                            <li><a href="news/Mashable.html">Mashable</a></li>
+                            <li><a href="news/Engadget.html">Engadget</a></li>
+                            <li><a href="news/CNET.html">CNET</a></li>
+                            <li><a href="news/Fox.html">Fox</a></li>
+                            <li><a href="news/Techland.html">Techland</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <ul id="media-nav" class="nav nav-pills">
+                            <li><a href="#">Media 1</a></li>
+                            <li><a href="#">Media 2</a></li>
+                            <li><a href="#">Media 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="tab4">
+                        <ul id="products-nav" class="nav nav-pills">
+                            <li><a href="#">Product 1</a></li>
+                            <li><a href="#">Product 2</a></li>
+                            <li><a href="#">Product 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="hero-unit">
+            <h1>News</h1>
+        </div>
+    </div>
+   
+    <!-- JS Resources --> 
+    <script type="text/javascript" src="//use.typekit.net/gvq8fcu.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="lib/jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $(function($) {
+            $('#livefyre-brand').click(function(e) {
+                e.preventDefault();
+                $('#streamhub').slideToggle();
+            });
+            $('#close').click(function(e) {
+                e.preventDefault();
+                $('#streamhub').slideUp();
+            });
+        });
+    </script>
+    <script src="lib/bootstrap.css/js/bootstrap.min.js"></script>
+    <script data-main="src/News" src="lib/requirejs/require.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36968790-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+</body>
+</html>
