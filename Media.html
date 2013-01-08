@@ -8,7 +8,7 @@
          <!-- StreamHub-Backbone -->
         <link href="lib/streamhub-backbone/main.css" rel="stylesheet" media="screen">
     </head>
-<body class="media">
+<body class="home media">
     <div class="streamhub-banner-bar">
         <a href="http://livefyre.com/streamhub" target="_blank">
         Real-time news and social curation, get your own NewsHub at Livefyre.com
@@ -41,13 +41,13 @@
 
     <div id="header-nav">
         <div class="tabbable"> <!-- Only required for left/right tabs -->
-            <div id="main-nav" class="green-gradient">
+            <div id="main-nav" class="blue-gradient">
                 <div id="main-nav-wrapper">
                     <ul id="main-nav-buttons" class="nav nav-tabs">
                         <li id="main-nav-home"><a href="/">Home</a></li>
-                        <li id="main-nav-news"><a href="/">News</a></li>
+                        <li id="main-nav-media" class="active"><a href="/">Media</a></li>
+                        <li id="main-nav-news"><a href="/News.html">News</a></li>
                         <li id="main-nav-exhibitors"><a href="/Exhibitors.html">Exhibitors</a></li>
-                        <li id="main-nav-media" class="active"><a href="/Media.html">Media</a></li>
                         <li id="main-nav-products"><a href="/Products.html">Products</a></li>
                     </ul>
                     <div id="main-nav-right">
@@ -116,13 +116,26 @@
     <script src="lib/jquery/jquery.js"></script>
     <script type="text/javascript">
         $(function($) {
+            var streamhub_showing = true;
+            var banner_showing = false;
+            var showBanner = function() {
+                if (!banner_showing) {
+                    $('.streamhub-banner-bar').slideDown();
+                    banner_showing = true;
+                }
+            }
             $('#livefyre-brand').click(function(e) {
                 e.preventDefault();
                 $('#streamhub').slideToggle();
+                showBanner();
+                streamhub_showing = !streamhub_showing;
+                
             });
             $('#close').click(function(e) {
                 e.preventDefault();
                 $('#streamhub').slideUp();
+                showBanner();
+                streamhub_showing = false;
             });
         });
     </script>
