@@ -13,7 +13,7 @@ function (fyre, Hub, IsotopeView, $, Mustache, InstagramHtml) {
 			sdk: sdk,
 	        collection: {
 	            siteId: "303818",
-	            articleId: "51"
+	            articleId: "69"
 	        },
 	        el: document.getElementById("media-wall-0"),
 	        view: IsotopeView,
