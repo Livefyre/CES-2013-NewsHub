@@ -3,7 +3,7 @@ require(['./config'],
 function () {
 
 require(['fyre', 'streamhub-backbone', 'streamhub-isotope',
-	     'jquery', 'mustache', '../src/templates/Card'],
+	     'jquery', 'mustache', '../src/templates/Card', '../src/news/newsCommon'],
 function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate) {
 	fyre.conv.load({
 		network: 'labs.fyre.co'
