@@ -412,6 +412,9 @@ body {
 .media .hub-item .hub-heading {
   background: rgba(122, 195, 199, 0.9);
 }
+.media .hub-item .hub-heading .hub-timestamp {
+  color: white;
+}
 .media .hub-item > article.brand-instagram {
   padding: 0;
   position: relative;
