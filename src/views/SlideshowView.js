@@ -27,7 +27,8 @@ slides) {
 			this.render();
 			setTimeout(function () {
 				that.$el.slides({
-					container: 'slides_container'
+					container: 'slides_container',
+					play: 7000
 				});
 				// No streaming
 				that.collection.off('add', that._addItem, that);
