@@ -109,4 +109,4 @@ body.media{background:#222;}
 #streamhub #description{color:#FFF;margin-top:10px;}
 #streamhub #close{float:right;position:relative;top:-40px;margin-right:-70px;text-transform:uppercase;color:#FFF;font-size:12px;}#streamhub #close span{font-size:14px;vertical-align:middle;margin-left:5px;}
 #streamhub #close:hover{cursor:pointer;}
-@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){.ces-brand{height:75px;line-height:75px;} #header #livefyre-brand{margin-top:30px;} .deck{top:202px;} #main-nav-content{font-size:12px;}}
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){.ces-brand{height:75px;line-height:75px;} #header #livefyre-brand{margin-top:30px;} .deck{top:202px;}}@media only screen and (min-device-width:768px) and (max-device-width:1024px){#main-nav-content{font-size:12px;}}
