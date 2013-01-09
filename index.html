@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CES StreamHub - Home</title>
+        <title>CES StreamHub - Media</title>
         <!-- Bootstrap -->
         <link href="lib/bootstrap.css/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="style.css" rel="stylesheet" media="screen">
          <!-- StreamHub-Backbone -->
         <link href="lib/streamhub-backbone/main.css" rel="stylesheet" media="screen">
-</head>
-<body class="home">
+    </head>
+<body class="home media">
+    <div class="streamhub-banner-bar">
+        <a href="http://livefyre.com/streamhub" target="_blank">
+        Real-time news and social curation, get your own NewsHub at Livefyre.com
+        </a>
+    </div>
     <div id="streamhub" class="clearfix">
         <div id="streamhub-wrapper" class="container">
             <a id="logo" href="http://livefyre.com/streamhub" target="_blank"></a>
             <div id="copy">
                 <div id="powered-by"><em>Powered by</em> <a href="http://livefyre.com/streamhub" target="_blank">Livefyre StreamHub</a></div>
-                <div id="description">Your real-time source for the hottest CES news from Vegas</div>
+                <div id="description">Real-time news and social curation, get your own NewsHub @ Livefyre.com</div>
                 <div id="close">Close <span>X</span></div>
             </div>
         </div>
     </div>
-    <div id="header" class="clearfix">
+    <div id="header">
         <h1 class="brand clearfix">
             <div id="brand-spacer"> 
                 <span class="ces-brand blue">C</span>
@@ -30,7 +35,7 @@
                 <span class="ces-brand yellow">1</span>
                 <span class="ces-brand yellow">3</span>
             </div>
-            <a id="livefyre-brand" href="#"></a>
+            <a id="livefyre-brand" target="_blank" href="http://livefyre.com/streamhub"></a>
         </h1>
     </div>
 
@@ -40,9 +45,9 @@
                 <div id="main-nav-wrapper">
                     <ul id="main-nav-buttons" class="nav nav-tabs">
                         <li id="main-nav-home"><a href="/">Home</a></li>
-                        <li id="main-nav-news" class="active"><a href="/">News</a></li>
-                        <li id="main-nav-exhibitors"><a href="/Exhibitors.html">Exhibitors</a></li>
-                        <li id="main-nav-media"><a href="/Media.html">Media</a></li>
+                        <li id="main-nav-media" class="active"><a href="/">Media</a></li>
+                        <li id="main-nav-news"><a href="/News.html">News</a></li>
+                        <li id="main-nav-exhibitors"><a href="/Brands.html">Brands</a></li>
                         <li id="main-nav-products"><a href="/Products.html">Products</a></li>
                     </ul>
                     <div id="main-nav-right">
@@ -88,78 +93,22 @@
             </div>
             <div id="main-nav-content">
                 <div class="tab-content">
-                    <div class="tab-pane" id="tab1">
-                        <ul id="exhibitors-nav" class="nav nav-pills">
-                            <li><a href="#">Samsung</a></li>
-                            <li><a href="#">Google</a></li>
-                            <li><a href="#">Microsoft</a></li>
-                            <li><a href="#">Canonical</a></li>
-                            <li><a href="#">Apple</a></li>
-                            <li><a href="#">Lenovo</a></li>
-                            <li><a href="#">Sharp</a></li>
-                            <li><a href="#">Panasonic</a></li>
-                            <li><a href="#">LG</a></li>
-                            <li><a href="#">Vizio</a></li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane active" id="tab2">
-                        <ul id="news-nav" class="nav nav-pills">
-                            <li><a href="/news/Mashable.html">Mashable</a></li>
-                            <li><a href="/news/Engadget.html">Engadget</a></li>
-                            <li><a href="/news/CNET.html">CNET</a></li>
-                            <li><a href="/news/Fox.html">Fox</a></li>
-                            <li><a href="/news/Techland.html">Techland</a></li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane" id="tab3">
+                    <div class="tab-pane active" id="tab3">
                         <ul id="media-nav" class="nav nav-pills">
                             <li><a href="#">Media 1</a></li>
                             <li><a href="#">Media 2</a></li>
                             <li><a href="#">Media 3</a></li>
                         </ul>
                     </div>
-                    <div class="tab-pane" id="tab4">
-                        <ul id="products-nav" class="nav nav-pills">
-                            <li><a href="#">Product 1</a></li>
-                            <li><a href="#">Product 2</a></li>
-                            <li><a href="#">Product 3</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <ul id="day-nav" class="nav nav-pills">
-            <li class="active"><a href="#">Day <span class="day-num">1</span></a></li>
-            <li class="disabled"><a href="#">Day <span class="day-num">2</span></a></li>
-            <li class="disabled"><a href="#">Day <span class="day-num">3</span></a></li>
-            <li class="disabled"><a href="#">Day <span class="day-num">4</span></a></li>
-        </ul>
-        <div class="row">
-            <div id="section2" class="span8">
-                <div id="main-section" class="row">
-                    <div class="feed-heading blue-gradient">
-                        <h2>All news</h2>
-                    </div>
-                    <div id="home-main-app" class="news-app"></div>
-                </div>
-            </div>
-            <div id="section3" class="span4">
-                <div id="tweets-section">
-                    <div class="feed-heading blue-gradient">
-                        <h2>From the Floor</h2>
-                    </div>
-                    <div id="home-tweets" class="feed">
-                        <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
-                    </div>
-                </div>
-            </div>
+    <div>
+        <div id="media-headline">Real-time images on-location in Vegas</div>
+        <div id="media-wall-0" class="wall">
         </div>
-    </div>
-
-    <div id="footer">
     </div>
    
     <!-- JS Resources --> 
@@ -168,18 +117,31 @@
     <script src="lib/jquery/jquery.js"></script>
     <script type="text/javascript">
         $(function($) {
+            var streamhub_showing = true;
+            var banner_showing = false;
+            var showBanner = function() {
+                if (!banner_showing) {
+                    $('.streamhub-banner-bar').slideDown();
+                    banner_showing = true;
+                }
+            }
             $('#livefyre-brand').click(function(e) {
                 e.preventDefault();
                 $('#streamhub').slideToggle();
+                showBanner();
+                streamhub_showing = !streamhub_showing;
+                
             });
             $('#close').click(function(e) {
                 e.preventDefault();
                 $('#streamhub').slideUp();
+                showBanner();
+                streamhub_showing = false;
             });
         });
     </script>
     <script src="lib/bootstrap.css/js/bootstrap.min.js"></script>
-    <script data-main="src/Home" src="lib/requirejs/require.js"></script>
+    <script data-main="src/Media" src="lib/requirejs/require.js"></script>
     <!-- Google Analytics -->
     <script type="text/javascript">
       var _gaq = _gaq || [];

@@ -102,16 +102,6 @@ function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml) {
             sources: sources,
             el: document.getElementById("product-7-env")
         }));
-        // Home Electronics
-        var app8 = apps.push(new Hub({
-            sdk: sdk,
-            collection: {
-                siteId: "320568",
-                articleId: "products_home_electronics"
-            },
-            sources: sources,
-            el: document.getElementById("product-8-env")
-        }));
         var col_width = 307;
         var viewport_width = $(window).width();
         $('.deck-columns').css('width', ((apps.length) * col_width) + viewport_width - 75);

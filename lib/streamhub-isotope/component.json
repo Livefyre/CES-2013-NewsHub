@@ -9,12 +9,12 @@
     "streamhub-backbone": "*",
     "isotope": "*"
   },
-  "gitHead": "da198e57e562e2ca13d29f45a51361ef11edd162",
+  "gitHead": "c793997b46cd64fa1d93028eb61a410a504f8178",
   "readme": "# Example Usage\n\n    var app = new Hub({\n        sdk: livefyreSdk,\n        collection: {\n            siteId: \"303772\",\n            articleId: \"prod0\"\n        },\n        el: document.getElementById(\"example\")\n    }).start();\n",
   "readmeFilename": "README.md",
   "_id": "streamhub-isotope@0.0.0",
   "description": "var app = new Hub({         sdk: livefyreSdk,         collection: {             siteId: \"303772\",             articleId: \"prod0\"         },         el: document.getElementById(\"example\")     }).start();",
-  "commit": "da198e57e562e2ca13d29f45a51361ef11edd162",
+  "commit": "c793997b46cd64fa1d93028eb61a410a504f8178",
   "repository": {
     "type": "git",
     "url": "git://github.com/gobengo/streamhub-isotope"

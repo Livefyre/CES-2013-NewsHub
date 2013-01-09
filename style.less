@@ -60,7 +60,34 @@
     background-image: linear-gradient(top, rgb(209, 206, 103), rgb(151, 148, 73));
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr=' #d1ce67 ', EndColorStr='#979449');
 }
-
+.streamhub-banner-bar{
+	background-color: #37375F;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#47486B),to(#222252));
+    background-image: -webkit-linear-gradient(top, #47486B, #222252);
+    background-image: -moz-linear-gradient(top, #47486B, #222252);
+    background-image: -o-linear-gradient(top, #47486B, #222252);
+    background-image: -ms-linear-gradient(top, #47486B, #222252);
+    background-image: linear-gradient(top, #47486B, #222252);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#47486B', EndColorStr='#222252');
+	border-bottom: 1px solid #121723;
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	-o-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	height: 32px;
+	line-height: 32px;
+	width: 100%;
+	
+	a{
+	    background: url(media/streamhub-logo-small.png) no-repeat 50px center;
+	    background-size: 16px 16px;
+	    color: #fff;
+	    padding-left: 80px;
+	    text-indent: 30px;
+	    text-decoration: none;
+	    font-style: italic;
+	}
+}
 body {
     min-width: 960px;
     font-family: @proxima-nova-condensed;
@@ -94,7 +121,7 @@ body {
 }
 #header-nav {
     margin-bottom: 20px;
-    font-size: 11px;
+    font-size: 14px;
     text-transform: uppercase;
     position: relative;
     z-index: 10;
@@ -119,11 +146,15 @@ body {
 
     #main-nav {
         width: 100%;
-        height: 35px;
+        height: 50px;
         float: left;
 
         .nav-tabs {
             border: none;
+            li > a{
+                padding: 0px;
+                line-height: 50px;
+            }
         }
 
         li#main-nav-home.active a {
@@ -194,17 +225,17 @@ body {
 
             li#main-nav-exhibitors a:hover,
             li#main-nav-exhibitors.active a {
-                background-color: @turquoise;
+                background-color: @green;
             }
 
             li#main-nav-news a:hover,
             li#main-nav-news.active a {
-               background-color: @blue;
+               background-color: @turquoise;
             }
 
             li#main-nav-media a:hover,
             li#main-nav-media.active a {
-               background-color: @green;
+               background-color: @blue;
             }
 
             li#main-nav-products a:hover,
@@ -228,7 +259,7 @@ body {
 
             .social-button {
                 text-align: right;
-                padding-top: 7px;
+                padding-top: 15px;
                 margin-left: 15px;
             }
         }
@@ -373,13 +404,16 @@ body {
 
     li {
         float: left;
+        font-size: 12px;
 
         a {
             text-decoration: none;
             float: left;
+            color: #999;
 
             &:hover {
                 text-decoration: underline;
+                color: #777;
             }
 
             i {
@@ -426,46 +460,10 @@ body {
         }
     }
 }
-
-/*
- * News pages
- */
-#main-section .hub-item {
-    border-bottom: none;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    .card {
-        height: 180px;
-        width: 180px;
-    }
-    .card-image {
-        height: 410px;
-        width: 410px;
-    }
+.twt-intent{
+    color: #A5A6A8;
 }
 
-#tweets-section {
-    .feed-heading {
-    }
-    .feed {
-    }
-}
-
-#day-nav {
-    display: none;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-
-    li {
-        margin: 0 10px;
-    }
-}
-.day-num {
-    font-size: 22px;
-    font-weight: 550;
-    vertical-align: sub;
-}
 
 /*
  * Deck Layout
@@ -477,7 +475,7 @@ body {
     padding-left: 1em;
     padding-right: 1em;
     position: absolute;
-    top: 185px;
+    top: 227px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -559,7 +557,7 @@ body {
     }
 
     & > article.brand-rss {
-        background: @turquoise;
+        background: @green;
         color: white;
         min-height: 150px;
         max-height: 400px;
@@ -593,12 +591,12 @@ body {
     .feed .hub-item {
         & > article.brand-instagram {
             .hub-heading {
-                background: @turquoise90;
+                background: @green90;
             }
         }
 
         & > article.brand-rss {
-            background: @turquoise;
+            background: @green;
         }
     }
 }
@@ -606,12 +604,12 @@ body {
     .feed .hub-item {
         & > article.brand-instagram {
             .hub-heading {
-                background: @blue90;
+                background: @turquoise90;
             }
         }
 
         & > article.brand-rss {
-            background: @blue;
+            background: @turquoise;
         }
     }
 }
@@ -623,7 +621,7 @@ body {
         margin: 2px;
 
         .hub-heading {
-            background: @green90;
+            background: @blue90;
             .hub-timestamp { color: white; }
         }
 
@@ -656,7 +654,7 @@ body {
         }
 
         & > article.brand-rss {
-            background: @green;
+            background: @blue;
         }
     }
 }
@@ -675,33 +673,36 @@ body {
 }
 
 /*
- * Home Page
- */
-.home #main-nav-content {
-    display: none;
-}
-
-/*
  * Exhibitors
  */
 .exhibitors #main-nav-content {
-    background: @turquoise;
+    background: @green;
 
     .nav .active a,
     a:hover {
-        background: rgba(63,131,142,1);
+        background: rgba(104,175,187,1);
+    }
+}
+
+.home {
+    .streamhub-banner-bar {
+        display: none;
+    }
+    #streamhub {
+        display: block;
     }
 }
 
 /*
  * News
  */
-.news #main-nav-content {
-    background: @blue;
+.news {    #main-nav-content {
+        background: @turquoise;
 
-    .nav .active a,
-    a:hover {
-        background: rgba(93,122,162,1);
+        .nav .active a,
+        a:hover {
+            background: rgba(63,131,142,1);
+        }
     }
 }
 .news-app {
@@ -709,6 +710,90 @@ body {
         width: 620px !important;
         height: 200px !important;
     }*/
+}
+#hero {
+    font-family: @proxima-nova-condensed;
+    font-weight: 300px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 960px;
+    cursor: pointer;
+
+    .hero-content {
+        color: white;
+        min-height: 25px;
+        max-height: 300px;
+        width: 960px;
+        overflow: hidden;
+        position: relative;
+
+        a.hero-content-link {
+            width: 960px; 
+            color: #FFF;
+        }
+        a.hero-content-link:hover .headline { text-decoration: underline; }
+        .data {
+            .source { font-size: 1.5em;}
+            .headline { font-size: 2em; font-weight: 300; line-height: 28px; }
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(102,137,181,0.92);
+            padding: 15px;
+            width: 960px;
+        }
+    }
+}
+.hub-SlideshowView {
+    .pagination { display: none; }
+}
+
+#main-section  {
+    .feed-heading {
+        width: 615px;
+    }
+    .hub-item {
+        border-bottom: none;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        .card {
+            height: 188px;
+            width: 188px;
+        }
+        .card-image {
+            /* TODO: Don't hide these */
+            display: none;
+        }
+    }
+}
+
+.news {
+    #main-section .hub-item {
+        margin-left: 0;
+    }
+}
+
+#tweets-section {
+    .feed-heading {
+    }
+    .feed {
+    }
+}
+
+#day-nav {
+    display: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    li {
+        margin: 0 10px;
+    }
+}
+.day-num {
+    font-size: 22px;
+    font-weight: 550;
+    vertical-align: sub;
 }
 
 /*
@@ -718,18 +803,26 @@ body.media {
     background: #222;
 }
 .media #main-nav-content {
-    background: @green;
+    background: @blue;
     display: none;
     
     .nav .active a,
     a:hover {
-        background: rgba(104,175,187,1);
+        background: rgba(93,122,162,1);
     }  
 }
 body.media {
         background: #222;
 }
-
+#media-headline{
+    color: #FFF;
+    font-family: @proxima-nova-condensed;
+    font-size: 18px;
+    padding-bottom: 15px;
+    width: 90%;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
 .wall {
     width: 90%;
     margin: 0 auto;
@@ -823,34 +916,36 @@ body.media {
     display: none;
     background: #0C0A18 url('media/streamhub-background.jpg') no-repeat center -170px;
     width: 100%;
-    height: 135px;
+    height: 110px;
     margin: 0 auto;
     font-family: @proxima-nova;
 
     #logo {
         display: inline-block;
-        width: 140px;
-        height: 140px;
+        width: 100px;
+        height: 100px;
         background: url('media/streamhub-logo.png') no-repeat;
+        background-size: 100%;
         position: relative;
-        top: 20px;
+        top: 5px;
     }
 
     #copy {
         display: inline-block;
         position: relative;
-        top: -40px;
+        top: -20px;
         margin-left: 40px;
+        width: 700px;
     }
 
     #powered-by {
        color: #99C;
        text-transform: uppercase;
        font-weight: 700;
-       font-size: 18px;
-       border-bottom: 1px solid white;
+       font-size: 24px;
+       border-bottom: 1px solid #75739F;
        padding-bottom: 10px;
-       width: 680px;
+       //width: 574px;
 
         em {
             font-weight: 300;

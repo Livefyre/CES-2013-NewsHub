@@ -10,6 +10,7 @@ require.config({
     underscore: 'underscore/underscore',
     mustache: 'mustache/mustache',
     isotope: 'isotope/jquery.isotope',
+    slides: 'slides.jquery/slides.jquery',
     fyre: 'http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre',
     fyret402: 'http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre'
   },
@@ -39,6 +40,9 @@ require.config({
     },
     fyret402: {
         exports: 'fyre'
+    },
+    slides: {
+        exports: '$'
     }
   }
 });

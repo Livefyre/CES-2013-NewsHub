@@ -3,31 +3,45 @@ define([
 'mustache',
 'text!streamhub-backbone/templates/Content.html',
 'streamhub-backbone/views/ContentView',
-'streamhub-backbone/const/sources'
+'streamhub-backbone/const/sources',
+'slides'
 ], function (
 Backbone,
 Mustache,
 ContentTemplate,
 ContentView,
-sources) {
+sources,
+slides) {
 	var	DefaultView = Backbone.View.extend({
 		"tagName": "div",
-		"className": "hub-backbone",
+		"className": "hub-SlideshowView",
 		events: {
 		},
 		initialize: function (opts) {
+			var that = this;
 			this._sourceOpts = opts.sources || {};
-			this._contentViewOpts = opts._contentViewOptions || {};
+			this._contentViewOpts = opts.contentViewOptions || {};
+			if (this.collection) {
+				this.collection.on('add', this._addItem, this);
+			}
 			this.render();
-			this.collection.on('add', this._addItem, this);
+			setTimeout(function () {
+				that.$el.slides({
+					container: 'slides_container'
+				});
+				// No streaming
+				that.collection.off('add', that._addItem, that);
+			}, 2000)
 		},
 		render: function () {
 			var self = this;
-			this.$el.html('');
+			this.$el.html('<div class="slides_container"></div>');
 			this.$el.addClass(this.className);
-			this.collection.forEach(function(item, index, collection) {
-				self._addItem(item, collection, {})
-			});
+			if (this.collection) {
+				this.collection.forEach(function(item, index, collection) {
+					self._addItem(item, collection, {})
+				});
+			}
 		}
 	});
 
@@ -48,10 +62,6 @@ sources) {
 				configuredOpts = _(opts).extend(self._contentViewOpts),
 				perSourceOpts;
 			if (content.get('source')==sources.TWITTER) {
-                var content_id = content.get('id');
-                if (content_id) {
-                    content.set('tweet_id', content_id.split('@twitter.com')[0].substring('tweet-'.length));
-                }
 				return _(configuredOpts).extend(self._sourceOpts['twitter']||{});
 			}
 			if (content.get('source')==sources.RSS) {
@@ -59,16 +69,18 @@ sources) {
 			}
 			return configuredOpts;
 		}
+
 		var cv = new ContentView(_.extend({
 			model: item,
 			el: newItem
 		}, _getContentViewOpts(item)));
 
 		if (collection.length - collection.indexOf(item)-1===0) {
-			this.$el.prepend(newItem);
+			this.$el.find('.slides_container').prepend(newItem);
 		} else {
-			this.$el.append(newItem);
+			this.$el.find('.slides_container').append(newItem);
 		}
 	}
+
 	return DefaultView;
 });

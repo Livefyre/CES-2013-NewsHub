@@ -12,5 +12,5 @@ require(['jquery', 'underscore'], function ($, _) {
 			if (link.text.substring(0,1)=='#') return false
 			return true;
 		}
-	})
+	});
 })

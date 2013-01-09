@@ -9,6 +9,11 @@
         <link href="lib/streamhub-backbone/main.css" rel="stylesheet" media="screen">
     </head>
 <body class="products">
+    <div class="streamhub-banner-bar">
+        <a href="http://livefyre.com/streamhub" target="_blank">
+        Real-time news and social curation, get your own NewsHub at Livefyre.com
+        </a>
+    </div>
     <div id="streamhub" class="clearfix">
         <div id="streamhub-wrapper" class="container">
             <a id="logo" href="http://livefyre.com/streamhub" target="_blank"></a>
@@ -40,9 +45,9 @@
                 <div id="main-nav-wrapper">
                     <ul id="main-nav-buttons" class="nav nav-tabs">
                         <li id="main-nav-home"><a href="/">Home</a></li>
-                        <li id="main-nav-news"><a href="/">News</a></li>
-                        <li id="main-nav-exhibitors"><a href="/Exhibitors.html">Exhibitors</a></li>
-                        <li id="main-nav-media"><a href="/Media.html">Media</a></li>
+                        <li id="main-nav-media"><a href="/">Media</a></li>
+                        <li id="main-nav-news"><a href="/News.html">News</a></li>
+                        <li id="main-nav-exhibitors"><a href="/Brands.html">Brands</a></li>
                         <li id="main-nav-products" class="active"><a href="/Products.html">Products</a></li>
                     </ul>
                     <div id="main-nav-right">
@@ -98,7 +103,6 @@
                             <li><a href="#product-5">Gaming</a></li>
                             <li><a href="#product-6">Gadgets</a></li>
                             <li><a href="#product-7">Digital Health</a></li>
-                            <li><a href="#product-8">Home Electronics</a></li>
                         </ul>
                     </div>
                 </div>
@@ -229,21 +233,6 @@
                         </div>
                     </div>
                 </section>
-                <section class="span4 brand deck-col" id="product-8">
-                    <div class="feed-heading yellow-gradient">
-                        <h2>Home Electronics</h2>
-                    </div>
-                    <div class="deck-col-scroll">
-                        <div class="feed" id="product-8-env">
-                            <div class="loading-placeholder" style="height: 100px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
-                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
-                            <div class="loading-placeholder" style="height: 400px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
-                            <div class="loading-placeholder" style="height: 100px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
-                            <div class="loading-placeholder" style="height: 200px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
-                            <div class="loading-placeholder" style="height: 400px; margin-bottom: 10px; background-color: #d9dc5e;"></div>
-                        </div>
-                    </div>
-                </section>
             </div>
         </div>
     </div>
@@ -255,7 +244,7 @@
     <script type="text/javascript">
         $(function($) {
             var $streamhub_header = $('#streamhub');
-            var streamhub_header_height = 135;
+            var streamhub_header_height = 110;
             var $deck = $('.deck');
             var streamhub_showing = false;
             $('#livefyre-brand').click(function(e) {
