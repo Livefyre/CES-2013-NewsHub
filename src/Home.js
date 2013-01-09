@@ -46,7 +46,7 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate, SlideshowView, Hero
 			sdk: sdk,
 	        collection: {
 	            siteId: "320568",
-	            articleId: "products_televisions"
+	            articleId: "home_fromthefloor"
 	        },
 	        el: document.getElementById("home-tweets")
 		})
