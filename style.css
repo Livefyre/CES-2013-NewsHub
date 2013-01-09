@@ -93,7 +93,7 @@ body{min-width:960px;font-family:proxima-nova-condensed,"Proxima Nova Condensed"
 body.media{background:#222;}
 .media #main-nav-content{background:#6689b5;display:none;}.media #main-nav-content .nav .active a,.media #main-nav-content a:hover{background:#5d7aa2;}
 body.media{background:#222;}
-#media-headline{color:#5A9093;font-family:proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;padding-bottom:15px;width:90%;margin:0 auto;}
+#media-headline{color:#FFF;font-family:proxima-nova-condensed,"Proxima Nova Condensed",proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;padding-bottom:15px;width:90%;margin:0 auto;text-transform:uppercase;}
 .wall{width:90%;margin:0 auto;}.wall .hub-item{background-color:white;border-bottom:0;clear:both;margin:2px;width:200px;}
 .wall .isotope-item{z-index:2;}
 .wall .isotope-hidden.isotope-item{pointer-events:none;z-index:1;}
@@ -103,7 +103,7 @@ body.media{background:#222;}
 .wall .isotope.no-transition,.wall .isotope.no-transition .isotope-item,.wall .isotope .isotope-item.no-transition{-webkit-transition-duration:0s;-moz-transition-duration:0s;-ms-transition-duration:0s;-o-transition-duration:0s;transition-duration:0s;}
 .products #main-nav-content{background:#e0e06e;}.products #main-nav-content .nav .active a,.products #main-nav-content a:hover{background:#c5ca71;}
 @-moz-keyframes fadeIn{from{opacity:0;} to{opacity:1;}}@-webkit-keyframes fadeIn{from{opacity:0;} to{opacity:1;}}@keyframes fadeIn{from{opacity:0;} to{opacity:1;}}#streamhub{display:none;background:#0c0a18 url('media/streamhub-background.jpg') no-repeat center -170px;width:100%;height:110px;margin:0 auto;font-family:proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;}#streamhub #logo{display:inline-block;width:100px;height:100px;background:url('media/streamhub-logo.png') no-repeat;background-size:100%;position:relative;top:5px;}
-#streamhub #copy{display:inline-block;position:absolute;top:55px;margin-left:40px;}
+#streamhub #copy{display:inline-block;position:relative;top:-20px;margin-left:40px;width:700px;}
 #streamhub #powered-by{color:#99C;text-transform:uppercase;font-weight:700;font-size:24px;border-bottom:1px solid #75739F;padding-bottom:10px;}#streamhub #powered-by em{font-weight:300;}
 #streamhub #powered-by a,#streamhub #powered-by a:hover{color:#99C;}
 #streamhub #description{color:#FFF;margin-top:10px;}
