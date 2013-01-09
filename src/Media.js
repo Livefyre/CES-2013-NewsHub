@@ -24,7 +24,7 @@ function (fyre, Hub, IsotopeView, $, Mustache, InstagramHtml) {
 	                }
 	            }
 	        }
-		})
+		});
 	}
 });
 
