@@ -16,7 +16,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml) {
                     return Mustache.compile(InstagramHtml)(d);
                 }
             },
-            tweet: {
+            tweets: {
                 template: (function () {
                     var i=0;
                     return function (d) {
