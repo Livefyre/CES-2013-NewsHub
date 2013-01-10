@@ -37,7 +37,6 @@ function focusMediaEveryNSeconds (frequencyInSeconds) {
     window.setInterval(function() { 
         var $hubItems = $('.hub-item');
         var $focusItem = $hubItems.eq(getRandomInt(0, 15));
-        console.warn($focusItem);
         var focusedClassName = 'focused-hub-item';
         $('.'+focusedClassName).removeClass(focusedClassName);
         $focusItem.addClass(focusedClassName);
