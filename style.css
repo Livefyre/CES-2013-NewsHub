@@ -90,9 +90,8 @@ body{min-width:960px;font-family:proxima-nova-condensed,"Proxima Nova Condensed"
 .news #main-section .hub-item{margin-left:0;}
 #day-nav{display:none;letter-spacing:1px;text-transform:uppercase;}#day-nav li{margin:0 10px;}
 .day-num{font-size:22px;font-weight:550;vertical-align:sub;}
-body.media{background:#222;}
+body.media{background:#222;}body.media #loading-indicator{background:url('media/ajax-loader-white.gif') no-repeat center center;width:31px;height:31px;margin:0 auto;margin-top:200px;}
 .media #main-nav-content{background:#6689b5;display:none;}.media #main-nav-content .nav .active a,.media #main-nav-content a:hover{background:#5d7aa2;}
-body.media{background:#222;}
 #media-headline{color:#FFF;font-family:proxima-nova-condensed,"Proxima Nova Condensed",proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;padding-bottom:15px;width:90%;margin:0 auto;text-transform:uppercase;}
 .wall{width:90%;margin:0 auto;}.wall .hub-item{background-color:white;border-bottom:0;clear:both;margin:2px;width:200px;}
 .wall .isotope-item{z-index:2;}
