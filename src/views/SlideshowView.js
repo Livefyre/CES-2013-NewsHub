@@ -21,20 +21,15 @@ slides) {
 			var that = this;
 			this._sourceOpts = opts.sources || {};
 			this._contentViewOpts = opts.contentViewOptions || {};
-			if (this.collection) {
-				this.collection.on('add', this._addItem, this);
-			}
-			this.render();
-			setTimeout(function () {
-				that.$el.slides({
-					container: 'slides_container',
-					play: 7000
-				});
-				// No streaming
-				that.collection.off('add', that._addItem, that);
-			}, 2000)
+
+            this.collection.on('add', this._addItem, this);
+            this.collection.on('initialDataLoaded', this.render, this);
 		},
 		render: function () {
+            // No streaming
+            this.collection.off('add', this._addItem, this);
+
+            this.$el.prev('.loading-indicator').hide();
 			var self = this;
 			this.$el.html('<div class="slides_container"></div>');
 			this.$el.addClass(this.className);
@@ -43,6 +38,10 @@ slides) {
 					self._addItem(item, collection, {})
 				});
 			}
+            this.$el.slides({
+                container: 'slides_container',
+                play: 7000
+            });
 		}
 	});
 
@@ -58,23 +57,23 @@ slides) {
 		}
 		newItem.addClass('hub-item')
 
-		function _getContentViewOpts (content) {
-			var opts = {},
-				configuredOpts = _(opts).extend(self._contentViewOpts),
-				perSourceOpts;
-			if (content.get('source')==sources.TWITTER) {
-				return _(configuredOpts).extend(self._sourceOpts['twitter']||{});
-			}
-			if (content.get('source')==sources.RSS) {
-				return _(configuredOpts).extend(self._sourceOpts['rss']||{});
-			}
-			return configuredOpts;
-		}
+	    function _getContentViewOpts (content) {
+	    	var opts = {},
+	    		configuredOpts = _(opts).extend(self._contentViewOpts),
+	    		perSourceOpts;
+	    	if (content.get('source')==sources.TWITTER) {
+	    		return _(configuredOpts).extend(self._sourceOpts['twitter']||{});
+	    	}
+	    	if (content.get('source')==sources.RSS) {
+	    		return _(configuredOpts).extend(self._sourceOpts['rss']||{});
+	    	}
+	    	return configuredOpts;
+	    }
 
-		var cv = new ContentView(_.extend({
-			model: item,
-			el: newItem
-		}, _getContentViewOpts(item)));
+	    var cv = new ContentView(_.extend({
+	    	model: item,
+	    	el: newItem
+	    }, _getContentViewOpts(item)));
 
 		if (collection.length - collection.indexOf(item)-1===0) {
 			this.$el.find('.slides_container').prepend(newItem);
