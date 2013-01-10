@@ -15,7 +15,7 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate) {
 			sdk: sdk,
 	        collection: {
 	            siteId: "320568",
-	            articleId: "news_techcrunch_chatter"
+	            articleId: "news_techcrunch"
 	        },
 	        contentViewOptions: {
 	        	template: CardTemplate
@@ -27,7 +27,7 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate) {
 			sdk: sdk,
 	        collection: {
 	            siteId: "320568",
-	            articleId: "news_techcrunch"
+	            articleId: "news_techcrunch_chatter"
 	        },
 	        el: document.getElementById("techcrunch-tweets")
 		})
