@@ -79,7 +79,7 @@ body{min-width:960px;font-family:proxima-nova-condensed,"Proxima Nova Condensed"
 .home #streamhub{display:block;}
 .news #main-nav-content{background:#34727f;}.news #main-nav-content .nav .active a,.news #main-nav-content a:hover{background:#3f838e;}
 .news-app{}
-#hero{font-family:proxima-nova-condensed,"Proxima Nova Condensed",proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300px;margin:0 auto;margin-bottom:15px;width:960px;cursor:pointer;}#hero .hero-content{color:white;min-height:25px;max-height:300px;width:960px;overflow:hidden;position:relative;}#hero .hero-content a.hero-content-link{width:960px;color:#FFF;}
+#hero{font-family:proxima-nova-condensed,"Proxima Nova Condensed",proxima-nova,"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300px;margin:0 auto;margin-bottom:15px;width:960px;cursor:pointer;}#hero .hero-content{color:white;height:300px;width:960px;overflow:hidden;position:relative;}#hero .hero-content a.hero-content-link{width:960px;color:#FFF;}
 #hero .hero-content a.hero-content-link:hover .headline{text-decoration:underline;}
 #hero .hero-content .data{position:absolute;bottom:0;left:0;background-color:rgba(102, 137, 181, 0.92);padding:15px;width:960px;}#hero .hero-content .data .source{font-size:1.5em;}
 #hero .hero-content .data .headline{font-size:2em;font-weight:300;line-height:28px;}
