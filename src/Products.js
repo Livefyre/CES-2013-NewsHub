@@ -16,16 +16,18 @@ function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml) {
                     return Mustache.compile(InstagramHtml)(d);
                 }
             },
-            template: (function () {
-                var i=0;
-                return function (d) {
-                    i++;
-                    if (i%4==0) {
-                        return CardTemplate(d);
+            tweet {
+                template: (function () {
+                    var i=0;
+                    return function (d) {
+                        i++;
+                        if (i%4==0) {
+                            return CardTemplate(d);
+                        }
+                        return Mustache.compile(TwitterHtml)(d);
                     }
-                    return Mustache.compile(TwitterHtml)(d);
-                }
-            }())
+                }())
+            }
         }
         // Televisions
 		var app0 = apps.push(new Hub({
