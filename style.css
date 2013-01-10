@@ -35,10 +35,9 @@ body{min-width:960px;font-family:proxima-nova-condensed,"Proxima Nova Condensed"
 #main-nav-content .tab-pane{display:none;}
 #main-nav-content .active{display:block;}
 .card{color:white;cursor:pointer;}.card .hub-body{font-size:1.5em;line-height:1.3em;}.card .hub-body a{color:white;}
-.card-content{color:white;font-weight:bold;overflow:auto;padding:10px;box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);}.card-content .hub-byline .hub-avatar{float:none;}
-.card-content .hub-byline .hub-avatar img{height:1em;}
+.card-content{color:white;font-weight:bold;overflow:auto;padding:10px;box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);}.card-content .hub-byline .hub-avatar{float:none;height:1em !important;}.card-content .hub-byline .hub-avatar img{height:1em !important;width:1em !important;}
 .card-content .hub-byline .hub-author{text-transform:uppercase;}
-.card-content .hub-byline .hub-timestamp{color:white;}
+.card-content .hub-byline .hub-timestamp{color:white !important;}
 .card-image{padding:0;position:relative;box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);}.card-image .hub-heading{position:absolute;bottom:0;left:0;right:0;background:rgba(0, 0, 0, 0.6);padding:5px;height:auto;color:white;overflow:hidden;line-height:22px;max-height:100%;transition:all 1.5s;-moz-transition:all 1.5s;-webkit-transition:all 1.5s;-o-transition:all 1.5s;}.card-image .hub-heading .hub-timestamp{color:white;}
 .hub-actions{overflow:hidden;margin-top:10px;}
 .twt-actions{display:block;float:right;list-style:none;margin-bottom:0;font-weight:200;}.twt-actions li{float:left;font-size:12px;}.twt-actions li a{text-decoration:none;float:left;color:#999;}.twt-actions li a:hover{text-decoration:underline;color:#777;}
@@ -50,7 +49,7 @@ body{min-width:960px;font-family:proxima-nova-condensed,"Proxima Nova Condensed"
 .twt-actions .favorite-action{width:75px;}.twt-actions .favorite-action i{width:16px;height:15px;background-position:0 -66px;}
 .twt-actions .favorite-action:hover i{background-position:-21px -66px;}
 .twt-intent{color:#A5A6A8;}
-.deck{overflow-x:auto;overflow-y:hidden;margin-left:0.5em;padding-left:1em;padding-right:1em;position:absolute;top:227px;left:0;right:0;bottom:0;-webkit-overflow-scrolling:touch;}
+.deck{overflow-x:auto;overflow-y:hidden;margin-left:0.5em;padding-left:1em;padding-right:1em;position:absolute;top:227px;left:0;right:0;bottom:0;-webkit-overflow-scrolling:touch;}.deck .card{padding:15px !important;}
 .deck-columns{height:100%;overflow:visible;}
 .deck-col{height:100%;margin:0 0.25em;position:relative;}
 .deck-col-scroll{float:left;position:absolute;top:35px;left:0;bottom:0;width:299px;overflow-x:hidden;overflow-y:auto;min-height:200px;-webkit-overflow-scrolling:touch;}

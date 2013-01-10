@@ -359,10 +359,16 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 
     .hub-byline {
-        .hub-avatar { float: none; }
-        .hub-avatar img { height: 1em; }
+        .hub-avatar {
+            float: none;
+            height: 1em !important;
+            img {
+                height: 1em !important;
+                width: 1em !important;
+            }
+        }
         .hub-author { text-transform: uppercase; }
-        .hub-timestamp { color: white; }
+        .hub-timestamp { color: white !important; }
     }
 }
 
@@ -480,6 +486,10 @@ body {
     right: 0;
     bottom: 0;
     -webkit-overflow-scrolling: touch;
+
+    .card {
+        padding: 15px !important;
+    }
 }
 .deck-columns {
     height: 100%;
