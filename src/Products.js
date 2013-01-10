@@ -1,8 +1,8 @@
 // This will run on the Products page
 require(['./config'], function () {
 
-require(['fyre', 'streamhub-backbone', 'jquery', 'mustache', 'text!../src/templates/Instagram.html','text!../src/templates/Twitter.html'],
-function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml) {
+require(['fyre', 'streamhub-backbone', 'jquery', 'mustache', 'text!../src/templates/Instagram.html','text!../src/templates/Twitter.html','../src/templates/Card'],
+function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml, CardTemplate) {
     var apps = [];
 	fyre.conv.load({
         network: 'labs.fyre.co'
