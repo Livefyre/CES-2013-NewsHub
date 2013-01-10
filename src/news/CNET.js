@@ -15,7 +15,7 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate) {
 			sdk: sdk,
 	        collection: {
 	            siteId: "320568",
-	            articleId: "news_cnet_chatter"
+	            articleId: "news_cnet"
 	        },
 	        contentViewOptions: {
 	        	template: CardTemplate
@@ -27,7 +27,7 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate) {
 			sdk: sdk,
 	        collection: {
 	            siteId: "320568",
-	            articleId: "news_cnet"
+	            articleId: "news_cnet_chatter"
 	        },
 	        el: document.getElementById("cnet-tweets")
 		})
