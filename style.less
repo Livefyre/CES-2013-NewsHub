@@ -648,9 +648,9 @@ body {
                 height: auto;
                 color: white;
                 opacity: 0;
+                max-height: 20px;
                 overflow: hidden;
                 line-height: 22px;
-                max-height: 20px;
                 transition:all .5s;
                 -moz-transition:all .5s; /* Firefox 4 */
                 -webkit-transition:all .5s; /* Safari and Chrome */
@@ -843,12 +843,25 @@ body.media {
     margin: 0 auto;
 
     .hub-item {
-        background-color: white;
+        background-color: #222;
         border-bottom: 0;
         clear: both;
         margin: 2px;
         width: 200px;
     }
+    .focused-hub-item {
+        & > article.brand-instagram {
+            .hub-heading {
+                max-height: 300px;
+                opacity: 1;
+                transition:all 1.5s;
+                -moz-transition:all 1.5s; /* Firefox 4 */
+                -webkit-transition:all 1.5s; /* Safari and Chrome */
+                -o-transition:all 1.5s; /* Opera */
+            }
+        }         
+    }
+
     .isotope-item {
         z-index: 2;
     }

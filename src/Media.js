@@ -28,5 +28,28 @@ function (fyre, Hub, IsotopeView, $, Mustache, InstagramHtml) {
     }
 });
 
+focusMediaEveryNSeconds(3);
+
+/*
+ * Focuses a hub item on the media wall every n seconds
+ */
+function focusMediaEveryNSeconds (frequencyInSeconds) {
+    window.setInterval(function() { 
+        var $hubItems = $('.hub-item', $('#media-wall-0'));
+        var $focusItem = $hubItems.eq(getRandomInt(0, 10));
+        var focusedClassName = 'focused-hub-item';
+        $('.'+focusedClassName).removeClass(focusedClassName);
+        $focusItem.addClass(focusedClassName);
+    }, frequencyInSeconds * 1000);
+};
+
+/*
+ * Returns a random integer between min and max
+ * Using Math.round() will give you a non-uniform distribution!
+ */
+function getRandomInt (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 console.log("Media loaded");
 });

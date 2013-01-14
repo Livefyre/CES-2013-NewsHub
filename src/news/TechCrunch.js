@@ -1,4 +1,4 @@
-// This will run on the index (CNET) page
+// This will run on the index (TechCrunch) page
 require(['../config'],
 function () {
 
@@ -15,24 +15,24 @@ function (fyre, Hub, IsotopeView, $, Mustache, CardTemplate) {
 			sdk: sdk,
 	        collection: {
 	            siteId: "320568",
-	            articleId: "news_cnet"
+	            articleId: "news_techcrunch"
 	        },
 	        contentViewOptions: {
 	        	template: CardTemplate
 	        },
 	        view: IsotopeView,
-	        el: document.getElementById("cnet-main-app")
+	        el: document.getElementById("techcrunch-main-app")
 		})
 		var tweets = new Hub({
 			sdk: sdk,
 	        collection: {
 	            siteId: "320568",
-	            articleId: "news_cnet_chatter"
+	            articleId: "news_techcrunch_chatter"
 	        },
-	        el: document.getElementById("cnet-tweets")
+	        el: document.getElementById("techcrunch-tweets")
 		})
 	}
 });
 
-console.log("CNET loaded");
+console.log("TechCrunch loaded");
 });
