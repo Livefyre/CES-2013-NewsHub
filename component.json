@@ -10,9 +10,9 @@
     "requirejs": "~2.1.2",
     "requirejs-text": "*",
     "bootstrap.css": "2.1.1",
-    "streamhub-backbone": "latest",
-    "streamhub-isotope": "latest",
-    "streamhub-slidesjs": "latest",
+    "streamhub-backbone": "1.0.0",
+    "streamhub-isotope": "1.0.0",
+    "streamhub-slidesjs": "1.0.0",
     "backbone": "~0.9.9",
     "underscore": "~1.4.3",
     "mustache": "~0.7.2"

@@ -1,0 +1,13 @@
+lib/backbone/
+lib/bootstrap.css/
+lib/isotope/
+lib/jasmine-jquery/
+lib/jasmine/
+lib/jquery/
+lib/mustache/
+lib/requirejs-text/
+lib/requirejs/
+lib/streamhub-backbone/
+lib/streamhub-isotope/
+lib/streamhub-slidesjs/
+lib/underscore/
