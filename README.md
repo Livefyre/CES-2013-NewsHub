@@ -6,7 +6,7 @@ The [Livefyre CES 2013 NewsHub](http://ces.livefyre.com/) curates social Content
 
 [CES 2103 NewsHub](http://ces.livefyre.com/) is powered by [StreamHub-Backbone](http://gobengo.github.com/streamhub-backbone/), which binds [Livefyre StreamHub](http://www.livefyre.com/streamhub/) with [Backbone.js](http://backbonejs.org/) so you can make amazing Content experiences like feeds, media walls, and slideshows.
 
-Livefyre StreamHub is the web's first Engagement Management System. StreamHub turns your site into a real-time social experience. Curate images, videos, and Tweets from across the social web, right into live blogs, chats, widgets, and dashboards.
+[Livefyre StreamHub](http://www.livefyre.com/streamhub/) is the web's first Engagement Management System. StreamHub turns your site into a real-time social experience. Curate images, videos, and Tweets from across the social web, right into live blogs, chats, widgets, and dashboards.
 
 NewsHub displays Collections of curated Content that live in the Livefyre Labs Network. To get your own Network so you can create your own Collections, engage your own community of SSO Users, and make your own NewsHub about whatever strikes your fancy, [contact Livefyre](http://www.livefyre.com/streamhub/) about subscribing to StreamHub.
 
