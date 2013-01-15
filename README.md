@@ -12,7 +12,27 @@ This NewsHub uses the following apps:
 * [StreamHub-Isotope](https://github.com/gobengo/streamhub-isotope) - Uses the [jQuery Isotope](https://github.com/desandro/isotope) plugin to lay out Content for a tiled display
 * [StreamHub-SlidesJS](https://github.com/gobengo/streamhub-slidesjs) - displays Content in a slideshow using [SlidesJS](http://slidesjs.com/)
 
-# Libraries used
+## Documentation</h1>
+
+You may be wondering how _you_ can build a NewsHub. The GitHub Page for this repository includes [annotated source code](http://livefyre.github.com/CES-2013-NewsHub/docs) that describes step-by-step the code that powers the 2013 CES NewsHub
+
+* [Media Wall](http://livefyre.github.com/CES-2013-NewsHub/docs/News.html)
+* [Brands](http://livefyre.github.com/CES-2013-NewsHub/docs/Brands.html)
+* [Products](http://livefyre.github.com/CES-2013-NewsHub/docs/Products.html)
+* [News](http://livefyre.github.com/CES-2013-NewsHub/docs/News.html)
+	* [Engadget News](http://livefyre.github.com/CES-2013-NewsHub/docs/Media.html)
+	* [Fox News News](http://livefyre.github.com/CES-2013-NewsHub/docs/Media.html)
+	* [CNET News](http://livefyre.github.com/CES-2013-NewsHub/docs/Media.html)
+	* [Mashable News](http://livefyre.github.com/CES-2013-NewsHub/docs/Media.html)
+	* [Techland News](http://livefyre.github.com/CES-2013-NewsHub/docs/Techland.html)
+	* [TechCrunch News](http://livefyre.github.com/CES-2013-NewsHub/docs/TechCrunch.html)
+	* [Common to all News pages](http://livefyre.github.com/CES-2013-NewsHub/docs/newsCommon.html)
+* Templates
+	* [Card Template](http://livefyre.github.com/CES-2013-NewsHub/docs/Card.html)
+	* [Hero Template](http://livefyre.github.com/CES-2013-NewsHub/docs/Hero.html)
+* [config](http://livefyre.github.com/CES-2013-NewsHub/docs/config.html)
+
+## Libraries used
 
 NewsHub (and StreamHub-Backbone) stands on the shoulders of several other great open-source projects:
 
@@ -22,7 +42,7 @@ NewsHub (and StreamHub-Backbone) stands on the shoulders of several other great 
 * [Backbone.js](http://backbonejs.org/) - A lightweight MVC framework for browser apps
 * [jQuery](http://jquery.com/) - a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
 
-# Running locally
+## Running locally
 
 Install npm - https://npmjs.org/doc/install.html
 
