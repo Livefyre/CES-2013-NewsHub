@@ -26,9 +26,10 @@ function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml, CardTemplate) {
     }, [{
         app: 'sdk'
     }], loadApps);
+    
     // `fyre.conv.loader` passes the sdk to this once loaded
     function loadApps (sdk) {
-        // The Brand page uses a different template for Content
+        // The Brands page uses a different template for Content
         // depending on the Content source
         var sources = {
             // RSS Items will be from Instagram, so use a template
@@ -55,6 +56,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml, CardTemplate) {
                 }())
             }
         };
+        
         // ## Render the FeedViews
         // The `Hub` constructor provided with StreamHub-Backbone
         // takes care of slurping up data from the `sdk` and sending
