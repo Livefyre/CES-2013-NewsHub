@@ -10,7 +10,7 @@ require.config({
     underscore: 'underscore/underscore',
     mustache: 'mustache/mustache',
     isotope: 'isotope/jquery.isotope',
-    slidesjs: 'slides.jquery/slides.jquery',
+    slidesjs: 'Slides/source/slides.jquery',
     fyre: 'http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre',
     fyret402: 'http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre'
   },
