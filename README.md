@@ -6,7 +6,7 @@ The [Livefyre CES 2013 NewsHub](http://ces.livefyre.com/) curates social Content
 
 This NewsHub uses the following apps:
 
-* [FeedView](https://github.com/gobengo/streamhub-backbone/blob/master/views/FeedView.js) - Included with StreamHub-Backbone, this displays a simple feed of Content and is used in NewsHub on the Brands and Products pages
+* [StreamHub-Backbone/views/FeedView](https://github.com/gobengo/streamhub-backbone/blob/master/views/FeedView.js) - Included with StreamHub-Backbone, this displays a simple feed of Content and is used in NewsHub on the Brands and Products pages
 * [StreamHub-Isotope](https://github.com/gobengo/streamhub-isotope) - Uses the [jQuery Isotope](https://github.com/desandro/isotope) plugin to lay out Content for a tiled display
 * [StreamHub-SlidesJS](https://github.com/gobengo/streamhub-slidesjs) - displays Content in a slideshow using [SlidesJS](http://slidesjs.com/)
 
