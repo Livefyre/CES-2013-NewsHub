@@ -1,6 +1,6 @@
 {
-  "name": "CES 2013 StreamHub",
-  "version": "0.0.0",
+  "name": "Livefyre CES 2013 NewsHub",
+  "version": "1.0.0",
   "main": [
     "main.js",
     "style.css"
@@ -12,6 +12,7 @@
     "bootstrap.css": "2.1.1",
     "streamhub-backbone": "latest",
     "streamhub-isotope": "latest",
+    "streamhub-slidesjs": "latest",
     "backbone": "~0.9.9",
     "underscore": "~1.4.3",
     "mustache": "~0.7.2"
