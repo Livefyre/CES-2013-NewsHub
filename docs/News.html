@@ -1,0 +1,90 @@
+<!DOCTYPE html>  <html> <head>   <title>News.js</title>   <meta http-equiv="content-type" content="text/html; charset=UTF-8">   <link rel="stylesheet" media="all" href="docco.css" /> </head> <body>   <div id="container">     <div id="background"></div>            <div id="jump_to">         Jump To &hellip;         <div id="jump_wrapper">           <div id="jump_page">                                           <a class="source" href="Brands.html">                 Brands.js               </a>                                           <a class="source" href="Media.html">                 Media.js               </a>                                           <a class="source" href="News.html">                 News.js               </a>                                           <a class="source" href="Products.html">                 Products.js               </a>                                           <a class="source" href="config.html">                 config.js               </a>                                           <a class="source" href="CNET.html">                 CNET.js               </a>                                           <a class="source" href="Engadget.html">                 Engadget.js               </a>                                           <a class="source" href="Fox.html">                 Fox.js               </a>                                           <a class="source" href="Mashable.html">                 Mashable.js               </a>                                           <a class="source" href="TechCrunch.html">                 TechCrunch.js               </a>                                           <a class="source" href="Techland.html">                 Techland.js               </a>                                           <a class="source" href="newsCommon.html">                 newsCommon.js               </a>                                           <a class="source" href="Card.html">                 Card.js               </a>                                           <a class="source" href="Hero.html">                 Hero.js               </a>                        </div>         </div>       </div>          <table cellpadding="0" cellspacing="0">       <thead>         <tr>           <th class="docs">             <h1>               News.js             </h1>           </th>           <th class="code">           </th>         </tr>       </thead>       <tbody>                               <tr id="section-1">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-1">&#182;</a>               </div>               <h1><a href="http://ces.livefyre.com/News.html">News</a></h1>
+
+<p>Display:</p>
+
+<ul>
+<li>a Hero <a href="https://github.com/gobengo/streamhub-slidesjs">SlideshowView</a>
+of editorially curated Content by Livefyre</li>
+<li>an <a href="https://github.com/gobengo/streamhub-isotope">IsotopeView</a> of
+aggregated news</li>
+<li>a FeedView of chatter from CES</li>
+</ul>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-2">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-2">&#182;</a>               </div>               <p>Load ../config so that requirejs knows about all the dependencies</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">require</span><span class="p">([</span><span class="s1">&#39;./config&#39;</span><span class="p">],</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span></pre></div>             </td>           </tr>                               <tr id="section-3">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-3">&#182;</a>               </div>               <p>Load dependencies</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">require</span><span class="p">([</span>
+    <span class="s1">&#39;fyre&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;streamhub-backbone&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;streamhub-isotope&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;jquery&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;mustache&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;../src/templates/Card&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;streamhub-slidesjs&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;CES/templates/Hero&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;../src/news/newsCommon&#39;</span><span class="p">],</span>
+<span class="kd">function</span> <span class="p">(</span><span class="nx">fyre</span><span class="p">,</span> <span class="nx">Hub</span><span class="p">,</span> <span class="nx">IsotopeView</span><span class="p">,</span> <span class="nx">$</span><span class="p">,</span> <span class="nx">Mustache</span><span class="p">,</span> <span class="nx">CardTemplate</span><span class="p">,</span> <span class="nx">SlideshowView</span><span class="p">,</span> <span class="nx">HeroTemplate</span><span class="p">,</span> <span class="nx">newsCommon</span><span class="p">)</span> <span class="p">{</span></pre></div>             </td>           </tr>                               <tr id="section-4">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-4">&#182;</a>               </div>               <h2>Load the StreamHub JavaScript SDK</h2>
+
+<p>Get StreamHub JS SDKs from Livefyre's lib.
+All CES 2013 NewsHub Collections are in the <code>labs.fyre.co</code> Network</p>             </td>             <td class="code">               <div class="highlight"><pre>    <span class="nx">fyre</span><span class="p">.</span><span class="nx">conv</span><span class="p">.</span><span class="nx">load</span><span class="p">({</span>
+        <span class="nx">network</span><span class="o">:</span> <span class="s1">&#39;labs.fyre.co&#39;</span>
+    <span class="p">},</span> <span class="p">[{</span>
+        <span class="nx">app</span><span class="o">:</span> <span class="s1">&#39;sdk&#39;</span>
+    <span class="p">}],</span> <span class="nx">loadNewsApps</span><span class="p">);</span></pre></div>             </td>           </tr>                               <tr id="section-5">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-5">&#182;</a>               </div>               <p><code>fyre.conv.load</code> passes the sdk to this once loaded</p>             </td>             <td class="code">               <div class="highlight"><pre>    <span class="kd">function</span> <span class="nx">loadNewsApps</span> <span class="p">(</span><span class="nx">sdk</span><span class="p">)</span> <span class="p">{</span></pre></div>             </td>           </tr>                               <tr id="section-6">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-6">&#182;</a>               </div>               <h2>Hero - Editorially curated Content from Livefyre</h2>
+
+<p>Display a slideshow of the best news in a SlideshowView</p>             </td>             <td class="code">               <div class="highlight"><pre>        <span class="kd">var</span> <span class="nx">hero</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Hub</span><span class="p">({</span>
+            <span class="nx">sdk</span><span class="o">:</span> <span class="nx">sdk</span><span class="p">,</span>
+            <span class="nx">collection</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">siteId</span><span class="o">:</span> <span class="s2">&quot;320568&quot;</span><span class="p">,</span>
+                <span class="nx">articleId</span><span class="o">:</span> <span class="s2">&quot;home_editorial&quot;</span>
+            <span class="p">},</span>
+            <span class="nx">el</span><span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;hero&#39;</span><span class="p">),</span></pre></div>             </td>           </tr>                               <tr id="section-7">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-7">&#182;</a>               </div>               <p>Use a SlideshowView</p>             </td>             <td class="code">               <div class="highlight"><pre>            <span class="nx">view</span><span class="o">:</span> <span class="nx">SlideshowView</span><span class="p">,</span></pre></div>             </td>           </tr>                               <tr id="section-8">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-8">&#182;</a>               </div>               <p>Use the special HeroTemplate for Heroes</p>             </td>             <td class="code">               <div class="highlight"><pre>            <span class="nx">contentViewOptions</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">template</span><span class="o">:</span> <span class="nx">HeroTemplate</span>
+            <span class="p">}</span>
+        <span class="p">});</span></pre></div>             </td>           </tr>                               <tr id="section-9">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-9">&#182;</a>               </div>               <h2>Aggregated News</h2>
+
+<p>Display News from many sources in an IsotopeView</p>
+
+<ul>
+<li>Tweets by @techland, @mashable, @foxnews, @engadget,
+@cnet, @allthingsd, or @techcrunch
+that contain #ces, #ces2013, or #2013ces</li>
+</ul>             </td>             <td class="code">               <div class="highlight"><pre>        <span class="kd">var</span> <span class="nx">main</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Hub</span><span class="p">({</span>
+            <span class="nx">sdk</span><span class="o">:</span> <span class="nx">sdk</span><span class="p">,</span>
+            <span class="nx">collection</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">siteId</span><span class="o">:</span> <span class="s2">&quot;320568&quot;</span><span class="p">,</span>
+                <span class="nx">articleId</span><span class="o">:</span> <span class="s2">&quot;home_news&quot;</span>
+            <span class="p">},</span></pre></div>             </td>           </tr>                               <tr id="section-10">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-10">&#182;</a>               </div>               <p>Use the colorful CardTemplate for Content</p>             </td>             <td class="code">               <div class="highlight"><pre>            <span class="nx">contentViewOptions</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">template</span><span class="o">:</span> <span class="nx">CardTemplate</span>
+            <span class="p">},</span></pre></div>             </td>           </tr>                               <tr id="section-11">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-11">&#182;</a>               </div>               <p>Use a tiled IsotopeView</p>             </td>             <td class="code">               <div class="highlight"><pre>            <span class="nx">view</span><span class="o">:</span> <span class="nx">IsotopeView</span><span class="p">,</span></pre></div>             </td>           </tr>                               <tr id="section-12">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-12">&#182;</a>               </div>               <p>Pass specific options to the view</p>             </td>             <td class="code">               <div class="highlight"><pre>            <span class="nx">viewOptions</span><span class="o">:</span> <span class="p">{</span></pre></div>             </td>           </tr>                               <tr id="section-13">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-13">&#182;</a>               </div>               <p>IsotopeView allows passing Isotope options</p>             </td>             <td class="code">               <div class="highlight"><pre>                <span class="nx">isotope</span><span class="o">:</span> <span class="p">{</span>
+                    <span class="nx">masonry</span><span class="o">:</span> <span class="p">{</span></pre></div>             </td>           </tr>                               <tr id="section-14">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-14">&#182;</a>               </div>               <p>Set the columnWidth to meet the layout.
+This helps isotope do the right thing.</p>             </td>             <td class="code">               <div class="highlight"><pre>                        <span class="nx">columnWidth</span><span class="o">:</span> <span class="mi">213</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="nx">el</span><span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;home-main-app&quot;</span><span class="p">)</span>
+        <span class="p">});</span></pre></div>             </td>           </tr>                               <tr id="section-15">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-15">&#182;</a>               </div>               <h2>Aggregated Chatter</h2>
+
+<p>Display chatter from all sorts of people</p>
+
+<ul>
+<li>Tweets by  @mikeisaac, @rogerwcheng, @film_girl,
+@harrymccracken, @briantong, @lturrentine, @mollywood,
+@jbruin, @benparr, @lanceulanoff, @reckless, @calllewis,
+@ryan, @johnbiggs, @joemfbrown, @danawollman, @pkafka,
+@bheater, @jimkerstetter, @falconejp, @tim_stevens,
+@daamoth, @danackerman, @alexia, @petepachal, @emily,
+@waltmossberg, or @karaswisher</li>
+<li>Tweets by @reckless, @calilewis, @ryan, @briantong,
+@johnbiggs, @joemfbrown, @danawollman, @pkafka,
+@nickbilton, or @nickcicero</li>
+</ul>             </td>             <td class="code">               <div class="highlight"><pre>        <span class="kd">var</span> <span class="nx">tweets</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Hub</span><span class="p">({</span>
+            <span class="nx">sdk</span><span class="o">:</span> <span class="nx">sdk</span><span class="p">,</span>
+            <span class="nx">collection</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">siteId</span><span class="o">:</span> <span class="s2">&quot;320568&quot;</span><span class="p">,</span>
+                <span class="nx">articleId</span><span class="o">:</span> <span class="s2">&quot;home_fromthefloor&quot;</span>
+            <span class="p">},</span>
+            <span class="nx">el</span><span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;home-tweets&quot;</span><span class="p">)</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;News loaded&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+
+</pre></div>             </td>           </tr>                </tbody>     </table>   </div> </body> </html> 

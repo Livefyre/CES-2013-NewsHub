@@ -1,0 +1,50 @@
+<!DOCTYPE html>  <html> <head>   <title>config.js</title>   <meta http-equiv="content-type" content="text/html; charset=UTF-8">   <link rel="stylesheet" media="all" href="docco.css" /> </head> <body>   <div id="container">     <div id="background"></div>            <div id="jump_to">         Jump To &hellip;         <div id="jump_wrapper">           <div id="jump_page">                                           <a class="source" href="Brands.html">                 Brands.js               </a>                                           <a class="source" href="Media.html">                 Media.js               </a>                                           <a class="source" href="News.html">                 News.js               </a>                                           <a class="source" href="Products.html">                 Products.js               </a>                                           <a class="source" href="config.html">                 config.js               </a>                                           <a class="source" href="CNET.html">                 CNET.js               </a>                                           <a class="source" href="Engadget.html">                 Engadget.js               </a>                                           <a class="source" href="Fox.html">                 Fox.js               </a>                                           <a class="source" href="Mashable.html">                 Mashable.js               </a>                                           <a class="source" href="TechCrunch.html">                 TechCrunch.js               </a>                                           <a class="source" href="Techland.html">                 Techland.js               </a>                                           <a class="source" href="newsCommon.html">                 newsCommon.js               </a>                                           <a class="source" href="Card.html">                 Card.js               </a>                                           <a class="source" href="Hero.html">                 Hero.js               </a>                        </div>         </div>       </div>          <table cellpadding="0" cellspacing="0">       <thead>         <tr>           <th class="docs">             <h1>               config.js             </h1>           </th>           <th class="code">           </th>         </tr>       </thead>       <tbody>                               <tr id="section-1">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-1">&#182;</a>               </div>               <h1>Config</h1>
+
+<p>Tell requirejs where to find dependency packages</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">require</span><span class="p">.</span><span class="nx">config</span><span class="p">({</span></pre></div>             </td>           </tr>                               <tr id="section-2">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-2">&#182;</a>               </div>               <p>libs live in /lib</p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="nx">baseUrl</span><span class="o">:</span> <span class="s2">&quot;/lib&quot;</span><span class="p">,</span></pre></div>             </td>           </tr>                               <tr id="section-3">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-3">&#182;</a>               </div>               <p>Deps will be referred to by the value on the left
+and can be found at the value on the right</p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="nx">paths</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;CES&quot;</span><span class="o">:</span> <span class="s2">&quot;../src&quot;</span><span class="p">,</span>
+    <span class="nx">jquery</span><span class="o">:</span> <span class="s1">&#39;jquery/jquery&#39;</span><span class="p">,</span>
+    <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;requirejs-text/text&#39;</span><span class="p">,</span>
+    <span class="nx">backbone</span><span class="o">:</span> <span class="s1">&#39;backbone/backbone&#39;</span><span class="p">,</span>
+    <span class="nx">underscore</span><span class="o">:</span> <span class="s1">&#39;underscore/underscore&#39;</span><span class="p">,</span>
+    <span class="nx">mustache</span><span class="o">:</span> <span class="s1">&#39;mustache/mustache&#39;</span><span class="p">,</span>
+    <span class="nx">isotope</span><span class="o">:</span> <span class="s1">&#39;isotope/jquery.isotope&#39;</span><span class="p">,</span>
+    <span class="nx">slidesjs</span><span class="o">:</span> <span class="s1">&#39;Slides/source/slides.jquery&#39;</span><span class="p">,</span></pre></div>             </td>           </tr>                               <tr id="section-4">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-4">&#182;</a>               </div>               <p>Include the StreamHub JavaScript SDKs in here</p>             </td>             <td class="code">               <div class="highlight"><pre>    <span class="nx">fyre</span><span class="o">:</span> <span class="s1">&#39;http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre&#39;</span><span class="p">,</span></pre></div>             </td>           </tr>                               <tr id="section-5">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-5">&#182;</a>               </div>               <p>including one from the UAT environment</p>             </td>             <td class="code">               <div class="highlight"><pre>    <span class="nx">fyret402</span><span class="o">:</span> <span class="s1">&#39;http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre&#39;</span>
+  <span class="p">},</span></pre></div>             </td>           </tr>                               <tr id="section-6">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-6">&#182;</a>               </div>               <p>Packages are multi-file modules. When loaded, they will
+execute {location}/main.js</p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="nx">packages</span><span class="o">:</span> <span class="p">[{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;CES&#39;</span><span class="p">,</span>
+    <span class="nx">location</span><span class="o">:</span> <span class="s2">&quot;../src/&quot;</span>
+  <span class="p">},{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;streamhub-backbone&#39;</span><span class="p">,</span>
+    <span class="nx">location</span><span class="o">:</span> <span class="s1">&#39;streamhub-backbone&#39;</span>
+  <span class="p">},{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;streamhub-isotope&#39;</span><span class="p">,</span>
+    <span class="nx">location</span><span class="o">:</span> <span class="s1">&#39;streamhub-isotope&#39;</span>
+  <span class="p">},{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;streamhub-slidesjs&#39;</span><span class="p">,</span>
+    <span class="nx">location</span><span class="o">:</span> <span class="s1">&#39;streamhub-slidesjs&#39;</span>
+  <span class="p">}],</span></pre></div>             </td>           </tr>                               <tr id="section-7">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-7">&#182;</a>               </div>               <p>For modules that don't use AMD, this tells RequireJS
+what globals they expose</p>             </td>             <td class="code">               <div class="highlight"><pre>  <span class="nx">shim</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">backbone</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">deps</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;underscore&#39;</span><span class="p">,</span> <span class="s1">&#39;jquery&#39;</span><span class="p">],</span>
+        <span class="nx">exports</span><span class="o">:</span> <span class="s1">&#39;Backbone&#39;</span>
+    <span class="p">},</span>
+    <span class="nx">underscore</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">exports</span><span class="o">:</span> <span class="s1">&#39;_&#39;</span>
+    <span class="p">},</span>
+    <span class="nx">isotope</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">deps</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;jquery&#39;</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="nx">fyre</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">exports</span><span class="o">:</span> <span class="s1">&#39;fyre&#39;</span>
+    <span class="p">},</span>
+    <span class="nx">fyret402</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">exports</span><span class="o">:</span> <span class="s1">&#39;fyre&#39;</span>
+    <span class="p">},</span>
+    <span class="nx">slidesjs</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">exports</span><span class="o">:</span> <span class="s1">&#39;$&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+</pre></div>             </td>           </tr>                </tbody>     </table>   </div> </body> </html> 
