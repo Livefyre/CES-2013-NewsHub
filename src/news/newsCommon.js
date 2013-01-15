@@ -9,8 +9,8 @@ require(['jquery', 'underscore'], function ($, _) {
 			window.open($link.attr('href'), '_blank');
 		}
 		function _notHashtag (link) {
-			if (link.text.substring(0,1)=='#') return false
+			if (link.text.substring(0,1)=='#') return false;
 			return true;
 		}
 	});
-})
+});

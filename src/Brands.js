@@ -4,12 +4,12 @@ require(['./config'], function () {
 require(['fyre', 'streamhub-backbone', 'jquery', 'mustache', 'text!../src/templates/Instagram.html','text!../src/templates/Twitter.html', '../src/templates/Card'],
 function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml, CardTemplate) {
     var apps = [];
-	fyre.conv.load({
+    fyre.conv.load({
         network: 'labs.fyre.co'
     }, [{
-		app: 'sdk'
-	}], loadApp);
-	function loadApp (sdk) {
+        app: 'sdk'
+    }], loadApp);
+    function loadApp (sdk) {
         var sources = {
             rss: {
                 template: function (d) {
@@ -21,16 +21,16 @@ function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml, CardTemplate) {
                     var i=0;
                     return function (d) {
                         i++;
-                        if (i%4==0) {
+                        if (i%4===0) {
                             return CardTemplate(d);
                         }
                         return Mustache.compile(TwitterHtml)(d);
-                    }
+                    };
                 }())
             }
-        }
+        };
         // Samsung
-		var app0 = apps.push(new Hub({
+        var app0 = apps.push(new Hub({
             sdk: sdk,
             collection: {
                 siteId: "320568",
@@ -38,19 +38,19 @@ function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml, CardTemplate) {
             },
             sources: sources,
             el: document.getElementById("brand-0-env")
-	    }));
+        }));
         // Google
-	    var app1 = apps.push(new Hub({
+        var app1 = apps.push(new Hub({
             sdk: sdk,
             collection: {
-				siteId: "320568",
+                siteId: "320568",
                 articleId: "brands_google"
             },
             sources: sources,
             el: document.getElementById("brand-1-env")
-	    }));
+        }));
         // Microsoft
-	    var app2 = apps.push(new Hub({
+        var app2 = apps.push(new Hub({
             sdk: sdk,
             collection: {
                 siteId: "320568",
@@ -173,7 +173,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml, CardTemplate) {
         var col_width = 307;
         var viewport_width = $(window).width();
         $('.deck-columns').css('width', ((apps.length) * col_width) + viewport_width - 75);
-	}
+    }
 });
 
 console.log("Brands loaded");

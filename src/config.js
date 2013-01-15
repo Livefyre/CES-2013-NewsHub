@@ -10,7 +10,7 @@ require.config({
     underscore: 'underscore/underscore',
     mustache: 'mustache/mustache',
     isotope: 'isotope/jquery.isotope',
-    slides: 'slides.jquery/slides.jquery',
+    slidesjs: 'Slides/source/slides.jquery',
     fyre: 'http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre',
     fyret402: 'http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre'
   },
@@ -23,6 +23,9 @@ require.config({
   },{
     name: 'streamhub-isotope',
     location: 'streamhub-isotope'
+  },{
+    name: 'streamhub-slidesjs',
+    location: 'streamhub-slidesjs'
   }],
   shim: {
     backbone: {
@@ -33,7 +36,7 @@ require.config({
         exports: '_'
     },
     isotope: {
-            deps: ['jquery']
+        deps: ['jquery']
     },
     fyre: {
         exports: 'fyre'
@@ -41,7 +44,7 @@ require.config({
     fyret402: {
         exports: 'fyre'
     },
-    slides: {
+    slidesjs: {
         exports: '$'
     }
   }
