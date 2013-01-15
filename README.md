@@ -14,7 +14,7 @@ This NewsHub uses the following apps:
 
 ## Documentation
 
-You may be wondering how _you_ can build a NewsHub. The GitHub Page for this repository includes [annotated source code](http://livefyre.github.com/CES-2013-NewsHub/docs) that describes step-by-step the code that powers the 2013 CES NewsHub
+You may be wondering how _you_ can build a NewsHub. The GitHub Page for this repository includes [annotated source code](http://livefyre.github.com/CES-2013-NewsHub/docs/News.html) that describes step-by-step the code that powers the 2013 CES NewsHub
 
 * [Media Wall](http://livefyre.github.com/CES-2013-NewsHub/docs/News.html)
 * [Brands](http://livefyre.github.com/CES-2013-NewsHub/docs/Brands.html)
