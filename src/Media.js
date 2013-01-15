@@ -41,7 +41,7 @@ function focusMediaEveryNSeconds (frequencyInSeconds) {
         $('.'+focusedClassName).removeClass(focusedClassName);
         $focusItem.addClass(focusedClassName);
     }, frequencyInSeconds * 1000);
-};
+}
 
 /*
  * Returns a random integer between min and max
