@@ -1,5 +1,9 @@
+// # JavaScript common to all News subpages
+
+// load dependencies
 require(['jquery', 'underscore'], function ($, _) {
-	// I can click on a card and go to the first link in it
+	// Whenever a .card is clicked on, find a good link in it
+	// to send a user to, then send them there in a new window
 	$('#main-section').on('click', '.card', function (e) {
 		var links = $(this).find('a[href]'),
 			withoutHashtags = _(links).filter(_notHashtag);

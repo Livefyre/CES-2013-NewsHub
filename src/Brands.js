@@ -1,8 +1,8 @@
-// # Brands page
+// # [Brands](http://ces.livefyre.com/Brands.html) page
 // Display a FeedView for each of a handful of brands
 // launching products at CES.
 
-// Load ./config so that requirejs knows about all the dependencies
+// Load ../config so that requirejs knows about all the dependencies
 require(['./config'], function () {
 
 // Load dependencies 
@@ -27,7 +27,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml, CardTemplate) {
         app: 'sdk'
     }], loadApps);
     
-    // `fyre.conv.loader` passes the sdk to this once loaded
+    // `fyre.conv.load` passes the sdk to this once loaded
     function loadApps (sdk) {
         // The Brands page uses a different template for Content
         // depending on the Content source

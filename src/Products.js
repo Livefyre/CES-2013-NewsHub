@@ -1,4 +1,4 @@
-// # Products page
+// # [Products](http://ces.livefyre.com/Products.html) page
 // Display a FeedView for each of a handful of product
 // categories for the exciting things at CES
 
@@ -26,7 +26,7 @@ function (fyre, Hub, $, Mustache, InstagramHtml, TwitterHtml, CardTemplate) {
         app: 'sdk'
     }], loadApps);
 
-    // `fyre.conv.loader` passes the sdk to this once loaded
+    // `fyre.conv.load` passes the sdk to this once loaded
     function loadApps (sdk) {
         // The Products page uses a different template for Content
         // depending on the Content source
