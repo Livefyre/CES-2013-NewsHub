@@ -12,7 +12,7 @@ This NewsHub uses the following apps:
 * [StreamHub-Isotope](https://github.com/gobengo/streamhub-isotope) - Uses the [jQuery Isotope](https://github.com/desandro/isotope) plugin to lay out Content for a tiled display
 * [StreamHub-SlidesJS](https://github.com/gobengo/streamhub-slidesjs) - displays Content in a slideshow using [SlidesJS](http://slidesjs.com/)
 
-## Documentation</h1>
+## Documentation
 
 You may be wondering how _you_ can build a NewsHub. The GitHub Page for this repository includes [annotated source code](http://livefyre.github.com/CES-2013-NewsHub/docs) that describes step-by-step the code that powers the 2013 CES NewsHub
 
