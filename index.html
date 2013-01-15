@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ces-2013-newshub by Livefyre</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Ces-2013-newshub</h1>
+        <p class="header">A StreamHub for social information about CES 2013</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/Livefyre/CES-2013-NewsHub/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/Livefyre/CES-2013-NewsHub/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/Livefyre/CES-2013-NewsHub">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/Livefyre">Livefyre</a></p>
+
+
+      </header>
+      <section>
+        <h1>Livefyre CES 2013 NewsHub</h1>
+
+<p>The <a href="http://ces.livefyre.com/">Livefyre CES 2013 NewsHub</a> curates social Content from around the web so you can keep track of all the new electronics from your favorite brands.</p>
+
+<p><img src="http://d.pr/i/71lK+" alt="CES 2013 NewsHub Screenshot"></p>
+
+<p><a href="http://ces.livefyre.com/">CES 2103 NewsHub</a> is powered by <a href="http://gobengo.github.com/streamhub-backbone/">StreamHub-Backbone</a>, which binds <a href="http://www.livefyre.com/streamhub/">Livefyre StreamHub</a> with <a href="http://backbonejs.org/">Backbone.js</a> so you can make amazing Content experiences like feeds, media walls, and slideshows.</p>
+
+<p>This NewsHub uses the following apps:</p>
+
+<ul>
+<li>
+<a href="https://github.com/gobengo/streamhub-backbone/blob/master/views/FeedView.js">StreamHub-Backbone/views/FeedView</a> - Included with StreamHub-Backbone, this displays a simple feed of Content and is used in NewsHub on the Brands and Products pages</li>
+<li>
+<a href="https://github.com/gobengo/streamhub-isotope">StreamHub-Isotope</a> - Uses the <a href="https://github.com/desandro/isotope">jQuery Isotope</a> plugin to lay out Content for a tiled display</li>
+<li>
+<a href="https://github.com/gobengo/streamhub-slidesjs">StreamHub-SlidesJS</a> - displays Content in a slideshow using <a href="http://slidesjs.com/">SlidesJS</a>
+</li>
+</ul><h1>Documentation</h1>
+
+<p>You may be wondering how <em>you</em> can build a NewsHub. The GitHub Page for this repository includes <a href="http://livefyre.github.com/CES-2013-NewsHub/docs">annotated source code</a> that describes step-by-step the code that powers the 2013 CES NewsHub.</p>
+
+<h1>Libraries used</h1>
+
+<p>NewsHub (and StreamHub-Backbone) stands on the shoulders of several other great open-source projects:</p>
+
+<ul>
+<li>
+<a href="http://requirejs.org/">RequireJS</a> - An <a href="http://requirejs.org/docs/whyamd.html">AMD</a> loader so modules can be defined in different files and loaded when needed.</li>
+<li>
+<a href="http://twitter.github.com/bower/">Bower</a> - A package manager for the browser. Used to declare and load most dependencies</li>
+<li>
+<a href="http://lesscss.org/">Less</a> - A better way to write CSS</li>
+<li>
+<a href="http://backbonejs.org/">Backbone.js</a> - A lightweight MVC framework for browser apps</li>
+<li>
+<a href="http://jquery.com/">jQuery</a> - a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.</li>
+</ul><h1>Running locally</h1>
+
+<p>Install npm - <a href="https://npmjs.org/doc/install.html">https://npmjs.org/doc/install.html</a></p>
+
+<p>Install <a href="http://twitter.github.com/bower/">Bower</a></p>
+
+<pre><code>npm install bower -g
+</code></pre>
+
+<p>Then, from the root of this repo, get dependencies for this app</p>
+
+<pre><code>bower install
+</code></pre>
+
+<p>You'll need to serve the directory over HTTP for the StreamHub JavaScript SDK to work its magic.</p>
+
+<pre><code>python -m SimpleHTTPServer 8888
+open http://localhost:8888
+</code></pre>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-36968790-4");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
